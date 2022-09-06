@@ -30,6 +30,7 @@ img {
 .ant-layout-header {
   background-color: #1F1F1F;
   color: #CCC;
+  z-index: 100;
 }
 
 .ant-layout-header .ant-menu {
@@ -73,14 +74,17 @@ img {
 /* App logo */
 
 .app-logo {
-  padding: 300px 0 400px 0;
-  /* background:
-    url('./img/background.png'); */
+  padding: 200px 0 550px 0;
+  background:
+    url('./img/background1.png');
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-color: #333;
-  background-position-x: 150%;
-  background-position-y: 100px;
-  background-size: 1400px;
+  background-position-x: center;
+  background-position-y: 0px;
+  background-size: cover;
+  position: relative;
+  top: -64px;
   /* opacity: 0.7; */
 }
 
