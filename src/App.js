@@ -1,31 +1,38 @@
-import React from 'react'
-import { Root, Routes, addPrefetchExcludes } from 'react-static'
-//
-import { Link, Router } from 'components/Router'
-import Dynamic from 'containers/Dynamic'
+import React from 'react';
+import { Root, Routes, addPrefetchExcludes } from 'react-static';
+import { Link, Router } from 'components/Router';
+import { Layout } from 'antd';
+import { MainMenu } from 'components/MainMenu';
 
+import 'antd/dist/antd.css';
 import './app.css'
 
+const { Header, Footer, Content } = Layout;
+
 // Any routes that start with 'dynamic' will be treated as non-static routes
-addPrefetchExcludes(['dynamic'])
+addPrefetchExcludes(['dynamic']);
 
 function App() {
   return (
     <Root>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/blog">Blog</Link>
-        <Link to="/dynamic">Dynamic</Link>
-      </nav>
-      <div className="content">
-        <React.Suspense fallback={<em>Loading...</em>}>
-          <Router>
-            <Dynamic path="dynamic" />
-            <Routes path="*" />
-          </Router>
-        </React.Suspense>
-      </div>
+      <Layout>
+        <Header>
+          <div className="logo"><img src="./img/NetScourSecLogo.png" /> NetScour Security</div>
+          <MainMenu />
+        </Header>
+        <Content>
+          <div className="content">
+            <React.Suspense fallback={<em>Loading...</em>}>
+              <Router>
+                <Routes path="*" />
+              </Router>
+            </React.Suspense>
+          </div>
+        </Content>
+        <Footer>
+          Footer
+        </Footer>
+      </Layout>
     </Root>
   )
 }

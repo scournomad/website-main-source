@@ -1,3 +1,5 @@
+/* ========== General elements ========== */
+
 * {
   scroll-behavior: smooth;
 }
@@ -9,11 +11,13 @@ body {
   font-size: 16px;
   margin: 0;
   padding: 0;
+  background-color: #111;
+  color: #CCC;
 }
 
 a {
   text-decoration: none;
-  color: #108db8;
+  color: #9e70c7;
   font-weight: bold;
 }
 
@@ -21,17 +25,113 @@ img {
   max-width: 100%;
 }
 
-nav {
-  width: 100%;
-  background: #108db8;
+/* ========== Header ========== */
+
+.ant-layout-header {
+  background-color: #1F1F1F;
+  color: #CCC;
 }
 
-nav a {
-  color: white;
-  padding: 1rem;
-  display: inline-block;
+.ant-layout-header .ant-menu {
+  float: right;
+  background-color: #1F1F1F;
+  border: 0;
+  width: 300px;
 }
+
+.ant-layout-header .ant-menu li {
+  color: #9e70c7;
+}
+
+.ant-layout-header .ant-menu li:hover {
+  color: #cf9ff8 !important;
+}
+
+.ant-layout-header .ant-menu li:hover::after {
+  border-bottom: 2px solid #9e70c7 !important;
+}
+
+.ant-layout-header .logo {
+  float: left;
+}
+
+.ant-menu-item-selected {
+  color: #cf9ff8 !important;
+  font-weight: bold;
+}
+
+.ant-menu-item-selected::after {
+  border-bottom: 2px solid #cf9ff8 !important;
+}
+
+.logo img {
+  height: 50px;
+}
+
+/* ========== Content ========== */
+
+/* App logo */
+
+.app-logo {
+  padding: 300px 0 400px 0;
+  /* background:
+    url('./img/background.png'); */
+  background-repeat: no-repeat;
+  background-color: #333;
+  background-position-x: 150%;
+  background-position-y: 100px;
+  background-size: 1400px;
+  /* opacity: 0.7; */
+}
+
+.app-logo .intro-text {
+  font-size: 16px;
+  text-shadow: 10px 10px 2px #222;
+  color: #CCC;
+  padding: 10px 0 0 0;
+  display: block;
+}
+
+.app-logo .header1 {
+  color: #b62025;
+  font-size: 60px;
+  line-height: 60px;
+  margin: 0;
+  text-shadow: 10px 10px 2px #222;
+}
+
+.app-logo .header2 {
+  text-shadow: 10px 10px 2px #222;
+  color: #CCC;
+}
+
+.app-logo img {
+  filter: drop-shadow(10px 10px 2px #222);
+}
+
+/* App logo - end */
 
 .content {
-  padding: 1rem;
+  background-color: #1F1F1F;
+}
+
+.main-body {
+  /* min-height: 800px; */
+  /* background:
+    url('./img/background.png'); */
+  /* background-repeat: no-repeat; */
+  background-color: #1F1F1F;
+  /* background-position-x: 150%;
+  background-position-y: 100px;
+  background-size: 1400px;
+  opacity: 0.7;
+  height: 2000px; */
+}
+
+/* ========== Footer ========== */
+
+footer {
+  min-height: 200px;
+  background-color: #111 !important;
+  flex: 0 1 200px;
 }
