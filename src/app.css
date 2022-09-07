@@ -51,12 +51,18 @@ img {
   width: 300px;
 }
 
-.ant-layout-header .ant-menu li {
-  color: #9e70c7;
+.ant-layout-header .ant-menu li a {
+  color: #9e70c7 !important;
 }
 
-.ant-layout-header .ant-menu li:hover {
+.ant-layout-header .ant-menu li:hover a {
   color: #cf9ff8 !important;
+}
+
+.ant-layout-header .ant-menu li:active,
+.ant-layout-header .ant-menu li:focus-visible {
+  background-color: #1F1F1F;
+  box-shadow: none;
 }
 
 .ant-layout-header .ant-menu li:hover::after {
@@ -67,12 +73,12 @@ img {
   float: left;
 }
 
-.ant-menu-item-selected {
+.ant-layout-header li.ant-menu-item-selected a {
   color: #cf9ff8 !important;
   font-weight: bold;
 }
 
-.ant-menu-item-selected::after {
+.ant-layout-header li.ant-menu-item-selected::after {
   border-bottom: 2px solid #cf9ff8 !important;
 }
 

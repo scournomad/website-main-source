@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'components/Router'
 import { Menu } from 'antd';
 
 const items = [
@@ -25,7 +26,19 @@ export function MainMenu() {
         console.log('click ', e);
         setCurrent(e.key);
     };
-    return <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />;
+    return (
+      <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal">
+        <Menu.Item key="product">
+          <Link to="/">Product</Link>
+        </Menu.Item>
+        <Menu.Item key="company">
+          <Link to="/company">Company</Link>
+        </Menu.Item>
+        <Menu.Item key="inquiry">
+          <Link to="/inquiry">Inquiry</Link>
+        </Menu.Item>
+      </Menu>
+    );
 }
 
 
