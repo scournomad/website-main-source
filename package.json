@@ -1,6 +1,6 @@
 {
   "name": "react-static-example-basic",
-  "homepage": "https://netscoursec.github.io/website-main/",
+  "homepage": "https://preview.netscoursec.com/",
   "private": true,
   "scripts": {
     "start": "react-static start",
