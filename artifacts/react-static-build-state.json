@@ -1,0 +1,62 @@
+{
+  "prefetchRate": 5,
+  "maxThreads": null,
+  "disableRoutePrefixing": false,
+  "outputFileRate": 100,
+  "extensions": [
+    ".js",
+    ".jsx"
+  ],
+  "minLoadTime": 200,
+  "disablePreload": false,
+  "disableRuntime": false,
+  "preloadPollInterval": 300,
+  "productionSourceMaps": false,
+  "silent": false,
+  "entry": "index.js",
+  "plugins": [
+    [
+      "/home/nutcracker/data/projects/netscoursec/website-main-source/node_modules/react-static-plugin-source-filesystem/node.api.js",
+      {
+        "location": "/home/nutcracker/data/projects/netscoursec/website-main-source/src/pages"
+      }
+    ],
+    "/home/nutcracker/data/projects/netscoursec/website-main-source/node_modules/react-static-plugin-reach-router/browser.api.js",
+    "/home/nutcracker/data/projects/netscoursec/website-main-source/node_modules/react-static-plugin-sitemap/dist/node.api.js",
+    "/home/nutcracker/data/projects/netscoursec/website-main-source"
+  ],
+  "paths": {
+    "ROOT": "/home/nutcracker/data/projects/netscoursec/website-main-source",
+    "SRC": "/home/nutcracker/data/projects/netscoursec/website-main-source/src",
+    "DIST": "/home/nutcracker/data/projects/netscoursec/website-main-source/dist",
+    "ASSETS": "/home/nutcracker/data/projects/netscoursec/website-main-source/dist",
+    "PLUGINS": "/home/nutcracker/data/projects/netscoursec/website-main-source/plugins",
+    "TEMP": "/home/nutcracker/data/projects/netscoursec/website-main-source/tmp",
+    "ARTIFACTS": "/home/nutcracker/data/projects/netscoursec/website-main-source/artifacts",
+    "PUBLIC": "/home/nutcracker/data/projects/netscoursec/website-main-source/public",
+    "NODE_MODULES": "/home/nutcracker/data/projects/netscoursec/website-main-source/node_modules",
+    "EXCLUDE_MODULES": "/home/nutcracker/data/projects/netscoursec/website-main-source/node_modules",
+    "PACKAGE": "/home/nutcracker/data/projects/netscoursec/website-main-source/package.json",
+    "HTML_TEMPLATE": "/home/nutcracker/data/projects/netscoursec/website-main-source/dist/index.html",
+    "STATIC_DATA": "/home/nutcracker/data/projects/netscoursec/website-main-source/dist/staticData"
+  },
+  "siteRoot": "/",
+  "basePath": "",
+  "publicPath": "/",
+  "assetsPath": "",
+  "extractCssChunks": false,
+  "inlineCss": false,
+  "babelExcludes": [],
+  "devServer": {
+    "host": "localhost",
+    "port": 3000
+  },
+  "terser": {
+    "terserOptions": {
+      "mangle": {},
+      "parse": {},
+      "compress": {},
+      "output": {}
+    }
+  }
+}
