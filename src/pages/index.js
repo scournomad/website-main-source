@@ -1,8 +1,8 @@
 import React from 'react'
-import { Row, Col, Card } from 'antd';
+import { Row, Col, Card, Button } from 'antd';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { PlatformDescriptionItem } from '../components/PlatformDescriptionItem';
-import { faBrainCircuit, faBugs, faGears, faListCheck, faRadar, faSignsPost } from '@fortawesome/pro-duotone-svg-icons';
+import { faBrainCircuit, faBugs, faGears, faListCheck, faMegaphone, faRadar, faSignsPost } from '@fortawesome/pro-duotone-svg-icons';
 
 const { Meta } = Card;
 
@@ -80,5 +80,12 @@ export default () => (
       </Col>
     </Row>
     <PlatformDescriptionItem />
+    <Row justify="center" style={{ marginTop: "100px"}}>
+      <Col xl={{ span: 10 }}>
+        <Button block className="shout-button" /*onClick={() => document.location = "/visit"}*/>
+          <FontAwesomeIcon icon={faMegaphone} /> Interested? Give us a shout!
+        </Button>
+      </Col>
+    </Row>
   </div>
 )

@@ -53,6 +53,11 @@ img {
   background-color: #1F1F1F;
   color: #CCC;
   z-index: 100;
+
+  /* Test */
+  position: fixed;
+  width: 100%;
+  box-shadow: #111 0px 5px 5px;
 }
 
 .ant-layout-header .ant-menu {
@@ -102,7 +107,7 @@ img {
 /* App logo */
 
 .app-logo {
-  padding: 200px 0 550px 0;
+  padding: 250px 0 550px 0;
   background:
     url('./img/background1.png');
   background-attachment: fixed;
@@ -164,6 +169,11 @@ img {
   box-shadow: #111 5px 5px 20px;
 }
 
+.initial-description .ant-card:hover {
+  background-color: #3F3F3F;
+  transition: 0.3s;
+}
+
 .initial-description .ant-card svg {
   font-size: 100px;
   color: #9e70c7;
@@ -203,6 +213,7 @@ img {
 
 .company-page h2 {
   font-size: 40px;
+  margin-top: 150px;
 }
 
 .company-page h3 {
@@ -216,6 +227,11 @@ img {
   padding-top: 40px;
   height: 100%;
   box-shadow: #111 5px 5px 20px;
+}
+
+.company-page .ant-card:hover {
+  background-color: #3F3F3F;
+  transition: 0.3s;
 }
 
 .company-page .ant-card svg {
@@ -252,6 +268,37 @@ img {
 }
 
 /* Company page - end */
+
+/* Shout Button */
+
+.shout-button,
+.shout-button:active,
+.shout-button:focus {
+  height: 60px;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #333;
+  color: #CCC;
+  margin-bottom: 100px;
+  border: none;
+}
+
+.shout-button:hover {
+  background-color: #3F3F3F;
+  color: #CCC;
+}
+
+.shout-button svg {
+  font-size: 20px;
+  color: #9e70c7;
+}
+
+.shout-button span {
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+/* Shout button - end */
 
 /* ========== Footer ========== */
 
