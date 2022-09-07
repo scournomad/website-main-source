@@ -36,6 +36,17 @@ img {
   background-color: #1F1F1F;
 }
 
+.platform-name {
+  color: #9e70c7;
+}
+
+.ant-popover-inner-content,
+.ant-popover-arrow-content {
+  background-color: #3f3f3f;
+  --antd-arrow-background-color: #3f3f3f;
+  color: #CCC;
+}
+
 /* ========== Header ========== */
 
 .ant-layout-header {
@@ -144,10 +155,6 @@ img {
   margin-bottom: 30px;
 }
 
-.initial-description h3 .platform-name {
-  color: #9e70c7;
-}
-
 .initial-description .ant-card {
   background-color: #333;
   color: #CCC;
@@ -192,7 +199,59 @@ img {
 
 /* Platform description item - end */
 
+/* Company page */
 
+.company-page h2 {
+  font-size: 40px;
+}
+
+.company-page h3 {
+  font-size: 30px;
+}
+
+.company-page .ant-card {
+  background-color: #333;
+  color: #CCC;
+  border: none;
+  padding-top: 40px;
+  height: 100%;
+  box-shadow: #111 5px 5px 20px;
+}
+
+.company-page .ant-card svg {
+  font-size: 100px;
+  color: #9e70c7;
+}
+
+.company-page .ant-card .ant-card-meta-description {
+  color: #CCC !important;
+  text-align: left;
+  width: 100%;
+  min-height: 66px;
+}
+
+.company-page .ant-card .ant-card-meta-title {
+  color: #CCC;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.company-page .ant-card .ant-card-meta-detail {
+  width: 100%;
+}
+
+.company-page .ant-card .ant-btn.find-out-more {
+  margin-top: 30px;
+  background-color: #3f3f3f !important;
+  color: #CCC;
+  border: none;
+}
+
+.company-description-item-row {
+  margin: 50px 0;
+}
+
+/* Company page - end */
 
 /* ========== Footer ========== */
 
