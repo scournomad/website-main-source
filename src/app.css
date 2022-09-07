@@ -229,11 +229,6 @@ img {
   box-shadow: #111 5px 5px 20px;
 }
 
-.company-page .ant-card:hover {
-  background-color: #3F3F3F;
-  transition: 0.3s;
-}
-
 .company-page .ant-card svg {
   font-size: 100px;
   color: #9e70c7;
