@@ -30,7 +30,7 @@ function App() {
           </div>
         </Content>
         <Footer>
-          Footer
+          
         </Footer>
       </Layout>
     </Root>

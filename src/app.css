@@ -13,6 +13,7 @@ body {
   padding: 0;
   background-color: #111;
   color: #CCC;
+  overflow-x: clip;
 }
 
 a {
@@ -21,8 +22,18 @@ a {
   font-weight: bold;
 }
 
+h1, h2, h3, h4, h5 {
+  color: #CCC;
+}
+
 img {
   max-width: 100%;
+}
+
+.content,
+.main-body,
+.ant-layout {
+  background-color: #1F1F1F;
 }
 
 /* ========== Header ========== */
@@ -115,22 +126,67 @@ img {
 
 /* App logo - end */
 
-.content {
-  background-color: #1F1F1F;
+/* Initial Description */
+
+.initial-description {
+  margin-bottom: 50px;
 }
 
-.main-body {
-  /* min-height: 800px; */
-  /* background:
-    url('./img/background.png'); */
-  /* background-repeat: no-repeat; */
-  background-color: #1F1F1F;
-  /* background-position-x: 150%;
-  background-position-y: 100px;
-  background-size: 1400px;
-  opacity: 0.7;
-  height: 2000px; */
+.initial-description h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
 }
+
+.initial-description h3 .platform-name {
+  color: #9e70c7;
+}
+
+.initial-description .ant-card {
+  background-color: #333;
+  color: #CCC;
+  border: none;
+  padding-top: 40px;
+  height: 100%;
+  box-shadow: #111 5px 5px 20px;
+}
+
+.initial-description .ant-card svg {
+  font-size: 100px;
+  color: #9e70c7;
+}
+
+.initial-description .ant-card .ant-card-meta-description {
+  color: #CCC !important;
+  text-align: center;
+  width: 100%;
+}
+
+.initial-description .ant-card .ant-card-meta-detail {
+  width: 100%;
+}
+
+/* Initial Description - end*/
+
+/* Platform description item */
+
+.platform-description-item-row {
+  margin-bottom: 100px;
+}
+
+.platform-description-item-row ul
+{
+  margin: 30px;
+}
+
+.platform-description-item-row .ant-image {
+  box-shadow: #111 5px 5px 20px;
+  margin: 30px;
+}
+
+/* Platform description item - end */
+
+
 
 /* ========== Footer ========== */
 
