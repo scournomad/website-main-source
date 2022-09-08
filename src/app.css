@@ -61,10 +61,10 @@ img {
 }
 
 .ant-layout-header .ant-menu {
-  float: right;
+  margin-left: auto;
+  width: 600px; /*480px;*/
   background-color: #1F1F1F;
   border: 0;
-  width: 300px;
 }
 
 .ant-layout-header .ant-menu li a {
@@ -85,6 +85,14 @@ img {
   border-bottom: 2px solid #9e70c7 !important;
 }
 
+.ant-layout-header .ant-menu li.social {
+  font-size: 20px;
+}
+
+.ant-layout-header .ant-menu li.social:hover::after {
+  border-bottom: 2px solid transparent !important;
+}
+
 .ant-layout-header .logo {
   float: left;
 }
@@ -94,7 +102,8 @@ img {
   font-weight: bold;
 }
 
-.ant-layout-header li.ant-menu-item-selected::after {
+.ant-layout-header li.ant-menu-item-selected::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected::after {
   border-bottom: 2px solid #cf9ff8 !important;
 }
 

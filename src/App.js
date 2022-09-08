@@ -17,7 +17,6 @@ function App() {
     <Root>
       <Layout>
         <Header>
-          <div className="logo"><img src="./img/NetScourSecLogo.png" /> NetScour Security</div>
           <MainMenu />
         </Header>
         <Content>
