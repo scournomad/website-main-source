@@ -1,17 +1,18 @@
 {
   "name": "react-static-example-basic",
-  "homepage": "https://preview.netscoursec.com/",
+  "homepage": "https://preview.netscoursec.com",
   "private": true,
   "scripts": {
     "start": "react-static start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -b master -d dist",
     "stage": "react-static build --staging",
     "build": "react-static build",
     "analyze": "react-static build --analyze",
     "serve": "serve dist -p 3000"
   },
   "dependencies": {
+    "@babel/runtime": "^7.19.0",
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
     "@fortawesome/pro-duotone-svg-icons": "^6.2.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
