@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'components/Router'
-import { Col, Menu, Row } from 'antd';
+import { Menu } from 'antd';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
@@ -36,11 +36,3 @@ export function MainMenu() {
       </>
     );
 }
-
-
-
-{/* <div className="main-menu">
-      <Link to="/">Product</Link>
-      <Link to="/company">Company</Link>
-      <Link to="/inquiry">Inquiry</Link>
-    </div> */}

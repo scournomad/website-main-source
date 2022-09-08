@@ -310,4 +310,53 @@ footer {
   min-height: 200px;
   background-color: #111 !important;
   flex: 0 1 200px;
+  font-size: 13px !important;
+  color: #CCC !important;
+}
+
+footer a,
+footer a:visited,
+footer a:active {
+  color: #AAA !important;
+  font-weight: 100;
+  text-decoration: dashed;
+}
+
+footer a svg {
+  font-size: 18px;
+  margin-right: 5px;
+  width: 18px;
+}
+
+footer a:hover {
+  color: #9e70c7 !important;
+}
+
+footer h3 {
+  color: #DDD !important;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+footer ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+footer li {
+  margin: 5px 0;
+}
+
+footer .partners {
+  text-align: center;
+}
+
+footer .partners .esif-text {
+  display: block;
+  text-align: justify;
+  font-size: 8px;
+  line-height: 10px;
+  color: #CCC;
+  margin: 5px 0 15px 0;
 }

@@ -6,6 +6,7 @@ import { MainMenu } from 'components/MainMenu';
 
 import 'antd/dist/antd.css';
 import './app.css'
+import { MainFooter } from './components/MainFooter';
 
 const { Header, Footer, Content } = Layout;
 
@@ -29,7 +30,7 @@ function App() {
           </div>
         </Content>
         <Footer>
-          
+          <MainFooter />
         </Footer>
       </Layout>
     </Root>
