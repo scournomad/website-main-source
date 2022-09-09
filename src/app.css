@@ -56,8 +56,8 @@ img {
 {
   .content {
     width: auto;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
   }
 }
 
@@ -81,6 +81,10 @@ img {
   }
 }
 
+.social-name {
+  margin-left: 10px;
+}
+
 /* ========== Header ========== */
 
 .ant-layout-header {
@@ -96,9 +100,10 @@ img {
 
 .ant-layout-header .ant-menu {
   margin-left: auto;
-  width: 600px; /*480px;*/
+  width: 500px;
   background-color: #1F1F1F;
   border: 0;
+  transition: none;
 }
 
 .ant-layout-header .ant-menu li a {
@@ -127,6 +132,52 @@ img {
   border-bottom: 2px solid transparent !important;
 }
 
+.ant-layout-header .ant-menu li.social .social-name {
+  font-size: 14px;
+  display: none;
+}
+
+.ant-layout-header .ant-menu .ant-menu-overflow-item-rest svg {
+  font-size: 25px;
+  color: #9e70c7;
+  vertical-align: middle;
+}
+
+.ant-layout-header .ant-menu .ant-menu-overflow-item-rest::after,
+.ant-layout-header .ant-menu .ant-menu-overflow-item-rest:hover::after {
+  border-bottom: 2px solid transparent !important;
+}
+
+/* Popup menu on small screens */
+
+.ant-menu-submenu-popup {
+  left: 0 !important;
+  position: relative;
+  box-shadow: #111 0px 5px 5px;
+}
+
+.ant-menu-submenu-popup > .ant-menu {
+  background-color: #1f1f1f;
+}
+
+.ant-menu-submenu-popup > .ant-menu a {
+  color: #CCC;
+}
+
+.ant-menu-vertical .ant-menu-item:not(:last-child),
+.ant-menu-vertical .ant-menu-item {
+  margin: 0;
+  height: 50px;
+  line-height: 50px;
+}
+
+.ant-menu-submenu-popup > .ant-menu .ant-menu-item-selected,
+.ant-menu-submenu-popup > .ant-menu li:hover {
+  background-color: #333;
+}
+
+/* Popup menu on small screens - end */
+
 .ant-layout-header .logo {
   float: left;
 }
@@ -143,6 +194,28 @@ img {
 
 .logo img {
   height: 50px;
+}
+
+@media (max-width: 480px) /* xs */
+{
+  .company-name {
+    display: none;
+  }
+
+  .ant-layout-header {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 992px)
+{
+  .ant-layout-header .ant-menu {
+    width: 50px;
+  }
+
+  .ant-layout-header .ant-menu li.social .social-name {
+    display: inline;
+  } 
 }
 
 /* ========== Content ========== */
