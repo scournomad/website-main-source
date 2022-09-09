@@ -517,3 +517,29 @@ footer .partners .esif-text {
   color: #CCC;
   margin: 5px 0 15px 0;
 }
+
+footer .copyright {
+  text-align: right;
+}
+
+@media (max-width: 768px) /* sm */
+{
+  footer,
+  footer .copyright {
+    text-align: center;
+  }
+
+  footer ul {
+    margin-bottom: 20px;
+  }
+
+  footer img {
+    max-width: 150px;
+    margin-bottom: 20px;
+  }
+
+  footer .partners .esif-text {
+    width: 150px;
+    margin: -15px auto 15px auto;
+  }
+}

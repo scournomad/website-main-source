@@ -8,7 +8,7 @@ export function MainFooter() {
     return (
         <>
             <Row>
-                <Col span={3}>
+                <Col xs={24} sm={5} md={4} xl={3}>
                     <h3>Menu</h3>
                     <ul>
                         <li><Link to="/">Product</Link></li>
@@ -16,7 +16,7 @@ export function MainFooter() {
                         <li><Link to="/preregister">Preregister</Link></li>
                     </ul>
                 </Col>
-                <Col span={5}>
+                <Col xs={24} sm={5} md={9} xl={5}>
                     <h3>Social</h3>
                     <ul>
                         <li><a href="#" target="_blank"><FontAwesomeIcon icon={faGithub} /> Github</a></li>
@@ -24,18 +24,18 @@ export function MainFooter() {
                         <li><a href="#" target="_blank"><FontAwesomeIcon icon={faLinkedin} /> Linkedin</a></li>
                     </ul>
                 </Col>
-                <Col span={8}>
+                <Col xs={24} sm={14} md={11} xl={8}>
                     <h3>Partners</h3>
                     <Row className='partners'>
-                        <Col span={8}>
+                        <Col xs={24} sm={8}>
                             <a href="https://filrougecapital.com/" target="_blank">
                                 <img src="./img/partners/FRC.png"></img>
                             </a>
                         </Col>
-                        <Col span={8}>
+                        <Col xs={24} sm={8}>
                             <img src="./img/partners/EU.png"></img>
                         </Col>
-                        <Col span={8}>
+                        <Col xs={24} sm={8}>
                             <img src="./img/partners/ESIF.png"></img>
                             <span className="esif-text">
                                 Krajnji primatelj ﬁnancijskog instrumenta suﬁnanciranog iz Europskog fonda za 
@@ -47,11 +47,11 @@ export function MainFooter() {
             </Row>
             <hr></hr>
             <Row justify="space-between">
-                <Col>&copy; 2022 by NetScour Security</Col>
-                <Col>
+                <Col xs={24} sm={5}>
                     <a href="#" target="_blank">Terms and Conditions</a>&nbsp;&nbsp;&nbsp;
                     <a href="#" target="_blank">Privacy Policy</a>
                 </Col>
+                <Col xs={24} sm={5} className="copyright">&copy; 2022 by NetScour Security</Col>
             </Row>
         </>
     )
