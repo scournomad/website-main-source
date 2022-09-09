@@ -76,6 +76,10 @@ img {
   margin-right: auto;
 }
 
+.ant-image-preview-img {
+  max-height: 90%;
+}
+
 @media (max-width: 768px) /* sm */
 {
   .content {

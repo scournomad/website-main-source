@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react';
 import { Row, Col, Image } from 'antd';
 
 const items = [
@@ -69,18 +69,37 @@ const items = [
 ];
 
 export function PlatformDescriptionItem() {
+    const [visible, setVisible] = useState(false);
+    const [index, setIndex] = useState(false);
     return (
-        items.map((item, idx) => 
-            <Row className="platform-description-item-row" gutter={32} align="middle">
-                <Col xl={{ span: 12, push: idx % 2 == 0 ? 0 : 12 }}>
-                    <Image src={item.image} />
-                </Col>
-                <Col xl={{ span: 12, pull: idx % 2 == 0 ? 0 : 12 }}>
-                    <ul>
-                        {item.textItems.map(textItem => <li>{textItem}</li>)}
-                    </ul>
-                </Col>
-            </Row>
-        )
+        <>
+            {
+                items.map((item, idx) =>
+                    <Row className="platform-description-item-row" gutter={32} align="middle">
+                        <Col xl={{ span: 12, push: idx % 2 == 0 ? 0 : 12 }}>
+                            <Image
+                                preview={{ visible: false }}
+                                onClick={() => { 
+                                    setIndex(idx);
+                                    setVisible(true);
+                                }}
+                                src={item.image} />
+                        </Col>
+                        <Col xl={{ span: 12, pull: idx % 2 == 0 ? 0 : 12 }}>
+                            <ul>
+                                {item.textItems.map(textItem => <li>{textItem}</li>)}
+                            </ul>
+                        </Col>
+                    </Row>
+                )
+            }
+            <div style={{ display: 'none' }}>
+                <Image.PreviewGroup preview={{ visible, onVisibleChange: vis => setVisible(vis), current: index }}>
+                {
+                    items.map((item) => <Image src={item.image} />)
+                }
+                </Image.PreviewGroup>
+            </div>
+        </>
     );
 }

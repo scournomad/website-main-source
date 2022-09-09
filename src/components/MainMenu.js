@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { Link } from 'components/Router'
+import React, { useState } from 'react';
+import { Link } from 'components/Router';
 import { Menu } from 'antd';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
@@ -29,13 +29,13 @@ export function MainMenu() {
               <Link to="/preregister">Preregister</Link>
             </Menu.Item>
             <Menu.Item key="github" className="social">
-              <a href="#" target="_blank"><FontAwesomeIcon icon={faGithub} /><span class="social-name">Github</span></a>
+              <a href="#" target="_blank"><FontAwesomeIcon icon={faGithub} /><span className="social-name">Github</span></a>
             </Menu.Item>
             <Menu.Item key="twitter" className="social">
-              <a href="#" target="_blank"><FontAwesomeIcon icon={faTwitter} /><span class="social-name">Twitter</span></a>
+              <a href="#" target="_blank"><FontAwesomeIcon icon={faTwitter} /><span className="social-name">Twitter</span></a>
             </Menu.Item>
             <Menu.Item key="linkedin" className="social">
-              <a href="#" target="_blank"><FontAwesomeIcon icon={faLinkedin} /><span class="social-name">Linkedin</span></a>
+              <a href="#" target="_blank"><FontAwesomeIcon icon={faLinkedin} /><span className="social-name">Linkedin</span></a>
             </Menu.Item>
           </Menu>
       </>

@@ -8,7 +8,7 @@ import { Content } from 'antd/lib/layout/layout'
 export default function Blog() {
   return (
     <div className="company-page">
-      <div class="content">
+      <div className="content">
         <h1><span className="platform-name"><FontAwesomeIcon icon={faBuildingShield} /> NetScour Security</span> - the company</h1>
         <h2>Mission</h2>
         <p>To build a next-generation platform for software security testing.</p>
