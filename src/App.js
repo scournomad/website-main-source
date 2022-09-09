@@ -21,7 +21,7 @@ function App() {
           <MainMenu />
         </Header>
         <Content>
-          <React.Suspense fallback={<em>Loading...</em>}>
+          <React.Suspense fallback={<></>}>
             <Router>
               <Routes path="*" />
             </Router>
