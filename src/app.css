@@ -224,6 +224,15 @@ img {
   height: 50px;
 }
 
+.company-name {
+  color: #CCC !important;
+}
+
+.company-name:hover {
+  color: #cf9ff8 !important;
+  transition: 0.3s;
+}
+
 @media (max-width: 480px) /* xs */
 {
   .company-name {
