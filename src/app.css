@@ -474,6 +474,31 @@ img {
 
 /* Shout button - end */
 
+/* 404 */
+
+.ant-result-404 {
+  padding: 200px 32px;
+}
+
+.ant-result-404 .ant-result-title,
+.ant-result-404 .ant-result-subtitle {
+  color: #CCC;
+}
+
+.ant-result-404 a {
+  background-color: #333 !important;
+  border-color: #333 !important;
+  padding: 10px 50px !important;
+  height: auto;
+}
+
+.ant-result-404 a:hover {
+  background-color: #3f3f3f !important;
+  transition: 0.3s !important;
+}
+
+/* 404 - end */
+
 /* ========== Footer ========== */
 
 footer {
