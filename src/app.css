@@ -22,8 +22,32 @@ a {
   font-weight: bold;
 }
 
+b {
+  font-weight: bold;
+}
+
 h1, h2, h3, h4, h5 {
   color: #CCC;
+}
+
+h1 {
+  font-size: 40px;
+  margin-top: 150px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+@media (max-width: 768px)
+{
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
 }
 
 img {
@@ -266,10 +290,11 @@ img {
   filter: drop-shadow(10px 10px 2px #222);
 }
 
-@media (max-width: 768px)
+@media (max-width: 662px)
 {
   .app-logo-container {
     text-align: center;
+    width: auto;
   }
 }
 
@@ -278,7 +303,7 @@ img {
 /* Initial Description */
 
 .initial-description {
-  margin-bottom: 50px;
+  margin: 50px 0;
 }
 
 .initial-description h3 {
@@ -342,14 +367,13 @@ img {
 
 /* Company page */
 
-.company-page h2 {
-  font-size: 40px;
-  margin-top: 150px;
+@media (max-width: 768px)
+{
+  .company-page .ant-card-meta-title {
+    font-size: 15px;
+  }
 }
 
-.company-page h3 {
-  font-size: 30px;
-}
 
 .company-page .ant-card {
   background-color: #333;
@@ -426,6 +450,13 @@ img {
 .shout-button span {
   font-size: 20px;
   margin-left: 15px;
+}
+
+@media (max-width: 480px) /* xs */
+{
+  .shout-button svg {
+    display: none;
+  }
 }
 
 /* Shout button - end */

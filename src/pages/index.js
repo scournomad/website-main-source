@@ -8,13 +8,13 @@ const { Meta } = Card;
 
 export default () => (
   <div className="main-body">
-    <Row className="app-logo">
-      <Col xs={24} sm={{ span: 2, offset: 3 }}>
-        <Row className="app-logo-container">
-          <Col xs={24} sm={6}>
+    <Row className="app-logo" justify="center">
+      <Col xs={{span: 24}} md={{ span: 21, offset: 3 }}>
+        <Row className="app-logo-container" justify="center">
+          <Col xs={{ flex: "350px" }} md={6}>
             <img src="./img/ScourNomadLogo.png"/>
           </Col>
-          <Col xs={24} sm={18}>
+          <Col xs={{ flex: "350px" }} md={18}>
             <span className="intro-text">NetScour Security presents</span>
             <h1 className="header1">ScourNomad</h1>
             <h2 className="header2">Redefining infosec toolbox</h2>
@@ -23,20 +23,22 @@ export default () => (
       </Col>
     </Row>
     <div className="content">
-      <h3>
-        Build and execute your software security testing methodologies quickly and easily with 
-        <span className="platform-name">ScourNomad.</span>
-      </h3>
+      <h2>
+        What is <span className="platform-name">ScourNomad</span>?
+      </h2>
       <p>
         The goal of the ScourNomad platform is to reduce the security experts' time and effort performing 
         mundane tasks and improve testing performance. It enhances the penetration tests and bug hunts speed 
         and precision, providing easy-to-use interfaces and powerful integrations.
       </p>
+      <b>
+        Build and execute your full software security testing methodologies quickly and easily!
+      </b>
       <Row className="initial-description" gutter={32}>
         <Col xl={8} lg={12} xs={24}>
           <Card
             cover={<FontAwesomeIcon icon={faBugs} />}>
-            <Meta description="Build security testing methodologies" />
+            <Meta description="Build security testing methodologies and access them from anywhere" />
           </Card>
         </Col>
         <Col xl={8} lg={12} xs={24}>
@@ -71,16 +73,17 @@ export default () => (
         </Col>
       </Row>
       
-      <h3>How <span className="platform-name">ScourNomad</span> platform works:</h3>
+      <h2>How <span className="platform-name">ScourNomad</span> platform works:</h2>
       <p>
-        ScourNomad platform will provide multiple user interfaces to cover all the tasks that 
-        software security professionals require on the daily basis.
+        ScourNomad platform provides multiple user interfaces to cover the daily tasks that software 
+        security professionals require. It also offers the most used tools that are readily available 
+        at any moment.
       </p>
       <PlatformDescriptionItem />
       <Row justify="center" style={{ marginTop: "100px"}}>
-        <Col xl={{ span: 10 }}>
+        <Col xs={24} xl={18}>
           <Button block className="shout-button" /*onClick={() => document.location = "/visit"}*/>
-            <FontAwesomeIcon icon={faMegaphone} /> Interested? Give us a shout!
+            <FontAwesomeIcon icon={faMegaphone} /> Preorder &amp; Mailing list
           </Button>
         </Col>
       </Row>

@@ -9,19 +9,19 @@ export default function Blog() {
   return (
     <div className="company-page">
       <div class="content">
-        <h2><span className="platform-name"><FontAwesomeIcon icon={faBuildingShield} /> NetScour Security</span> - the company</h2>
-        <h3>Mission</h3>
+        <h1><span className="platform-name"><FontAwesomeIcon icon={faBuildingShield} /> NetScour Security</span> - the company</h1>
+        <h2>Mission</h2>
         <p>To build a next-generation platform for software security testing.</p>
 
-        <h3>Vision</h3>
+        <h2>Vision</h2>
         <p>To provide quality tools and services for software security testing that will be affordable to everyone.</p>
 
         <CompanyDescription />
 
         <Row justify="center" style={{ marginTop: "100px"}}>
-          <Col xl={{ span: 10 }}>
+          <Col xs={24} xl={18}>
             <Button block className="shout-button" /*onClick={() => document.location = "/visit"}*/>
-              <FontAwesomeIcon icon={faMegaphone} /> Interested? Give us a shout!
+              <FontAwesomeIcon icon={faMegaphone} /> Preorder &amp; Mailing list
             </Button>
           </Col>
         </Row>

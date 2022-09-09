@@ -60,7 +60,7 @@ const items = [
     {
         image: "./img/platform/collaboration.png",
         textItems: [
-            "Collaborate with your team, company, or fellow hackers",
+            "Collaborate with your team, company, or fellow security researchers",
             "Selectively share the pieces of your knowledgebase",
             "Jointly edit the project notes, group knowledgebase, or project information",
             "Split the tasks, and create the tickets in one of the supported ticketing systems",
