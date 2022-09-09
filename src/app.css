@@ -47,6 +47,40 @@ img {
   color: #CCC;
 }
 
+.content {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) /* sm */
+{
+  .content {
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) /* md */
+{
+  .content {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px)  /* lg */
+{
+  .content {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {  /* xl */
+  .content {
+    width: 1170px;
+  }
+}
+
 /* ========== Header ========== */
 
 .ant-layout-header {
@@ -130,7 +164,11 @@ img {
   /* opacity: 0.7; */
 }
 
-.app-logo .intro-text {
+.app-logo-container {
+  width: 500px;
+}
+
+.app-logo-container .intro-text {
   font-size: 16px;
   text-shadow: 10px 10px 2px #222;
   color: #CCC;
@@ -138,7 +176,7 @@ img {
   display: block;
 }
 
-.app-logo .header1 {
+.app-logo-container .header1 {
   color: #b62025;
   font-size: 60px;
   line-height: 60px;
@@ -146,13 +184,20 @@ img {
   text-shadow: 10px 10px 2px #222;
 }
 
-.app-logo .header2 {
+.app-logo-container .header2 {
   text-shadow: 10px 10px 2px #222;
   color: #CCC;
 }
 
-.app-logo img {
+.app-logo-container img {
   filter: drop-shadow(10px 10px 2px #222);
+}
+
+@media (max-width: 768px)
+{
+  .app-logo-container {
+    text-align: center;
+  }
 }
 
 /* App logo - end */
@@ -167,6 +212,10 @@ img {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 30px;
+}
+
+.initial-description .ant-col {
+  margin-bottom: 32px;
 }
 
 .initial-description .ant-card {
@@ -269,6 +318,10 @@ img {
 
 .company-description-item-row {
   margin: 50px 0;
+}
+
+.company-description-item-row .ant-col {
+  margin-bottom: 32px;
 }
 
 /* Company page - end */

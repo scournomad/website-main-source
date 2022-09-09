@@ -3,7 +3,7 @@ import { Row, Col } from 'antd';
 import { faEye, faGlobe, faPeopleGroup, faTrowelBricks, faUserSecret, faVault } from '@fortawesome/pro-duotone-svg-icons';
 import { CompanyDescriptionItem } from './CompanyDescriptionItem';
 
-const items1 = [
+const items = [
     {
         icon: faVault,
         title: "Security",
@@ -36,8 +36,6 @@ const items1 = [
             "We will always publish bad news when it comes, and we will never wait to do so",
         ]
     },
-];
-const items2 = [
     {
         icon: faTrowelBricks,
         title: "Availability",
@@ -72,21 +70,13 @@ const items2 = [
 export function CompanyDescription() {
     return (
         <>
-            <Row className="company-description-item-row" style={{ marginTop: "100px" }} gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} justify="center">
-                {
-                    items1.map((item) =>
-                        <Col xl={{ span: 5 }}>
-                            <CompanyDescriptionItem data={item} />
-                        </Col>)
-                }
-            </Row>
-            <Row className="company-description-item-row" style={{ marginBottom: "100px" }} gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} justify="center">
-                {
-                    items2.map((item) =>
-                        <Col xl={{ span: 5 }}>
-                            <CompanyDescriptionItem data={item} />
-                        </Col>)
-                }
+            <Row className="company-description-item-row" style={{ marginTop: "100px" }} gutter={32} justify="center">
+            {
+                items.map((item) =>
+                    <Col xl={8} lg={12} xs={24} >
+                        <CompanyDescriptionItem data={item} />
+                    </Col>)
+            }
             </Row>
         </>
     );

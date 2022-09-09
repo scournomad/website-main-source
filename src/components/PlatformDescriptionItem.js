@@ -71,11 +71,11 @@ const items = [
 export function PlatformDescriptionItem() {
     return (
         items.map((item, idx) => 
-            <Row className="platform-description-item-row" gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} align="middle" justify="center">
-                <Col xl={{ span: 8, push: idx % 2 == 0 ? 0 : 8 }}>
+            <Row className="platform-description-item-row" gutter={32} align="middle">
+                <Col xl={{ span: 12, push: idx % 2 == 0 ? 0 : 12 }}>
                     <Image src={item.image} />
                 </Col>
-                <Col xl={{ span: 8, pull: idx % 2 == 0 ? 0 : 8 }}>
+                <Col xl={{ span: 12, pull: idx % 2 == 0 ? 0 : 12 }}>
                     <ul>
                         {item.textItems.map(textItem => <li>{textItem}</li>)}
                     </ul>

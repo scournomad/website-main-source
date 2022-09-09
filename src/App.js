@@ -21,13 +21,11 @@ function App() {
           <MainMenu />
         </Header>
         <Content>
-          <div className="content">
-            <React.Suspense fallback={<em>Loading...</em>}>
-              <Router>
-                <Routes path="*" />
-              </Router>
-            </React.Suspense>
-          </div>
+          <React.Suspense fallback={<em>Loading...</em>}>
+            <Router>
+              <Routes path="*" />
+            </Router>
+          </React.Suspense>
         </Content>
         <Footer>
           <MainFooter />
