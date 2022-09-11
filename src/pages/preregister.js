@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
+import Plausible from 'plausible-tracker'
 import { Button, Col, Row } from 'antd'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faIdCard } from '@fortawesome/pro-duotone-svg-icons'
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
+
+const { trackEvent } = Plausible()
 
 export default function Preregister() {
     const [text, setText] = useState("[Click to reveal]");
@@ -36,8 +39,11 @@ export default function Preregister() {
                 </ul>
                 <Row justify="center" style={{ marginTop: "100px"}}>
                 <Col xs={24} xl={18}>
-                    <Button block className="shout-button" /*onClick={() => document.location = "/visit"}*/>
-                    <FontAwesomeIcon icon={faIdCard} /> Go to registration form
+                    <Button block className="shout-button" onClick={() => {
+                        trackEvent("preregister");
+                        document.location = "https://forms.gle/WdBE9FiD2e7EERMW7";
+                    }}>
+                        <FontAwesomeIcon icon={faIdCard} /> Go to registration form
                     </Button>
                 </Col>
                 </Row>

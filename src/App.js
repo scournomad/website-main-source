@@ -1,6 +1,7 @@
 import React from 'react';
 import { Root, Routes, addPrefetchExcludes } from 'react-static';
 import { Router } from 'components/Router';
+import Plausible from 'plausible-tracker'
 import { Layout } from 'antd';
 import { MainMenu } from 'components/MainMenu';
 
@@ -14,6 +15,10 @@ const { Header, Footer, Content } = Layout;
 addPrefetchExcludes(['dynamic']);
 
 function App() {
+  const plausible = Plausible({ domain: 'netscoursec.com' });
+  plausible.enableAutoPageviews();
+  plausible.enableAutoOutboundTracking();
+  
   return (
     <Root>
       <Layout>
