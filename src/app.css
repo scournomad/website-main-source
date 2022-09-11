@@ -113,6 +113,15 @@ img {
   margin-left: 10px;
 }
 
+.ant-descriptions-item-label {
+  color: #CCC;
+  font-weight: bold;
+}
+
+.ant-descriptions-item-content {
+  color: #CCC;
+}
+
 /* ========== Header ========== */
 
 .ant-layout-header {

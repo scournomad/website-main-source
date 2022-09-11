@@ -1,9 +1,8 @@
 import React from 'react'
-import { Button, Col, Layout, Row } from 'antd'
+import { Button, Col, Descriptions, Row } from 'antd'
 import { CompanyDescription } from '../components/CompanyDescription'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBuildingShield, faMegaphone } from '@fortawesome/pro-duotone-svg-icons'
-import { Content } from 'antd/lib/layout/layout'
 
 export default function Blog() {
   return (
@@ -17,6 +16,20 @@ export default function Blog() {
         <p>To provide quality tools and services for software security testing that will be affordable to everyone.</p>
 
         <CompanyDescription />
+
+        <h2>Comapny legal information</h2>
+        <Descriptions column={1}>
+          <Descriptions.Item label="Company name">NETSCOUR SECURITY D.O.O.</Descriptions.Item>
+          <Descriptions.Item label="Date formed">2022-07-13</Descriptions.Item>
+          <Descriptions.Item label="Main activity">6201 - Computer Programming Activities</Descriptions.Item>
+          <Descriptions.Item label="OIB">88192628473</Descriptions.Item>
+          <Descriptions.Item label="MBS">040443521</Descriptions.Item>
+          <Descriptions.Item label="VAT">HR88192628473</Descriptions.Item>
+          <Descriptions.Item label="IBAN">HR2524020061101107494</Descriptions.Item>
+          <Descriptions.Item label="Board members">Andrej Mohar, Director</Descriptions.Item>
+          <Descriptions.Item label="Initial capital">20.000,00 kn, paid in full</Descriptions.Item>
+          <Descriptions.Item label="Register">Trgovački sud u Rijeci, Tt-22/4982-2</Descriptions.Item>
+        </Descriptions>
 
         <Row justify="center" style={{ marginTop: "100px"}}>
           <Col xs={24} xl={18}>
