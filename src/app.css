@@ -22,6 +22,11 @@ a {
   font-weight: bold;
 }
 
+a:hover {
+  color: #cf9ff8;
+  transition: 0.3px;
+}
+
 b {
   font-weight: bold;
 }
@@ -451,6 +456,7 @@ img {
 .shout-button:active,
 .shout-button:focus {
   height: 60px;
+  line-height: 52px;
   font-size: 25px;
   font-weight: bold;
   background-color: #333;
@@ -465,7 +471,8 @@ img {
 }
 
 .shout-button svg {
-  font-size: 20px;
+  vertical-align: middle;
+  font-size: 35px;
   color: #9e70c7;
 }
 

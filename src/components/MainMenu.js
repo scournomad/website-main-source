@@ -9,6 +9,8 @@ import { faBars } from '@fortawesome/pro-duotone-svg-icons';
 export function MainMenu() {
     const location = useLocation();
     const [current, setCurrent] = useState(location.pathname); // TODO: Works as long as there are no complex paths
+
+    if (current !== location.pathname) setCurrent(location.pathname);
     const onClick = e => {
         console.log('click ', e);
         setCurrent(e.key);

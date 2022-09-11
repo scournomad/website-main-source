@@ -1,10 +1,12 @@
 import React from 'react'
+import { useNavigate } from '@reach/router'
 import { Button, Col, Descriptions, Row } from 'antd'
 import { CompanyDescription } from '../components/CompanyDescription'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBuildingShield, faMegaphone } from '@fortawesome/pro-duotone-svg-icons'
+import { faBuildingShield, faBullhorn } from '@fortawesome/pro-duotone-svg-icons'
 
 export default function Blog() {
+  const navigate = useNavigate();
   return (
     <div className="company-page">
       <div className="content">
@@ -33,8 +35,8 @@ export default function Blog() {
 
         <Row justify="center" style={{ marginTop: "100px"}}>
           <Col xs={24} xl={18}>
-            <Button block className="shout-button" /*onClick={() => document.location = "/visit"}*/>
-              <FontAwesomeIcon icon={faMegaphone} /> Preorder &amp; Mailing list
+            <Button block className="shout-button" onClick={() => navigate("/preregister")}>
+              <FontAwesomeIcon icon={faBullhorn} /> Preregister
             </Button>
           </Col>
         </Row>
