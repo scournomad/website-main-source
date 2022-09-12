@@ -16,9 +16,11 @@ const { Header, Footer, Content } = Layout;
 addPrefetchExcludes(['dynamic']);
 
 function App() {
-  const plausible = Plausible({ domain: 'netscoursec.com' });
-  plausible.enableAutoPageviews();
-  plausible.enableAutoOutboundTracking();
+  if (typeof window !== 'undefined') {
+    const plausible = Plausible({ domain: 'netscoursec.com' });
+    plausible.enableAutoPageviews();
+    plausible.enableAutoOutboundTracking();
+  }
   
   return (
     <Root>
