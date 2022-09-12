@@ -5,7 +5,7 @@
   "scripts": {
     "start": "react-static start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d dist",
+    "deploy": "gh-pages -d dist",
     "stage": "react-static build --staging",
     "build": "react-static build",
     "analyze": "react-static build --analyze",
