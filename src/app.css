@@ -275,8 +275,7 @@ img {
 
 .app-logo {
   padding: 250px 0 550px 0;
-  background:
-    url('./img/background1.png');
+  background: url('./img/background2.png');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-color: #333;
@@ -286,6 +285,38 @@ img {
   position: relative;
   top: -64px;
   /* opacity: 0.7; */
+}
+
+@media (max-width: 992px)
+{
+  .app-logo {
+    padding: 250px 0 550px 0;
+    background: url('./img/background2-tablet.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #333;
+    background-position-x: center;
+    background-position-y: 0px;
+    background-size: cover;
+    position: relative;
+    top: -64px;
+  } 
+}
+
+@media (max-width: 770px)
+{
+  .app-logo {
+    padding: 150px 0 350px 0;
+    background: url('./img/background2-mobile.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #333;
+    background-position-x: center;
+    background-position-y: 150px;
+    background-size: cover;
+    position: relative;
+    top: -64px;
+  } 
 }
 
 .app-logo-container {
@@ -489,6 +520,49 @@ img {
 }
 
 /* Shout button - end */
+
+/* Roadmap */
+
+.roadmap .ant-timeline {
+  color: #CCC;
+}
+
+.roadmap .ant-timeline-item-head {
+  background-color: transparent;
+}
+
+.roadmap .ant-timeline-item-tail {
+  border-left: 2px solid #444;
+}
+
+.roadmap .ant-timeline-item-tail:first-of-type {
+  border-image: linear-gradient(45deg, #444, #1f1f1f) 1;
+}
+
+.roadmap .ant-timeline-item-last > .ant-timeline-item-tail {
+  display: block;
+  border-image: linear-gradient(45deg, #1f1f1f, #444) 1;
+}
+
+.roadmap .ant-timeline-item-head-gray {
+  border-color: #999;
+}
+
+.roadmap .ant-timeline-item-head-gray svg {
+  color: white;
+  background-color: #1f1f1f;
+  padding: 7px;
+  border-radius: 100%;
+  font-size: 17px;
+}
+
+.roadmap .ant-timeline.ant-timeline-label .ant-timeline-item-label,
+.roadmap .ant-timeline.ant-timeline-label .ant-timeline-item-left .ant-timeline-item-content {
+  top: -4.001px;
+  width: calc(50% - 20px);
+}
+
+/* Roadmap - end */
 
 /* 404 */
 

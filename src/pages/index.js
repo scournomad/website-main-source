@@ -3,6 +3,7 @@ import { Row, Col, Card, Button } from 'antd';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { PlatformDescriptionItem } from '../components/PlatformDescriptionItem';
 import { faBrainCircuit, faBugs, faGears, faListCheck, faBullhorn, faRadar, faSignsPost } from '@fortawesome/pro-duotone-svg-icons';
+import { Roadmap } from '../components/Roadmap';
 
 const { Meta } = Card;
 
@@ -80,6 +81,7 @@ export default () => (
         at any moment.
       </p>
       <PlatformDescriptionItem />
+      <Roadmap />
       <Row justify="center" style={{ marginTop: "100px"}}>
         <Col xs={24} xl={18}>
           <Button block className="shout-button" onClick={() => document.location = "/preregister"}>

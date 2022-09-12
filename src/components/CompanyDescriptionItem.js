@@ -1,7 +1,6 @@
 import React from 'react'
 import { Button, Card, Popover } from 'antd';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEye, faGlobe, faPeopleGroup, faTrowelBricks, faUserSecret, faVault } from '@fortawesome/pro-duotone-svg-icons';
 
 const { Meta } = Card;
 
