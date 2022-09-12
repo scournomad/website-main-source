@@ -110,7 +110,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 26);
+/******/ 	return __webpack_require__(__webpack_require__.s = 30);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -129,34 +129,52 @@ module.exports = require("antd");
 /* 2 */
 /***/ (function(module, exports) {
 
-module.exports = require("@fortawesome/pro-duotone-svg-icons");
+module.exports = require("@fortawesome/react-fontawesome");
 
 /***/ }),
 /* 3 */
 /***/ (function(module, exports) {
 
-module.exports = require("@fortawesome/react-fontawesome");
+module.exports = require("@fortawesome/pro-duotone-svg-icons");
 
 /***/ }),
 /* 4 */
 /***/ (function(module, exports) {
 
-module.exports = require("path");
+module.exports = require("@reach/router");
 
 /***/ }),
 /* 5 */
 /***/ (function(module, exports) {
 
-module.exports = require("babel-plugin-universal-import/universalImport");
+module.exports = require("@fortawesome/free-brands-svg-icons");
 
 /***/ }),
 /* 6 */
+/***/ (function(module, exports) {
+
+module.exports = require("@babel/runtime/helpers/slicedToArray");
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports) {
+
+module.exports = require("path");
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports) {
+
+module.exports = require("babel-plugin-universal-import/universalImport");
+
+/***/ }),
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(module) {
 
-var _typeof = __webpack_require__(11);
+var _typeof = __webpack_require__(15);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -195,7 +213,7 @@ var _createClass = function () {
   };
 }();
 
-var _requireUniversalModule = __webpack_require__(32);
+var _requireUniversalModule = __webpack_require__(36);
 
 Object.defineProperty(exports, 'CHUNK_NAMES', {
   enumerable: true,
@@ -210,7 +228,7 @@ Object.defineProperty(exports, 'MODULE_IDS', {
   }
 });
 
-var _reportChunks = __webpack_require__(34);
+var _reportChunks = __webpack_require__(38);
 
 Object.defineProperty(exports, 'ReportChunks', {
   enumerable: true,
@@ -224,23 +242,23 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(15);
+var _propTypes = __webpack_require__(19);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _hoistNonReactStatics = __webpack_require__(17);
+var _hoistNonReactStatics = __webpack_require__(21);
 
 var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
 var _requireUniversalModule2 = _interopRequireDefault(_requireUniversalModule);
 
-var _context = __webpack_require__(16);
+var _context = __webpack_require__(20);
 
 var _context2 = _interopRequireDefault(_context);
 
-var _utils = __webpack_require__(12);
+var _utils = __webpack_require__(16);
 
-var _helpers = __webpack_require__(35);
+var _helpers = __webpack_require__(39);
 
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
@@ -624,10 +642,10 @@ function universal(asyncModule) {
     return UniversalComponent;
   }(_react2["default"].Component), _class.contextType = _context2["default"], _temp;
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(31)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(35)(module)))
 
 /***/ }),
-/* 7 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -637,11 +655,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _utils = __webpack_require__(12);
+var _utils = __webpack_require__(16);
 
 var requireById = function requireById(id) {
   if (!(0, _utils.isWebpack)() && typeof id === 'string') {
-    return __webpack_require__(33)("" + id);
+    return __webpack_require__(37)("" + id);
   }
 
   return __webpack_require__('' + id);
@@ -650,19 +668,25 @@ var requireById = function requireById(id) {
 exports["default"] = requireById;
 
 /***/ }),
-/* 8 */
+/* 11 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-static");
 
 /***/ }),
-/* 9 */
+/* 12 */
 /***/ (function(module, exports) {
 
-module.exports = require("@reach/router");
+module.exports = require("react-favicon");
 
 /***/ }),
-/* 10 */
+/* 13 */
+/***/ (function(module, exports) {
+
+module.exports = require("plausible-tracker");
+
+/***/ }),
+/* 14 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -672,81 +696,213 @@ var external_react_ = __webpack_require__(0);
 var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
 
 // EXTERNAL MODULE: external "react-static"
-var external_react_static_ = __webpack_require__(8);
+var external_react_static_ = __webpack_require__(11);
 
 // EXTERNAL MODULE: external "@reach/router"
-var router_ = __webpack_require__(9);
+var router_ = __webpack_require__(4);
 
 // CONCATENATED MODULE: /home/nutcracker/data/projects/netscoursec/website-main-source/src/components/Router.js
+
+// EXTERNAL MODULE: external "plausible-tracker"
+var external_plausible_tracker_ = __webpack_require__(13);
+var external_plausible_tracker_default = /*#__PURE__*/__webpack_require__.n(external_plausible_tracker_);
 
 // EXTERNAL MODULE: external "antd"
 var external_antd_ = __webpack_require__(1);
 
 // EXTERNAL MODULE: external "@babel/runtime/helpers/slicedToArray"
-var slicedToArray_ = __webpack_require__(25);
+var slicedToArray_ = __webpack_require__(6);
 var slicedToArray_default = /*#__PURE__*/__webpack_require__.n(slicedToArray_);
+
+// EXTERNAL MODULE: external "@fortawesome/react-fontawesome"
+var react_fontawesome_ = __webpack_require__(2);
+
+// EXTERNAL MODULE: external "@fortawesome/free-brands-svg-icons"
+var free_brands_svg_icons_ = __webpack_require__(5);
+
+// EXTERNAL MODULE: external "@fortawesome/pro-duotone-svg-icons"
+var pro_duotone_svg_icons_ = __webpack_require__(3);
 
 // CONCATENATED MODULE: /home/nutcracker/data/projects/netscoursec/website-main-source/src/components/MainMenu.js
 
 
 
 
-var items = [{
-  label: 'Product',
-  key: 'product' //icon: <MailOutlined />,
 
-}, {
-  label: 'Company',
-  key: 'company' //icon: <AppstoreOutlined />,
 
-}, {
-  label: 'Inquiry',
-  key: 'inquiry' //icon: <SettingOutlined />,
 
-}];
+
 function MainMenu() {
-  var _useState = Object(external_react_["useState"])('product'),
+  var location = Object(router_["useLocation"])();
+
+  var _useState = Object(external_react_["useState"])(location.pathname),
       _useState2 = slicedToArray_default()(_useState, 2),
       current = _useState2[0],
-      setCurrent = _useState2[1];
+      setCurrent = _useState2[1]; // TODO: Works as long as there are no complex paths
+
+
+  if (current !== location.pathname) setCurrent(location.pathname);
 
   var onClick = function onClick(e) {
     console.log('click ', e);
     setCurrent(e.key);
   };
 
-  return /*#__PURE__*/external_react_default.a.createElement(external_antd_["Menu"], {
+  return /*#__PURE__*/external_react_default.a.createElement(external_react_default.a.Fragment, null, /*#__PURE__*/external_react_default.a.createElement("div", {
+    className: "logo"
+  }, /*#__PURE__*/external_react_default.a.createElement(router_["Link"], {
+    to: "/"
+  }, /*#__PURE__*/external_react_default.a.createElement("img", {
+    src: "./img/NetScourSecLogo.png"
+  }), "\xA0", /*#__PURE__*/external_react_default.a.createElement("span", {
+    className: "company-name"
+  }, "NetScour Security"))), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Menu"], {
     onClick: onClick,
     selectedKeys: [current],
-    mode: "horizontal"
+    mode: "horizontal",
+    overflowedIndicator: /*#__PURE__*/external_react_default.a.createElement(react_fontawesome_["FontAwesomeIcon"], {
+      icon: pro_duotone_svg_icons_["faBars"]
+    })
   }, /*#__PURE__*/external_react_default.a.createElement(external_antd_["Menu"].Item, {
-    key: "product"
+    key: "/"
   }, /*#__PURE__*/external_react_default.a.createElement(router_["Link"], {
     to: "/"
   }, "Product")), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Menu"].Item, {
-    key: "company"
+    key: "/company"
   }, /*#__PURE__*/external_react_default.a.createElement(router_["Link"], {
     to: "/company"
   }, "Company")), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Menu"].Item, {
-    key: "inquiry"
+    key: "/preregister"
   }, /*#__PURE__*/external_react_default.a.createElement(router_["Link"], {
-    to: "/inquiry"
-  }, "Inquiry")));
-}
-{
-  /* <div className="main-menu">
-       <Link to="/">Product</Link>
-       <Link to="/company">Company</Link>
-       <Link to="/inquiry">Inquiry</Link>
-     </div> */
+    to: "/preregister"
+  }, "Preregister")), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Menu"].Item, {
+    key: "github",
+    className: "social"
+  }, /*#__PURE__*/external_react_default.a.createElement("a", {
+    href: "#",
+    target: "_blank"
+  }, /*#__PURE__*/external_react_default.a.createElement(react_fontawesome_["FontAwesomeIcon"], {
+    icon: free_brands_svg_icons_["faGithub"]
+  }), /*#__PURE__*/external_react_default.a.createElement("span", {
+    className: "social-name"
+  }, "Github"))), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Menu"].Item, {
+    key: "twitter",
+    className: "social"
+  }, /*#__PURE__*/external_react_default.a.createElement("a", {
+    href: "#",
+    target: "_blank"
+  }, /*#__PURE__*/external_react_default.a.createElement(react_fontawesome_["FontAwesomeIcon"], {
+    icon: free_brands_svg_icons_["faTwitter"]
+  }), /*#__PURE__*/external_react_default.a.createElement("span", {
+    className: "social-name"
+  }, "Twitter"))), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Menu"].Item, {
+    key: "linkedin",
+    className: "social"
+  }, /*#__PURE__*/external_react_default.a.createElement("a", {
+    href: "#",
+    target: "_blank"
+  }, /*#__PURE__*/external_react_default.a.createElement(react_fontawesome_["FontAwesomeIcon"], {
+    icon: free_brands_svg_icons_["faLinkedin"]
+  }), /*#__PURE__*/external_react_default.a.createElement("span", {
+    className: "social-name"
+  }, "Linkedin")))));
 }
 // EXTERNAL MODULE: external "antd/dist/antd.css"
-var antd_css_ = __webpack_require__(43);
+var antd_css_ = __webpack_require__(47);
 
 // EXTERNAL MODULE: /home/nutcracker/data/projects/netscoursec/website-main-source/src/app.css
-var app = __webpack_require__(44);
+var app = __webpack_require__(48);
+
+// CONCATENATED MODULE: /home/nutcracker/data/projects/netscoursec/website-main-source/src/components/MainFooter.js
+
+
+
+
+
+function MainFooter() {
+  return /*#__PURE__*/external_react_default.a.createElement(external_react_default.a.Fragment, null, /*#__PURE__*/external_react_default.a.createElement(external_antd_["Row"], null, /*#__PURE__*/external_react_default.a.createElement(external_antd_["Col"], {
+    xs: 24,
+    sm: 5,
+    md: 4,
+    xl: 3
+  }, /*#__PURE__*/external_react_default.a.createElement("h3", null, "Menu"), /*#__PURE__*/external_react_default.a.createElement("ul", null, /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement(router_["Link"], {
+    to: "/"
+  }, "Product")), /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement(router_["Link"], {
+    to: "/company"
+  }, "Company")), /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement(router_["Link"], {
+    to: "/preregister"
+  }, "Preregister")))), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Col"], {
+    xs: 24,
+    sm: 5,
+    md: 9,
+    xl: 5
+  }, /*#__PURE__*/external_react_default.a.createElement("h3", null, "Social"), /*#__PURE__*/external_react_default.a.createElement("ul", null, /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement("a", {
+    href: "#",
+    target: "_blank"
+  }, /*#__PURE__*/external_react_default.a.createElement(react_fontawesome_["FontAwesomeIcon"], {
+    icon: free_brands_svg_icons_["faGithub"]
+  }), " Github")), /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement("a", {
+    href: "#",
+    target: "_blank"
+  }, /*#__PURE__*/external_react_default.a.createElement(react_fontawesome_["FontAwesomeIcon"], {
+    icon: free_brands_svg_icons_["faTwitter"]
+  }), " Twitter")), /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement("a", {
+    href: "#",
+    target: "_blank"
+  }, /*#__PURE__*/external_react_default.a.createElement(react_fontawesome_["FontAwesomeIcon"], {
+    icon: free_brands_svg_icons_["faLinkedin"]
+  }), " Linkedin")))), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Col"], {
+    xs: 24,
+    sm: 14,
+    md: 11,
+    xl: 8
+  }, /*#__PURE__*/external_react_default.a.createElement("h3", null, "Partners"), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Row"], {
+    className: "partners"
+  }, /*#__PURE__*/external_react_default.a.createElement(external_antd_["Col"], {
+    xs: 24,
+    sm: 8
+  }, /*#__PURE__*/external_react_default.a.createElement("a", {
+    href: "https://filrougecapital.com/",
+    target: "_blank"
+  }, /*#__PURE__*/external_react_default.a.createElement("img", {
+    src: "./img/partners/FRC.png"
+  }))), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Col"], {
+    xs: 24,
+    sm: 8
+  }, /*#__PURE__*/external_react_default.a.createElement("img", {
+    src: "./img/partners/EU.png"
+  })), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Col"], {
+    xs: 24,
+    sm: 8
+  }, /*#__PURE__*/external_react_default.a.createElement("img", {
+    src: "./img/partners/ESIF.png"
+  }), /*#__PURE__*/external_react_default.a.createElement("span", {
+    className: "esif-text"
+  }, "Krajnji primatelj \uFB01nancijskog instrumenta su\uFB01nanciranog iz Europskog fonda za regionalni razvoj u sklopu Operativnog programa \"Konkurentnost i kohezija\"."))))), /*#__PURE__*/external_react_default.a.createElement("hr", null), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Row"], {
+    justify: "space-between"
+  }, /*#__PURE__*/external_react_default.a.createElement(external_antd_["Col"], {
+    xs: 24,
+    sm: 5
+  }, /*#__PURE__*/external_react_default.a.createElement("a", {
+    href: "#",
+    target: "_blank"
+  }, "Terms and Conditions"), "\xA0\xA0\xA0", /*#__PURE__*/external_react_default.a.createElement("a", {
+    href: "#",
+    target: "_blank"
+  }, "Privacy Policy")), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Col"], {
+    xs: 24,
+    sm: 5,
+    className: "copyright"
+  }, "\xA9 2022 by NetScour Security")));
+}
+// EXTERNAL MODULE: external "react-favicon"
+var external_react_favicon_ = __webpack_require__(12);
+var external_react_favicon_default = /*#__PURE__*/__webpack_require__.n(external_react_favicon_);
 
 // CONCATENATED MODULE: /home/nutcracker/data/projects/netscoursec/website-main-source/src/App.js
+
+
+
 
 
 
@@ -761,35 +917,49 @@ var Header = external_antd_["Layout"].Header,
 Object(external_react_static_["addPrefetchExcludes"])(['dynamic']);
 
 function App() {
-  return /*#__PURE__*/external_react_default.a.createElement(external_react_static_["Root"], null, /*#__PURE__*/external_react_default.a.createElement(external_antd_["Layout"], null, /*#__PURE__*/external_react_default.a.createElement(Header, null, /*#__PURE__*/external_react_default.a.createElement("div", {
-    className: "logo"
-  }, /*#__PURE__*/external_react_default.a.createElement("img", {
-    src: "./img/NetScourSecLogo.png"
-  }), " NetScour Security"), /*#__PURE__*/external_react_default.a.createElement(MainMenu, null)), /*#__PURE__*/external_react_default.a.createElement(Content, null, /*#__PURE__*/external_react_default.a.createElement("div", {
-    className: "content"
-  }, /*#__PURE__*/external_react_default.a.createElement(external_react_default.a.Suspense, {
-    fallback: /*#__PURE__*/external_react_default.a.createElement("em", null, "Loading...")
+  if (typeof window !== 'undefined') {
+    var plausible = external_plausible_tracker_default()({
+      domain: 'netscoursec.com'
+    });
+    plausible.enableAutoPageviews();
+    plausible.enableAutoOutboundTracking();
+  }
+
+  return /*#__PURE__*/external_react_default.a.createElement(external_react_static_["Root"], null, /*#__PURE__*/external_react_default.a.createElement(external_react_favicon_default.a, {
+    url: "/img/favicons/NetScour-Security-32px-favicon.png",
+    iconSize: 32
+  }), /*#__PURE__*/external_react_default.a.createElement(external_react_favicon_default.a, {
+    url: "/img/favicons/NetScour-Security-128px-favicon.png",
+    iconSize: 128
+  }), /*#__PURE__*/external_react_default.a.createElement(external_react_favicon_default.a, {
+    url: "/img/favicons/NetScour-Security-180px-favicon.png",
+    iconSize: 180
+  }), /*#__PURE__*/external_react_default.a.createElement(external_react_favicon_default.a, {
+    url: "/img/favicons/NetScour-Security-192px-favicon.png",
+    iconSize: 192
+  }), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Layout"], null, /*#__PURE__*/external_react_default.a.createElement(Header, null, /*#__PURE__*/external_react_default.a.createElement(MainMenu, null)), /*#__PURE__*/external_react_default.a.createElement(Content, null, /*#__PURE__*/external_react_default.a.createElement(external_react_default.a.Suspense, {
+    fallback: /*#__PURE__*/external_react_default.a.createElement(external_react_default.a.Fragment, null)
   }, /*#__PURE__*/external_react_default.a.createElement(router_["Router"], null, /*#__PURE__*/external_react_default.a.createElement(external_react_static_["Routes"], {
     path: "*"
-  }))))), /*#__PURE__*/external_react_default.a.createElement(Footer, null)));
+  })))), /*#__PURE__*/external_react_default.a.createElement(Footer, null, /*#__PURE__*/external_react_default.a.createElement(MainFooter, null))));
 }
 
 /* harmony default export */ var src_App = __webpack_exports__["a"] = (App);
 
 /***/ }),
-/* 11 */
+/* 15 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/typeof");
 
 /***/ }),
-/* 12 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _typeof2 = __webpack_require__(11);
+var _typeof2 = __webpack_require__(15);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -820,7 +990,7 @@ var _react = __webpack_require__(0);
 
 var React = _interopRequireWildcard(_react);
 
-var _requireById = __webpack_require__(7);
+var _requireById = __webpack_require__(10);
 
 var _requireById2 = _interopRequireDefault(_requireById);
 
@@ -949,25 +1119,25 @@ var cacheProm = exports.cacheProm = function cacheProm(pr, chunkName, props, pro
 };
 
 /***/ }),
-/* 13 */
+/* 17 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-dom");
 
 /***/ }),
-/* 14 */
+/* 18 */
 /***/ (function(module, exports) {
 
 module.exports = require("/home/nutcracker/data/projects/netscoursec/website-main-source/node_modules/react-static/lib/browser");
 
 /***/ }),
-/* 15 */
+/* 19 */
 /***/ (function(module, exports) {
 
 module.exports = require("prop-types");
 
 /***/ }),
-/* 16 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -994,38 +1164,168 @@ var ReportContext = _react2["default"].createContext({
 exports["default"] = ReportContext;
 
 /***/ }),
-/* 17 */
+/* 21 */
 /***/ (function(module, exports) {
 
 module.exports = require("hoist-non-react-statics");
 
 /***/ }),
-/* 18 */
+/* 22 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/interopRequireDefault");
 
 /***/ }),
-/* 19 */
+/* 23 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/interopRequireWildcard");
 
 /***/ }),
-/* 20 */
+/* 24 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(antd__WEBPACK_IMPORTED_MODULE_1__);
+
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "404 - Oh no's! We couldn't find that page :("));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "content"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_1__["Result"], {
+    status: "404",
+    title: "404 Not found",
+    subTitle: "Sorry, the page you visited does not exist.",
+    extra: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+      type: "primary",
+      href: "/"
+    }, "Back Home")
+  }));
 });
 
 /***/ }),
-/* 21 */
+/* 25 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Preregister; });
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6);
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var plausible_tracker__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(13);
+/* harmony import */ var plausible_tracker__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(plausible_tracker__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1);
+/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(antd__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(2);
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _fortawesome_pro_duotone_svg_icons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(3);
+/* harmony import */ var _fortawesome_pro_duotone_svg_icons__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_pro_duotone_svg_icons__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(5);
+/* harmony import */ var _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__);
+
+
+
+
+
+
+
+
+var _Plausible = plausible_tracker__WEBPACK_IMPORTED_MODULE_2___default()(),
+    trackEvent = _Plausible.trackEvent;
+
+function Preregister() {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])("[Click to reveal]"),
+      _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(_useState, 2),
+      text = _useState2[0],
+      setText = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(""),
+      _useState4 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(_useState3, 2),
+      url = _useState4[0],
+      setUrl = _useState4[1];
+
+  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false),
+      _useState6 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(_useState5, 2),
+      isDecoded = _useState6[0],
+      setIsDecoded = _useState6[1];
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "preregister-page"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "content"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "platform-name"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_4__["FontAwesomeIcon"], {
+    icon: _fortawesome_pro_duotone_svg_icons__WEBPACK_IMPORTED_MODULE_5__["faIdCard"]
+  })), " Preregister"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "If you are interested in our product, take this opportunity to preregister! You can register for the following activities:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, "Mailing list - montly updates on platform's development progress"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, "A live demo - once this option becomes available"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, "Beta testing - if you'd like to be considered for a beta tester")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "We would very much like to hear a little bit about you, what you do, and how you think ScourNomad could help you in your daily activities. If you feel like sharing, chatting, and helping out, please join our community:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
+    style: {
+      listStyleType: "none"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    href: "#",
+    target: "_blank"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_4__["FontAwesomeIcon"], {
+    icon: _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faGithub"]
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "social-name"
+  }, "Github"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    href: "#",
+    target: "_blank"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_4__["FontAwesomeIcon"], {
+    icon: _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faTwitter"]
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "social-name"
+  }, "Twitter"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    href: "#",
+    target: "_blank"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_4__["FontAwesomeIcon"], {
+    icon: _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faLinkedin"]
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "social-name"
+  }, "Linkedin")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "If you'd like to contact us, send us an email here:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    href: url,
+    onClick: function onClick(event) {
+      return decryptMail(event, isDecoded, setIsDecoded, setText, setUrl);
+    }
+  }, text))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Row"], {
+    justify: "center",
+    style: {
+      marginTop: "100px"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Col"], {
+    xs: 24,
+    xl: 18
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Button"], {
+    block: true,
+    className: "shout-button",
+    onClick: function onClick() {
+      trackEvent("preregister");
+      document.location = "https://forms.gle/WdBE9FiD2e7EERMW7";
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_4__["FontAwesomeIcon"], {
+    icon: _fortawesome_pro_duotone_svg_icons__WEBPACK_IMPORTED_MODULE_5__["faIdCard"]
+  }), " Go to registration form")))));
+}
+/* Concatenating and redirection mailstring function */
+
+function decryptMail(event, isDecoded, setIsDecoded, setText, setUrl) {
+  if (!isDecoded) {
+    event.preventDefault();
+    var addressString = atob("Y29udGFjdEBuZXRzY291cnNlYy5jb20=");
+    setIsDecoded(true);
+    setText(addressString);
+    setUrl("mailto:".concat(addressString));
+  }
+}
+
+/***/ }),
+/* 26 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1039,17 +1339,19 @@ __webpack_require__.d(__webpack_exports__, "default", function() { return /* bin
 var external_react_ = __webpack_require__(0);
 var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
 
+// EXTERNAL MODULE: external "@reach/router"
+var router_ = __webpack_require__(4);
+
 // EXTERNAL MODULE: external "antd"
 var external_antd_ = __webpack_require__(1);
 
 // EXTERNAL MODULE: external "@fortawesome/pro-duotone-svg-icons"
-var pro_duotone_svg_icons_ = __webpack_require__(2);
+var pro_duotone_svg_icons_ = __webpack_require__(3);
 
 // EXTERNAL MODULE: external "@fortawesome/react-fontawesome"
-var react_fontawesome_ = __webpack_require__(3);
+var react_fontawesome_ = __webpack_require__(2);
 
 // CONCATENATED MODULE: /home/nutcracker/data/projects/netscoursec/website-main-source/src/components/CompanyDescriptionItem.js
-
 
 
 
@@ -1077,7 +1379,7 @@ function CompanyDescriptionItem(props) {
 
 
 
-var items1 = [{
+var items = [{
   icon: pro_duotone_svg_icons_["faVault"],
   title: "Security",
   text: "NetScour Security considers user data sacred and will do everything in our power to protect it",
@@ -1092,8 +1394,7 @@ var items1 = [{
   title: "Transparency",
   text: "We believe in transparency as the primary driver of great relationships",
   textItems: ["As stated earlier, we will publish third-party pentest results as transparently as possible", "We will publish bug bounty finds", "We will always publish bad news when it comes, and we will never wait to do so"]
-}];
-var items2 = [{
+}, {
   icon: pro_duotone_svg_icons_["faTrowelBricks"],
   title: "Availability",
   text: "We want to build and provide affordable software security testing tools and services to everyone that needs them",
@@ -1115,38 +1416,13 @@ function CompanyDescription() {
     style: {
       marginTop: "100px"
     },
-    gutter: {
-      xs: 8,
-      sm: 16,
-      md: 24,
-      lg: 32
-    },
+    gutter: 32,
     justify: "center"
-  }, items1.map(function (item) {
+  }, items.map(function (item) {
     return /*#__PURE__*/external_react_default.a.createElement(external_antd_["Col"], {
-      xl: {
-        span: 5
-      }
-    }, /*#__PURE__*/external_react_default.a.createElement(CompanyDescriptionItem, {
-      data: item
-    }));
-  })), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Row"], {
-    className: "company-description-item-row",
-    style: {
-      marginBottom: "100px"
-    },
-    gutter: {
-      xs: 8,
-      sm: 16,
-      md: 24,
-      lg: 32
-    },
-    justify: "center"
-  }, items2.map(function (item) {
-    return /*#__PURE__*/external_react_default.a.createElement(external_antd_["Col"], {
-      xl: {
-        span: 5
-      }
+      xl: 8,
+      lg: 12,
+      xs: 24
     }, /*#__PURE__*/external_react_default.a.createElement(CompanyDescriptionItem, {
       data: item
     }));
@@ -1158,38 +1434,60 @@ function CompanyDescription() {
 
 
 
+
 function Blog() {
+  var navigate = Object(router_["useNavigate"])();
   return /*#__PURE__*/external_react_default.a.createElement("div", {
     className: "company-page"
-  }, /*#__PURE__*/external_react_default.a.createElement(external_antd_["Row"], {
-    justify: "center"
-  }, /*#__PURE__*/external_react_default.a.createElement(external_antd_["Col"], {
-    span: 16
-  }, /*#__PURE__*/external_react_default.a.createElement("h2", null, /*#__PURE__*/external_react_default.a.createElement("span", {
+  }, /*#__PURE__*/external_react_default.a.createElement("div", {
+    className: "content"
+  }, /*#__PURE__*/external_react_default.a.createElement("h1", null, /*#__PURE__*/external_react_default.a.createElement("span", {
     className: "platform-name"
   }, /*#__PURE__*/external_react_default.a.createElement(react_fontawesome_["FontAwesomeIcon"], {
     icon: pro_duotone_svg_icons_["faBuildingShield"]
-  }), " NetScour Security"), " - the company"), /*#__PURE__*/external_react_default.a.createElement("h3", null, "Mission"), /*#__PURE__*/external_react_default.a.createElement("p", null, "To build a next-generation platform for software security testing."), /*#__PURE__*/external_react_default.a.createElement("h3", null, "Vision"), /*#__PURE__*/external_react_default.a.createElement("p", null, "To provide quality tools and services for software security testing that will be affordable to everyone."))), /*#__PURE__*/external_react_default.a.createElement(CompanyDescription, null), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Row"], {
+  }), " NetScour Security"), " - the company"), /*#__PURE__*/external_react_default.a.createElement("h2", null, "Mission"), /*#__PURE__*/external_react_default.a.createElement("p", null, "To build a next-generation platform for software security testing."), /*#__PURE__*/external_react_default.a.createElement("h2", null, "Vision"), /*#__PURE__*/external_react_default.a.createElement("p", null, "To provide quality tools and services for software security testing that will be affordable to everyone."), /*#__PURE__*/external_react_default.a.createElement(CompanyDescription, null), /*#__PURE__*/external_react_default.a.createElement("h2", null, "Comapny legal information"), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Descriptions"], {
+    column: 1
+  }, /*#__PURE__*/external_react_default.a.createElement(external_antd_["Descriptions"].Item, {
+    label: "Company name"
+  }, "NETSCOUR SECURITY D.O.O."), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Descriptions"].Item, {
+    label: "Date formed"
+  }, "2022-07-13"), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Descriptions"].Item, {
+    label: "Main activity"
+  }, "6201 - Computer Programming Activities"), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Descriptions"].Item, {
+    label: "OIB"
+  }, "88192628473"), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Descriptions"].Item, {
+    label: "MBS"
+  }, "040443521"), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Descriptions"].Item, {
+    label: "VAT"
+  }, "HR88192628473"), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Descriptions"].Item, {
+    label: "IBAN"
+  }, "HR2524020061101107494"), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Descriptions"].Item, {
+    label: "Board members"
+  }, "Andrej Mohar, Director"), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Descriptions"].Item, {
+    label: "Initial capital"
+  }, "20.000,00 kn, paid in full"), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Descriptions"].Item, {
+    label: "Register"
+  }, "Trgova\u010Dki sud u Rijeci, Tt-22/4982-2")), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Row"], {
     justify: "center",
     style: {
       marginTop: "100px"
     }
   }, /*#__PURE__*/external_react_default.a.createElement(external_antd_["Col"], {
-    xl: {
-      span: 10
-    }
+    xs: 24,
+    xl: 18
   }, /*#__PURE__*/external_react_default.a.createElement(external_antd_["Button"], {
     block: true,
-    className: "shout-button"
-    /*onClick={() => document.location = "/visit"}*/
-
+    className: "shout-button",
+    onClick: function onClick() {
+      return navigate("/preregister");
+    }
   }, /*#__PURE__*/external_react_default.a.createElement(react_fontawesome_["FontAwesomeIcon"], {
-    icon: pro_duotone_svg_icons_["faMegaphone"]
-  }), " Interested? Give us a shout!"))));
+    icon: pro_duotone_svg_icons_["faBullhorn"]
+  }), " Preregister")))));
 }
 
 /***/ }),
-/* 22 */
+/* 27 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1204,9 +1502,14 @@ var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_)
 var external_antd_ = __webpack_require__(1);
 
 // EXTERNAL MODULE: external "@fortawesome/react-fontawesome"
-var react_fontawesome_ = __webpack_require__(3);
+var react_fontawesome_ = __webpack_require__(2);
+
+// EXTERNAL MODULE: external "@babel/runtime/helpers/slicedToArray"
+var slicedToArray_ = __webpack_require__(6);
+var slicedToArray_default = /*#__PURE__*/__webpack_require__.n(slicedToArray_);
 
 // CONCATENATED MODULE: /home/nutcracker/data/projects/netscoursec/website-main-source/src/components/PlatformDescriptionItem.js
+
 
 
 var items = [{
@@ -1229,41 +1532,116 @@ var items = [{
   textItems: ["The platform will automatically keep the timeline for you", "Set up what goes into the timeline and how it is displayed", "Manually edit the timeline", "Automatically use the timeline in your reports"]
 }, {
   image: "./img/platform/collaboration.png",
-  textItems: ["Collaborate with your team, company, or fellow hackers", "Selectively share the pieces of your knowledgebase", "Jointly edit the project notes, group knowledgebase, or project information", "Split the tasks, and create the tickets in one of the supported ticketing systems"]
+  textItems: ["Collaborate with your team, company, or fellow security researchers", "Selectively share the pieces of your knowledgebase", "Jointly edit the project notes, group knowledgebase, or project information", "Split the tasks, and create the tickets in one of the supported ticketing systems"]
 }];
 function PlatformDescriptionItem() {
-  return items.map(function (item, idx) {
+  var _useState = Object(external_react_["useState"])(false),
+      _useState2 = slicedToArray_default()(_useState, 2),
+      visible = _useState2[0],
+      setVisible = _useState2[1];
+
+  var _useState3 = Object(external_react_["useState"])(false),
+      _useState4 = slicedToArray_default()(_useState3, 2),
+      index = _useState4[0],
+      setIndex = _useState4[1];
+
+  return /*#__PURE__*/external_react_default.a.createElement(external_react_default.a.Fragment, null, items.map(function (item, idx) {
     return /*#__PURE__*/external_react_default.a.createElement(external_antd_["Row"], {
       className: "platform-description-item-row",
-      gutter: {
-        xs: 8,
-        sm: 16,
-        md: 24,
-        lg: 32
-      },
-      align: "middle",
-      justify: "center"
+      gutter: 32,
+      align: "middle"
     }, /*#__PURE__*/external_react_default.a.createElement(external_antd_["Col"], {
       xl: {
-        span: 8,
-        push: idx % 2 == 0 ? 0 : 8
+        span: 12,
+        push: idx % 2 == 0 ? 0 : 12
       }
     }, /*#__PURE__*/external_react_default.a.createElement(external_antd_["Image"], {
+      preview: {
+        visible: false
+      },
+      onClick: function onClick() {
+        setIndex(idx);
+        setVisible(true);
+      },
       src: item.image
     })), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Col"], {
       xl: {
-        span: 8,
-        pull: idx % 2 == 0 ? 0 : 8
+        span: 12,
+        pull: idx % 2 == 0 ? 0 : 12
       }
     }, /*#__PURE__*/external_react_default.a.createElement("ul", null, item.textItems.map(function (textItem) {
       return /*#__PURE__*/external_react_default.a.createElement("li", null, textItem);
     }))));
-  });
+  }), /*#__PURE__*/external_react_default.a.createElement("div", {
+    style: {
+      display: 'none'
+    }
+  }, /*#__PURE__*/external_react_default.a.createElement(external_antd_["Image"].PreviewGroup, {
+    preview: {
+      visible: visible,
+      onVisibleChange: function onVisibleChange(vis) {
+        return setVisible(vis);
+      },
+      current: index
+    }
+  }, items.map(function (item) {
+    return /*#__PURE__*/external_react_default.a.createElement(external_antd_["Image"], {
+      src: item.image
+    });
+  }))));
 }
 // EXTERNAL MODULE: external "@fortawesome/pro-duotone-svg-icons"
-var pro_duotone_svg_icons_ = __webpack_require__(2);
+var pro_duotone_svg_icons_ = __webpack_require__(3);
 
+// CONCATENATED MODULE: /home/nutcracker/data/projects/netscoursec/website-main-source/src/components/Roadmap.js
+
+
+
+
+function Roadmap() {
+  return /*#__PURE__*/external_react_default.a.createElement("div", {
+    className: "roadmap"
+  }, /*#__PURE__*/external_react_default.a.createElement("h2", null, "Roadmap"), /*#__PURE__*/external_react_default.a.createElement("p", null, "We currently have the PoC running and are actively working on finalizing the pre-alpha stage. After this stage we will perform initial pentest and start with the closed apha testing."), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Row"], null, /*#__PURE__*/external_react_default.a.createElement(external_antd_["Col"], {
+    xs: 24
+  }, /*#__PURE__*/external_react_default.a.createElement(external_antd_["Timeline"], {
+    mode: "left"
+  }, /*#__PURE__*/external_react_default.a.createElement(external_antd_["Timeline"].Item, {
+    label: "",
+    color: "#1f1f1f"
+  }, "\xA0"), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Timeline"].Item, {
+    label: "2021",
+    color: "#9e70c7"
+  }, "Proof of Concept development"), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Timeline"].Item, {
+    label: "Q3 2022",
+    color: "#9e70c7"
+  }, "FRC investment received"), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Timeline"].Item, {
+    label: "Sep 2022",
+    color: "#cf9ff8"
+  }, "Pre-alpha development"), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Timeline"].Item, {
+    label: "Dec 2022",
+    color: "gray",
+    dot: /*#__PURE__*/external_react_default.a.createElement(react_fontawesome_["FontAwesomeIcon"], {
+      icon: pro_duotone_svg_icons_["faUserSecret"]
+    })
+  }, "Initial pentest"), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Timeline"].Item, {
+    label: "Jan 2022",
+    color: "gray"
+  }, "Closed alpha testing starts"), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Timeline"].Item, {
+    label: "Q1 2023",
+    color: "gray",
+    dot: /*#__PURE__*/external_react_default.a.createElement(react_fontawesome_["FontAwesomeIcon"], {
+      icon: pro_duotone_svg_icons_["faUserSecret"]
+    })
+  }, "Additional pentest"), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Timeline"].Item, {
+    label: "Q1-Q2 2023",
+    color: "gray"
+  }, "Beta testing starts"), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Timeline"].Item, {
+    label: "Q2-Q3 2023",
+    color: "gray"
+  }, "First commercial version")))));
+}
 // CONCATENATED MODULE: /home/nutcracker/data/projects/netscoursec/website-main-source/src/pages/index.js
+
 
 
 
@@ -1274,54 +1652,58 @@ var Meta = external_antd_["Card"].Meta;
   return /*#__PURE__*/external_react_default.a.createElement("div", {
     className: "main-body"
   }, /*#__PURE__*/external_react_default.a.createElement(external_antd_["Row"], {
-    className: "app-logo"
+    className: "app-logo",
+    justify: "center"
   }, /*#__PURE__*/external_react_default.a.createElement(external_antd_["Col"], {
-    xl: {
-      span: 2,
+    xs: {
+      span: 24
+    },
+    md: {
+      span: 21,
       offset: 3
     }
+  }, /*#__PURE__*/external_react_default.a.createElement(external_antd_["Row"], {
+    className: "app-logo-container",
+    justify: "center"
+  }, /*#__PURE__*/external_react_default.a.createElement(external_antd_["Col"], {
+    xs: {
+      flex: "350px"
+    },
+    md: 6
   }, /*#__PURE__*/external_react_default.a.createElement("img", {
-    src: "./img/ScourNomadLogo.png"
+    src: "./img/NetScourSecLogo.png"
   })), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Col"], {
-    xl: 8
+    xs: {
+      flex: "350px"
+    },
+    md: 18
   }, /*#__PURE__*/external_react_default.a.createElement("span", {
     className: "intro-text"
   }, "NetScour Security presents"), /*#__PURE__*/external_react_default.a.createElement("h1", {
     className: "header1"
   }, "ScourNomad"), /*#__PURE__*/external_react_default.a.createElement("h2", {
     className: "header2"
-  }, "Redefining infosec toolbox"))), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Row"], {
-    className: "initial-description",
-    justify: "center"
-  }, /*#__PURE__*/external_react_default.a.createElement(external_antd_["Col"], {
-    xl: {
-      span: 16
-    }
-  }, /*#__PURE__*/external_react_default.a.createElement("h3", null, "Build and execute your software security testing methodologies quickly and easily with ", /*#__PURE__*/external_react_default.a.createElement("span", {
+  }, "Redefining infosec toolbox"))))), /*#__PURE__*/external_react_default.a.createElement("div", {
+    className: "content"
+  }, /*#__PURE__*/external_react_default.a.createElement("h2", null, "What is ", /*#__PURE__*/external_react_default.a.createElement("span", {
     className: "platform-name"
-  }, "ScourNomad.")), /*#__PURE__*/external_react_default.a.createElement("p", null, "The goal of the ScourNomad platform is to reduce the security experts' time and effort performing mundane tasks and improve testing performance. It enhances the penetration tests and bug hunts speed and precision, providing easy-to-use interfaces and powerful integrations."))), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Row"], {
+  }, "ScourNomad"), "?"), /*#__PURE__*/external_react_default.a.createElement("p", null, "The goal of the ScourNomad platform is to reduce the security experts' time and effort performing mundane tasks and improve testing performance. It enhances the penetration tests and bug hunts speed and precision, providing easy-to-use interfaces and powerful integrations."), /*#__PURE__*/external_react_default.a.createElement("b", null, "Build and execute your full software security testing methodologies quickly and easily!"), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Row"], {
     className: "initial-description",
-    justify: "center",
-    gutter: {
-      xs: 8,
-      sm: 16,
-      md: 24,
-      lg: 32
-    }
+    gutter: 32
   }, /*#__PURE__*/external_react_default.a.createElement(external_antd_["Col"], {
-    xl: {
-      span: 4
-    }
+    xl: 8,
+    lg: 12,
+    xs: 24
   }, /*#__PURE__*/external_react_default.a.createElement(external_antd_["Card"], {
     cover: /*#__PURE__*/external_react_default.a.createElement(react_fontawesome_["FontAwesomeIcon"], {
       icon: pro_duotone_svg_icons_["faBugs"]
     })
   }, /*#__PURE__*/external_react_default.a.createElement(Meta, {
-    description: "Build security testing methodologies"
+    description: "Build security testing methodologies and access them from anywhere"
   }))), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Col"], {
-    xl: {
-      span: 4
-    }
+    xl: 8,
+    lg: 12,
+    xs: 24
   }, /*#__PURE__*/external_react_default.a.createElement(external_antd_["Card"], {
     cover: /*#__PURE__*/external_react_default.a.createElement(react_fontawesome_["FontAwesomeIcon"], {
       icon: pro_duotone_svg_icons_["faGears"]
@@ -1329,28 +1711,19 @@ var Meta = external_antd_["Card"].Meta;
   }, /*#__PURE__*/external_react_default.a.createElement(Meta, {
     description: "Automate what can be automated"
   }))), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Col"], {
-    xl: {
-      span: 4
-    }
+    xl: 8,
+    lg: 12,
+    xs: 24
   }, /*#__PURE__*/external_react_default.a.createElement(external_antd_["Card"], {
     cover: /*#__PURE__*/external_react_default.a.createElement(react_fontawesome_["FontAwesomeIcon"], {
       icon: pro_duotone_svg_icons_["faRadar"]
     })
   }, /*#__PURE__*/external_react_default.a.createElement(Meta, {
     description: "Discover resources and loot by automated or manual security testing"
-  })))), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Row"], {
-    className: "initial-description",
-    justify: "center",
-    gutter: {
-      xs: 8,
-      sm: 16,
-      md: 24,
-      lg: 32
-    }
-  }, /*#__PURE__*/external_react_default.a.createElement(external_antd_["Col"], {
-    xl: {
-      span: 4
-    }
+  }))), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Col"], {
+    xl: 8,
+    lg: 12,
+    xs: 24
   }, /*#__PURE__*/external_react_default.a.createElement(external_antd_["Card"], {
     cover: /*#__PURE__*/external_react_default.a.createElement(react_fontawesome_["FontAwesomeIcon"], {
       icon: pro_duotone_svg_icons_["faListCheck"]
@@ -1358,9 +1731,9 @@ var Meta = external_antd_["Card"].Meta;
   }, /*#__PURE__*/external_react_default.a.createElement(Meta, {
     description: "Build easy notes and reports"
   }))), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Col"], {
-    xl: {
-      span: 4
-    }
+    xl: 8,
+    lg: 12,
+    xs: 24
   }, /*#__PURE__*/external_react_default.a.createElement(external_antd_["Card"], {
     cover: /*#__PURE__*/external_react_default.a.createElement(react_fontawesome_["FontAwesomeIcon"], {
       icon: pro_duotone_svg_icons_["faSignsPost"]
@@ -1368,48 +1741,38 @@ var Meta = external_antd_["Card"].Meta;
   }, /*#__PURE__*/external_react_default.a.createElement(Meta, {
     description: "Visualize your tasks with checklists and mindmaps"
   }))), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Col"], {
-    xl: {
-      span: 4
-    }
+    xl: 8,
+    lg: 12,
+    xs: 24
   }, /*#__PURE__*/external_react_default.a.createElement(external_antd_["Card"], {
     cover: /*#__PURE__*/external_react_default.a.createElement(react_fontawesome_["FontAwesomeIcon"], {
       icon: pro_duotone_svg_icons_["faBrainCircuit"]
     })
   }, /*#__PURE__*/external_react_default.a.createElement(Meta, {
     description: "Correlate your knowledge base with the attack surface resources"
-  })))), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Row"], {
-    className: "initial-description",
-    justify: "center",
-    style: {
-      marginTop: "100px"
-    }
-  }, /*#__PURE__*/external_react_default.a.createElement(external_antd_["Col"], {
-    xl: {
-      span: 16
-    }
-  }, /*#__PURE__*/external_react_default.a.createElement("h3", null, "How ", /*#__PURE__*/external_react_default.a.createElement("span", {
+  })))), /*#__PURE__*/external_react_default.a.createElement("h2", null, "How ", /*#__PURE__*/external_react_default.a.createElement("span", {
     className: "platform-name"
-  }, "ScourNomad"), " platform works:"), /*#__PURE__*/external_react_default.a.createElement("p", null, "ScourNomad platform will provide multiple user interfaces to cover all the tasks that software security professionals require on the daily basis."))), /*#__PURE__*/external_react_default.a.createElement(PlatformDescriptionItem, null), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Row"], {
+  }, "ScourNomad"), " platform works:"), /*#__PURE__*/external_react_default.a.createElement("p", null, "ScourNomad platform provides multiple user interfaces to cover the daily tasks that software security professionals require. It also offers the most used tools that are readily available at any moment."), /*#__PURE__*/external_react_default.a.createElement(PlatformDescriptionItem, null), /*#__PURE__*/external_react_default.a.createElement(Roadmap, null), /*#__PURE__*/external_react_default.a.createElement(external_antd_["Row"], {
     justify: "center",
     style: {
       marginTop: "100px"
     }
   }, /*#__PURE__*/external_react_default.a.createElement(external_antd_["Col"], {
-    xl: {
-      span: 10
-    }
+    xs: 24,
+    xl: 18
   }, /*#__PURE__*/external_react_default.a.createElement(external_antd_["Button"], {
     block: true,
-    className: "shout-button"
-    /*onClick={() => document.location = "/visit"}*/
-
+    className: "shout-button",
+    onClick: function onClick() {
+      return document.location = "/preregister";
+    }
   }, /*#__PURE__*/external_react_default.a.createElement(react_fontawesome_["FontAwesomeIcon"], {
-    icon: pro_duotone_svg_icons_["faMegaphone"]
-  }), " Interested? Give us a shout!"))));
+    icon: pro_duotone_svg_icons_["faBullhorn"]
+  }), " Preregister")))));
 });
 
 /***/ }),
-/* 23 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1422,9 +1785,9 @@ exports["default"] = void 0;
 
 var _react = _interopRequireDefault(__webpack_require__(0));
 
-var _reactStatic = __webpack_require__(8);
+var _reactStatic = __webpack_require__(11);
 
-var _router = __webpack_require__(9);
+var _router = __webpack_require__(4);
 
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
@@ -1539,37 +1902,31 @@ var _default = function _default(_ref) {
 exports["default"] = _default;
 
 /***/ }),
-/* 24 */
+/* 29 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-hot-loader");
 
 /***/ }),
-/* 25 */
-/***/ (function(module, exports) {
-
-module.exports = require("@babel/runtime/helpers/slicedToArray");
-
-/***/ }),
-/* 26 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(27);
-__webpack_require__(29);
-module.exports = __webpack_require__(36);
+__webpack_require__(31);
+__webpack_require__(33);
+module.exports = __webpack_require__(40);
 
 
 /***/ }),
-/* 27 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 /* eslint-disable import/no-dynamic-require */
 
-var plugins = __webpack_require__(28)["default"];
+var plugins = __webpack_require__(32)["default"];
 
-var _require = __webpack_require__(14),
+var _require = __webpack_require__(18),
     registerPlugins = _require.registerPlugins;
 
 registerPlugins(plugins);
@@ -1577,12 +1934,12 @@ registerPlugins(plugins);
 if (false) {}
 
 /***/ }),
-/* 28 */
+/* 32 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _react_static_root_node_modules_react_static_plugin_reach_router_browser_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(23);
+/* harmony import */ var _react_static_root_node_modules_react_static_plugin_reach_router_browser_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(28);
 /* harmony import */ var _react_static_root_node_modules_react_static_plugin_reach_router_browser_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_react_static_root_node_modules_react_static_plugin_reach_router_browser_api_js__WEBPACK_IMPORTED_MODULE_0__);
 // Imports
  // Plugins
@@ -1608,17 +1965,17 @@ var plugins = [{
 /* harmony default export */ __webpack_exports__["default"] = (plugins);
 
 /***/ }),
-/* 29 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 /* eslint-disable import/no-dynamic-require */
 
-var _require = __webpack_require__(14),
+var _require = __webpack_require__(18),
     registerTemplates = _require.registerTemplates;
 
-var _require2 = __webpack_require__(30),
+var _require2 = __webpack_require__(34),
     templates = _require2["default"],
     notFoundTemplate = _require2.notFoundTemplate;
 
@@ -1627,20 +1984,22 @@ registerTemplates(templates, notFoundTemplate);
 if (false) {}
 
 /***/ }),
-/* 30 */
+/* 34 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__dirname) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "notFoundTemplate", function() { return notFoundTemplate; });
-/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4);
+/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7);
 /* harmony import */ var path__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(path__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5);
+/* harmony import */ var babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8);
 /* harmony import */ var babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_universal_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6);
+/* harmony import */ var react_universal_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(9);
 /* harmony import */ var react_universal_component__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_universal_component__WEBPACK_IMPORTED_MODULE_3__);
+
+
 
 
 
@@ -1663,7 +2022,7 @@ var universalOptions = {
 var t_0 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
   id: "__react_static_root__/src/pages/404.js",
   load: function load() {
-    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/404 */).then(__webpack_require__.bind(null, 20))]).then(function (proms) {
+    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/404 */).then(__webpack_require__.bind(null, 24))]).then(function (proms) {
       return proms[0];
     });
   },
@@ -1671,7 +2030,7 @@ var t_0 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel
     return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '__react_static_root__/src/pages/404.js');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(20);
+    return /*require.resolve*/(24);
   },
   chunkName: function chunkName() {
     return "__react_static_root__/src/pages/404";
@@ -1681,7 +2040,7 @@ t_0.template = '__react_static_root__/src/pages/404.js';
 var t_1 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
   id: "__react_static_root__/src/pages/company.js",
   load: function load() {
-    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/company */).then(__webpack_require__.bind(null, 21))]).then(function (proms) {
+    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/company */).then(__webpack_require__.bind(null, 26))]).then(function (proms) {
       return proms[0];
     });
   },
@@ -1689,7 +2048,7 @@ var t_1 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel
     return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '__react_static_root__/src/pages/company.js');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(21);
+    return /*require.resolve*/(26);
   },
   chunkName: function chunkName() {
     return "__react_static_root__/src/pages/company";
@@ -1699,7 +2058,7 @@ t_1.template = '__react_static_root__/src/pages/company.js';
 var t_2 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
   id: "__react_static_root__/src/pages/index.js",
   load: function load() {
-    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/index */).then(__webpack_require__.bind(null, 22))]).then(function (proms) {
+    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/index */).then(__webpack_require__.bind(null, 27))]).then(function (proms) {
       return proms[0];
     });
   },
@@ -1707,25 +2066,44 @@ var t_2 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel
     return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '__react_static_root__/src/pages/index.js');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(22);
+    return /*require.resolve*/(27);
   },
   chunkName: function chunkName() {
     return "__react_static_root__/src/pages/index";
   }
 }), universalOptions);
-t_2.template = '__react_static_root__/src/pages/index.js'; // Template Map
+t_2.template = '__react_static_root__/src/pages/index.js';
+var t_3 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
+  id: "__react_static_root__/src/pages/preregister.js",
+  load: function load() {
+    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/preregister */).then(__webpack_require__.bind(null, 25))]).then(function (proms) {
+      return proms[0];
+    });
+  },
+  path: function path() {
+    return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '__react_static_root__/src/pages/preregister.js');
+  },
+  resolve: function resolve() {
+    return /*require.resolve*/(25);
+  },
+  chunkName: function chunkName() {
+    return "__react_static_root__/src/pages/preregister";
+  }
+}), universalOptions);
+t_3.template = '__react_static_root__/src/pages/preregister.js'; // Template Map
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   '__react_static_root__/src/pages/404.js': t_0,
   '__react_static_root__/src/pages/company.js': t_1,
-  '__react_static_root__/src/pages/index.js': t_2
+  '__react_static_root__/src/pages/index.js': t_2,
+  '__react_static_root__/src/pages/preregister.js': t_3
 }); // Not Found Template
 
 var notFoundTemplate = "__react_static_root__/src/pages/404.js";
 /* WEBPACK VAR INJECTION */}.call(this, "/"))
 
 /***/ }),
-/* 31 */
+/* 35 */
 /***/ (function(module, exports) {
 
 module.exports = function (module) {
@@ -1754,7 +2132,7 @@ module.exports = function (module) {
 };
 
 /***/ }),
-/* 32 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1781,7 +2159,7 @@ var _extends = Object.assign || function (target) {
 
 exports["default"] = requireUniversalModule;
 
-var _utils = __webpack_require__(12);
+var _utils = __webpack_require__(16);
 
 var CHUNK_NAMES = exports.CHUNK_NAMES = new Set();
 var MODULE_IDS = exports.MODULE_IDS = new Set();
@@ -1965,14 +2343,14 @@ var getConfig = function getConfig(isDynamic, universalConfig, options, props) {
 };
 
 /***/ }),
-/* 33 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	".": 7,
-	"./": 7,
-	"./index": 7,
-	"./index.js": 7
+	".": 10,
+	"./": 10,
+	"./index": 10,
+	"./index.js": 10
 };
 
 
@@ -1993,16 +2371,16 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 33;
+webpackContext.id = 37;
 
 /***/ }),
-/* 34 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _typeof = __webpack_require__(11);
+var _typeof = __webpack_require__(15);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -2030,11 +2408,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(15);
+var _propTypes = __webpack_require__(19);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _context = __webpack_require__(16);
+var _context = __webpack_require__(20);
 
 var _context2 = _interopRequireDefault(_context);
 
@@ -2106,7 +2484,7 @@ ReportChunks.propTypes = {
 exports["default"] = ReportChunks;
 
 /***/ }),
-/* 35 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2117,11 +2495,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.__handleAfter = exports.__update = undefined;
 
-var _hoistNonReactStatics = __webpack_require__(17);
+var _hoistNonReactStatics = __webpack_require__(21);
 
 var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
-var _index = __webpack_require__(6);
+var _index = __webpack_require__(9);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -2173,15 +2551,15 @@ var __handleAfter = exports.__handleAfter = function __handleAfter(props, state,
 };
 
 /***/ }),
-/* 36 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _interopRequireDefault = __webpack_require__(18);
+var _interopRequireDefault = __webpack_require__(22);
 
-var _interopRequireWildcard = __webpack_require__(19);
+var _interopRequireWildcard = __webpack_require__(23);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -2190,9 +2568,9 @@ exports["default"] = void 0;
 
 var React = _interopRequireWildcard(__webpack_require__(0));
 
-var _useStaticInfo = __webpack_require__(37);
+var _useStaticInfo = __webpack_require__(41);
 
-var _Suspense = _interopRequireDefault(__webpack_require__(38));
+var _Suspense = _interopRequireDefault(__webpack_require__(42));
 /* eslint-disable import/no-dynamic-require */
 // Override the suspense module to be our own
 // This is expected to break when using preact
@@ -2203,7 +2581,7 @@ var _Suspense = _interopRequireDefault(__webpack_require__(38));
 React.Suspense = _Suspense["default"];
 React["default"].Suspense = _Suspense["default"];
 
-var App = __webpack_require__(41)["default"];
+var App = __webpack_require__(45)["default"];
 
 var _default = function _default(staticInfo) {
   return function (props) {
@@ -2216,30 +2594,30 @@ var _default = function _default(staticInfo) {
 exports["default"] = _default;
 
 /***/ }),
-/* 37 */
+/* 41 */
 /***/ (function(module, exports) {
 
 module.exports = require("/home/nutcracker/data/projects/netscoursec/website-main-source/node_modules/react-static/lib/browser/hooks/useStaticInfo");
 
 /***/ }),
-/* 38 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _interopRequireWildcard = __webpack_require__(19);
+var _interopRequireWildcard = __webpack_require__(23);
 
-var _interopRequireDefault = __webpack_require__(18);
+var _interopRequireDefault = __webpack_require__(22);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports["default"] = void 0;
 
-var _extends2 = _interopRequireDefault(__webpack_require__(39));
+var _extends2 = _interopRequireDefault(__webpack_require__(43));
 
-var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(40));
+var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(44));
 
 var React = _interopRequireWildcard(__webpack_require__(0));
 
@@ -2260,30 +2638,30 @@ var _default = Suspense;
 exports["default"] = _default;
 
 /***/ }),
-/* 39 */
+/* 43 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/extends");
 
 /***/ }),
-/* 40 */
+/* 44 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/objectWithoutProperties");
 
 /***/ }),
-/* 41 */
+/* 45 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(13);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(17);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(24);
+/* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(29);
 /* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_hot_loader__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(10);
+/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(14);
 
 
  // Your top level component
@@ -2309,10 +2687,10 @@ if (typeof document !== 'undefined') {
     });
   }
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(42)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(46)(module)))
 
 /***/ }),
-/* 42 */
+/* 46 */
 /***/ (function(module, exports) {
 
 module.exports = function (originalModule) {
@@ -2342,27 +2720,29 @@ module.exports = function (originalModule) {
 };
 
 /***/ }),
-/* 43 */
+/* 47 */
 /***/ (function(module, exports) {
 
 module.exports = require("antd/dist/antd.css");
 
 /***/ }),
-/* 44 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(45)(false);
+exports = module.exports = __webpack_require__(49)(false);
 // Imports
-var urlEscape = __webpack_require__(46);
-var ___CSS_LOADER_URL___0___ = urlEscape(__webpack_require__(47));
+var urlEscape = __webpack_require__(50);
+var ___CSS_LOADER_URL___0___ = urlEscape(__webpack_require__(51));
+var ___CSS_LOADER_URL___1___ = urlEscape(__webpack_require__(52));
+var ___CSS_LOADER_URL___2___ = urlEscape(__webpack_require__(53));
 
 // Module
-exports.push([module.i, "/* ========== General elements ========== */\n\n* {\n  scroll-behavior: smooth;\n}\n\nbody {\n  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue',\n    Helvetica, Arial, 'Lucida Grande', sans-serif;\n  font-weight: 300;\n  font-size: 16px;\n  margin: 0;\n  padding: 0;\n  background-color: #111;\n  color: #CCC;\n  overflow-x: clip;\n}\n\na {\n  text-decoration: none;\n  color: #9e70c7;\n  font-weight: bold;\n}\n\nh1, h2, h3, h4, h5 {\n  color: #CCC;\n}\n\nimg {\n  max-width: 100%;\n}\n\n.content,\n.main-body,\n.ant-layout {\n  background-color: #1F1F1F;\n}\n\n.platform-name {\n  color: #9e70c7;\n}\n\n.ant-popover-inner-content,\n.ant-popover-arrow-content {\n  background-color: #3f3f3f;\n  --antd-arrow-background-color: #3f3f3f;\n  color: #CCC;\n}\n\n/* ========== Header ========== */\n\n.ant-layout-header {\n  background-color: #1F1F1F;\n  color: #CCC;\n  z-index: 100;\n\n  /* Test */\n  position: fixed;\n  width: 100%;\n  box-shadow: #111 0px 5px 5px;\n}\n\n.ant-layout-header .ant-menu {\n  float: right;\n  background-color: #1F1F1F;\n  border: 0;\n  width: 300px;\n}\n\n.ant-layout-header .ant-menu li a {\n  color: #9e70c7 !important;\n}\n\n.ant-layout-header .ant-menu li:hover a {\n  color: #cf9ff8 !important;\n}\n\n.ant-layout-header .ant-menu li:active,\n.ant-layout-header .ant-menu li:focus-visible {\n  background-color: #1F1F1F;\n  box-shadow: none;\n}\n\n.ant-layout-header .ant-menu li:hover::after {\n  border-bottom: 2px solid #9e70c7 !important;\n}\n\n.ant-layout-header .logo {\n  float: left;\n}\n\n.ant-layout-header li.ant-menu-item-selected a {\n  color: #cf9ff8 !important;\n  font-weight: bold;\n}\n\n.ant-layout-header li.ant-menu-item-selected::after {\n  border-bottom: 2px solid #cf9ff8 !important;\n}\n\n.logo img {\n  height: 50px;\n}\n\n/* ========== Content ========== */\n\n/* App logo */\n\n.app-logo {\n  padding: 250px 0 550px 0;\n  background:\n    url(" + ___CSS_LOADER_URL___0___ + ");\n  background-attachment: fixed;\n  background-repeat: no-repeat;\n  background-color: #333;\n  background-position-x: center;\n  background-position-y: 0px;\n  background-size: cover;\n  position: relative;\n  top: -64px;\n  /* opacity: 0.7; */\n}\n\n.app-logo .intro-text {\n  font-size: 16px;\n  text-shadow: 10px 10px 2px #222;\n  color: #CCC;\n  padding: 10px 0 0 0;\n  display: block;\n}\n\n.app-logo .header1 {\n  color: #b62025;\n  font-size: 60px;\n  line-height: 60px;\n  margin: 0;\n  text-shadow: 10px 10px 2px #222;\n}\n\n.app-logo .header2 {\n  text-shadow: 10px 10px 2px #222;\n  color: #CCC;\n}\n\n.app-logo img {\n  filter: drop-shadow(10px 10px 2px #222);\n}\n\n/* App logo - end */\n\n/* Initial Description */\n\n.initial-description {\n  margin-bottom: 50px;\n}\n\n.initial-description h3 {\n  font-size: 20px;\n  font-weight: bold;\n  margin-bottom: 30px;\n}\n\n.initial-description .ant-card {\n  background-color: #333;\n  color: #CCC;\n  border: none;\n  padding-top: 40px;\n  height: 100%;\n  box-shadow: #111 5px 5px 20px;\n}\n\n.initial-description .ant-card:hover {\n  background-color: #3F3F3F;\n  transition: 0.3s;\n}\n\n.initial-description .ant-card svg {\n  font-size: 100px;\n  color: #9e70c7;\n}\n\n.initial-description .ant-card .ant-card-meta-description {\n  color: #CCC !important;\n  text-align: center;\n  width: 100%;\n}\n\n.initial-description .ant-card .ant-card-meta-detail {\n  width: 100%;\n}\n\n/* Initial Description - end*/\n\n/* Platform description item */\n\n.platform-description-item-row {\n  margin-bottom: 100px;\n}\n\n.platform-description-item-row ul\n{\n  margin: 30px;\n}\n\n.platform-description-item-row .ant-image {\n  box-shadow: #111 5px 5px 20px;\n  margin: 30px;\n}\n\n/* Platform description item - end */\n\n/* Company page */\n\n.company-page h2 {\n  font-size: 40px;\n  margin-top: 150px;\n}\n\n.company-page h3 {\n  font-size: 30px;\n}\n\n.company-page .ant-card {\n  background-color: #333;\n  color: #CCC;\n  border: none;\n  padding-top: 40px;\n  height: 100%;\n  box-shadow: #111 5px 5px 20px;\n}\n\n.company-page .ant-card svg {\n  font-size: 100px;\n  color: #9e70c7;\n}\n\n.company-page .ant-card .ant-card-meta-description {\n  color: #CCC !important;\n  text-align: left;\n  width: 100%;\n  min-height: 66px;\n}\n\n.company-page .ant-card .ant-card-meta-title {\n  color: #CCC;\n  font-size: 25px;\n  font-weight: bold;\n}\n\n.company-page .ant-card .ant-card-meta-detail {\n  width: 100%;\n}\n\n.company-page .ant-card .ant-btn.find-out-more {\n  margin-top: 30px;\n  background-color: #3f3f3f !important;\n  color: #CCC;\n  border: none;\n}\n\n.company-description-item-row {\n  margin: 50px 0;\n}\n\n/* Company page - end */\n\n/* Shout Button */\n\n.shout-button,\n.shout-button:active,\n.shout-button:focus {\n  height: 60px;\n  font-size: 25px;\n  font-weight: bold;\n  background-color: #333;\n  color: #CCC;\n  margin-bottom: 100px;\n  border: none;\n}\n\n.shout-button:hover {\n  background-color: #3F3F3F;\n  color: #CCC;\n}\n\n.shout-button svg {\n  font-size: 20px;\n  color: #9e70c7;\n}\n\n.shout-button span {\n  font-size: 20px;\n  margin-left: 15px;\n}\n\n/* Shout button - end */\n\n/* ========== Footer ========== */\n\nfooter {\n  min-height: 200px;\n  background-color: #111 !important;\n  flex: 0 1 200px;\n}", ""]);
+exports.push([module.i, "/* ========== General elements ========== */\n\n* {\n  scroll-behavior: smooth;\n}\n\nbody {\n  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue',\n    Helvetica, Arial, 'Lucida Grande', sans-serif;\n  font-weight: 300;\n  font-size: 16px;\n  margin: 0;\n  padding: 0;\n  background-color: #111;\n  color: #CCC;\n  overflow-x: clip;\n}\n\na {\n  text-decoration: none;\n  color: #9e70c7;\n  font-weight: bold;\n}\n\na:hover {\n  color: #cf9ff8;\n  transition: 0.3px;\n}\n\nb {\n  font-weight: bold;\n}\n\nh1, h2, h3, h4, h5 {\n  color: #CCC;\n}\n\nh1 {\n  font-size: 40px;\n  margin-top: 150px;\n}\n\nh2 {\n  font-size: 30px;\n}\n\n@media (max-width: 768px)\n{\n  h1 {\n    font-size: 25px;\n  }\n\n  h2 {\n    font-size: 20px;\n  }\n}\n\nimg {\n  max-width: 100%;\n}\n\n.content,\n.main-body,\n.ant-layout {\n  background-color: #1F1F1F;\n}\n\n.platform-name {\n  color: #9e70c7;\n}\n\n.ant-popover-inner-content,\n.ant-popover-arrow-content {\n  background-color: #3f3f3f;\n  --antd-arrow-background-color: #3f3f3f;\n  color: #CCC;\n}\n\n.content {\n  margin-left: auto;\n  margin-right: auto;\n}\n\n.ant-image-preview-img {\n  max-height: 90%;\n}\n\n@media (max-width: 768px) /* sm */\n{\n  .content {\n    width: auto;\n    margin-left: 30px;\n    margin-right: 30px;\n  }\n}\n\n@media (min-width: 768px) and (max-width: 992px) /* md */\n{\n  .content {\n    width: 750px;\n  }\n}\n\n@media (min-width: 992px) and (max-width: 1200px)  /* lg */\n{\n  .content {\n    width: 970px;\n  }\n}\n\n@media (min-width: 1200px) {  /* xl */\n  .content {\n    width: 1170px;\n  }\n}\n\n.social-name {\n  margin-left: 10px;\n}\n\n.ant-descriptions-item-label {\n  color: #CCC;\n  font-weight: bold;\n}\n\n.ant-descriptions-item-content {\n  color: #CCC;\n}\n\n/* ========== Header ========== */\n\n.ant-layout-header {\n  background-color: #1F1F1F;\n  color: #CCC;\n  z-index: 100;\n\n  /* Test */\n  position: fixed;\n  width: 100%;\n  box-shadow: #111 0px 5px 5px;\n}\n\n.ant-layout-header .ant-menu {\n  margin-left: auto;\n  width: 500px;\n  background-color: #1F1F1F;\n  border: 0;\n  transition: none;\n}\n\n.ant-layout-header .ant-menu li a {\n  color: #9e70c7 !important;\n}\n\n.ant-layout-header .ant-menu li:hover a {\n  color: #cf9ff8 !important;\n}\n\n.ant-layout-header .ant-menu li:active,\n.ant-layout-header .ant-menu li:focus-visible {\n  background-color: #1F1F1F;\n  box-shadow: none;\n}\n\n.ant-layout-header .ant-menu li:hover::after {\n  border-bottom: 2px solid #9e70c7 !important;\n}\n\n.ant-layout-header .ant-menu li.social {\n  font-size: 20px;\n}\n\n.ant-layout-header .ant-menu li.social:hover::after {\n  border-bottom: 2px solid transparent !important;\n}\n\n.ant-layout-header .ant-menu li.social .social-name {\n  font-size: 14px;\n  display: none;\n}\n\n.ant-layout-header .ant-menu .ant-menu-overflow-item-rest svg {\n  font-size: 25px;\n  color: #9e70c7;\n  vertical-align: middle;\n}\n\n.ant-layout-header .ant-menu .ant-menu-overflow-item-rest::after,\n.ant-layout-header .ant-menu .ant-menu-overflow-item-rest:hover::after {\n  border-bottom: 2px solid transparent !important;\n}\n\n/* Popup menu on small screens */\n\n.ant-menu-submenu-popup {\n  left: 0 !important;\n  position: relative;\n  box-shadow: #111 0px 5px 5px;\n}\n\n.ant-menu-submenu-popup > .ant-menu {\n  background-color: #1f1f1f;\n}\n\n.ant-menu-submenu-popup > .ant-menu a {\n  color: #CCC;\n}\n\n.ant-menu-vertical .ant-menu-item:not(:last-child),\n.ant-menu-vertical .ant-menu-item {\n  margin: 0;\n  height: 50px;\n  line-height: 50px;\n}\n\n.ant-menu-submenu-popup > .ant-menu .ant-menu-item-selected,\n.ant-menu-submenu-popup > .ant-menu li:hover {\n  background-color: #333;\n}\n\n/* Popup menu on small screens - end */\n\n.ant-layout-header .logo {\n  float: left;\n}\n\n.ant-layout-header li.ant-menu-item-selected a {\n  color: #cf9ff8 !important;\n  font-weight: bold;\n}\n\n.ant-layout-header li.ant-menu-item-selected::after,\n.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected::after {\n  border-bottom: 2px solid #cf9ff8 !important;\n}\n\n.logo img {\n  height: 50px;\n}\n\n.company-name {\n  color: #CCC !important;\n}\n\n.company-name:hover {\n  color: #cf9ff8 !important;\n  transition: 0.3s;\n}\n\n@media (max-width: 480px) /* xs */\n{\n  .company-name {\n    display: none;\n  }\n\n  .ant-layout-header {\n    padding: 0 20px;\n  }\n}\n\n@media (max-width: 992px)\n{\n  .ant-layout-header .ant-menu {\n    width: 50px;\n  }\n\n  .ant-layout-header .ant-menu li.social .social-name {\n    display: inline;\n  } \n}\n\n/* ========== Content ========== */\n\n/* App logo */\n\n.app-logo {\n  padding: 250px 0 550px 0;\n  background: url(" + ___CSS_LOADER_URL___0___ + ");\n  background-attachment: fixed;\n  background-repeat: no-repeat;\n  background-color: #333;\n  background-position-x: center;\n  background-position-y: 0px;\n  background-size: cover;\n  position: relative;\n  top: -64px;\n  /* opacity: 0.7; */\n}\n\n@media (max-width: 992px)\n{\n  .app-logo {\n    padding: 250px 0 550px 0;\n    background: url(" + ___CSS_LOADER_URL___1___ + ");\n    background-attachment: fixed;\n    background-repeat: no-repeat;\n    background-color: #333;\n    background-position-x: center;\n    background-position-y: 0px;\n    background-size: cover;\n    position: relative;\n    top: -64px;\n  } \n}\n\n@media (max-width: 770px)\n{\n  .app-logo {\n    padding: 150px 0 350px 0;\n    background: url(" + ___CSS_LOADER_URL___2___ + ");\n    background-attachment: fixed;\n    background-repeat: no-repeat;\n    background-color: #333;\n    background-position-x: center;\n    background-position-y: 150px;\n    background-size: cover;\n    position: relative;\n    top: -64px;\n  } \n}\n\n.app-logo-container {\n  width: 500px;\n}\n\n.app-logo-container .intro-text {\n  font-size: 16px;\n  text-shadow: 10px 10px 2px #222;\n  color: #CCC;\n  padding: 10px 0 0 0;\n  display: block;\n}\n\n.app-logo-container .header1 {\n  color: #8552b3;\n  font-size: 60px;\n  line-height: 60px;\n  margin: 0;\n  text-shadow: 10px 10px 2px #222;\n}\n\n.app-logo-container .header2 {\n  text-shadow: 10px 10px 2px #222;\n  color: #CCC;\n}\n\n.app-logo-container img {\n  filter: drop-shadow(10px 10px 2px #222);\n}\n\n@media (max-width: 662px)\n{\n  .app-logo-container {\n    text-align: center;\n    width: auto;\n  }\n}\n\n/* App logo - end */\n\n/* Initial Description */\n\n.initial-description {\n  margin: 50px 0;\n}\n\n.initial-description h3 {\n  font-size: 20px;\n  font-weight: bold;\n  margin-bottom: 30px;\n}\n\n.initial-description .ant-col {\n  margin-bottom: 32px;\n}\n\n.initial-description .ant-card {\n  background-color: #333;\n  color: #CCC;\n  border: none;\n  padding-top: 40px;\n  height: 100%;\n  box-shadow: #111 5px 5px 20px;\n}\n\n.initial-description .ant-card:hover {\n  background-color: #3F3F3F;\n  transition: 0.3s;\n}\n\n.initial-description .ant-card svg {\n  font-size: 100px;\n  color: #9e70c7;\n}\n\n.initial-description .ant-card .ant-card-meta-description {\n  color: #CCC !important;\n  text-align: center;\n  width: 100%;\n}\n\n.initial-description .ant-card .ant-card-meta-detail {\n  width: 100%;\n}\n\n/* Initial Description - end*/\n\n/* Platform description item */\n\n.platform-description-item-row {\n  margin-bottom: 100px;\n}\n\n.platform-description-item-row ul\n{\n  margin: 30px;\n}\n\n.platform-description-item-row .ant-image {\n  box-shadow: #111 5px 5px 20px;\n  margin: 30px;\n}\n\n/* Platform description item - end */\n\n/* Company page */\n\n@media (max-width: 768px)\n{\n  .company-page .ant-card-meta-title {\n    font-size: 15px;\n  }\n}\n\n\n.company-page .ant-card {\n  background-color: #333;\n  color: #CCC;\n  border: none;\n  padding-top: 40px;\n  height: 100%;\n  box-shadow: #111 5px 5px 20px;\n}\n\n.company-page .ant-card svg {\n  font-size: 100px;\n  color: #9e70c7;\n}\n\n.company-page .ant-card .ant-card-meta-description {\n  color: #CCC !important;\n  text-align: left;\n  width: 100%;\n  min-height: 66px;\n}\n\n.company-page .ant-card .ant-card-meta-title {\n  color: #CCC;\n  font-size: 25px;\n  font-weight: bold;\n}\n\n.company-page .ant-card .ant-card-meta-detail {\n  width: 100%;\n}\n\n.company-page .ant-card .ant-btn.find-out-more {\n  margin-top: 30px;\n  background-color: #3f3f3f !important;\n  color: #CCC;\n  border: none;\n}\n\n.company-description-item-row {\n  margin: 50px 0;\n}\n\n.company-description-item-row .ant-col {\n  margin-bottom: 32px;\n}\n\n/* Company page - end */\n\n/* Shout Button */\n\n.shout-button,\n.shout-button:active,\n.shout-button:focus {\n  height: 60px;\n  line-height: 52px;\n  font-size: 25px;\n  font-weight: bold;\n  background-color: #333;\n  color: #CCC;\n  margin-bottom: 100px;\n  border: none;\n}\n\n.shout-button:hover {\n  background-color: #3F3F3F;\n  color: #CCC;\n}\n\n.shout-button svg {\n  vertical-align: middle;\n  font-size: 35px;\n  color: #9e70c7;\n}\n\n.shout-button span {\n  font-size: 20px;\n  margin-left: 15px;\n}\n\n@media (max-width: 480px) /* xs */\n{\n  .shout-button svg {\n    display: none;\n  }\n}\n\n/* Shout button - end */\n\n/* Roadmap */\n\n.roadmap .ant-timeline {\n  color: #CCC;\n}\n\n.roadmap .ant-timeline-item-head {\n  background-color: transparent;\n}\n\n.roadmap .ant-timeline-item-tail {\n  border-left: 2px solid #444;\n}\n\n.roadmap .ant-timeline-item-tail:first-of-type {\n  -o-border-image: linear-gradient(45deg, #444, #1f1f1f) 1;\n     border-image: linear-gradient(45deg, #444, #1f1f1f) 1;\n}\n\n.roadmap .ant-timeline-item-last > .ant-timeline-item-tail {\n  display: block;\n  -o-border-image: linear-gradient(45deg, #1f1f1f, #444) 1;\n     border-image: linear-gradient(45deg, #1f1f1f, #444) 1;\n}\n\n.roadmap .ant-timeline-item-head-gray {\n  border-color: #999;\n}\n\n.roadmap .ant-timeline-item-head-gray svg {\n  color: white;\n  background-color: #1f1f1f;\n  padding: 7px;\n  border-radius: 100%;\n  font-size: 17px;\n}\n\n.roadmap .ant-timeline.ant-timeline-label .ant-timeline-item-label,\n.roadmap .ant-timeline.ant-timeline-label .ant-timeline-item-left .ant-timeline-item-content {\n  top: -4.001px;\n  width: calc(50% - 20px);\n}\n\n/* Roadmap - end */\n\n/* 404 */\n\n.ant-result-404 {\n  padding: 200px 32px;\n}\n\n.ant-result-404 .ant-result-title,\n.ant-result-404 .ant-result-subtitle {\n  color: #CCC;\n}\n\n.ant-result-404 a {\n  background-color: #333 !important;\n  border-color: #333 !important;\n  padding: 10px 50px !important;\n  height: auto;\n}\n\n.ant-result-404 a:hover {\n  background-color: #3f3f3f !important;\n  transition: 0.3s !important;\n}\n\n/* 404 - end */\n\n/* ========== Footer ========== */\n\nfooter {\n  min-height: 200px;\n  background-color: #111 !important;\n  flex: 0 1 200px;\n  font-size: 13px !important;\n  color: #CCC !important;\n}\n\nfooter a,\nfooter a:visited,\nfooter a:active {\n  color: #AAA !important;\n  font-weight: 100;\n  -webkit-text-decoration: dashed;\n          text-decoration: dashed;\n}\n\nfooter a svg {\n  font-size: 18px;\n  margin-right: 5px;\n  width: 18px;\n}\n\nfooter a:hover {\n  color: #9e70c7 !important;\n}\n\nfooter h3 {\n  color: #DDD !important;\n  font-size: 18px;\n  font-weight: bold;\n}\n\nfooter ul {\n  padding: 0;\n  margin: 0;\n  list-style-type: none;\n}\n\nfooter li {\n  margin: 5px 0;\n}\n\nfooter .partners {\n  text-align: center;\n}\n\nfooter .partners .esif-text {\n  display: block;\n  text-align: justify;\n  font-size: 8px;\n  line-height: 10px;\n  color: #CCC;\n  margin: 5px 0 15px 0;\n}\n\nfooter .copyright {\n  text-align: right;\n}\n\n@media (max-width: 768px) /* sm */\n{\n  footer,\n  footer .copyright {\n    text-align: center;\n  }\n\n  footer ul {\n    margin-bottom: 20px;\n  }\n\n  footer img {\n    max-width: 150px;\n    margin-bottom: 20px;\n  }\n\n  footer .partners .esif-text {\n    width: 150px;\n    margin: -15px auto 15px auto;\n  }\n}", ""]);
 
 
 
 /***/ }),
-/* 45 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2453,7 +2833,7 @@ function toComment(sourceMap) {
 }
 
 /***/ }),
-/* 46 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2479,10 +2859,22 @@ module.exports = function escape(url, needQuotes) {
 };
 
 /***/ }),
-/* 47 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/background1.cc1e5246.png";
+module.exports = __webpack_require__.p + "static/background2.49f0543f.png";
+
+/***/ }),
+/* 52 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/background2-tablet.abc8fe85.png";
+
+/***/ }),
+/* 53 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/background2-mobile.df42363c.png";
 
 /***/ })
 /******/ ]);
