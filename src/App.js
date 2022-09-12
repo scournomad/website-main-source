@@ -8,6 +8,7 @@ import { MainMenu } from 'components/MainMenu';
 import 'antd/dist/antd.css';
 import './app.css'
 import { MainFooter } from './components/MainFooter';
+import Favicon from 'react-favicon';
 
 const { Header, Footer, Content } = Layout;
 
@@ -21,6 +22,10 @@ function App() {
   
   return (
     <Root>
+      <Favicon url='/img/favicons/NetScour-Security-32px-favicon.png' iconSize={32} />
+      <Favicon url='/img/favicons/NetScour-Security-128px-favicon.png' iconSize={128} />
+      <Favicon url='/img/favicons/NetScour-Security-180px-favicon.png' iconSize={180} />
+      <Favicon url='/img/favicons/NetScour-Security-192px-favicon.png' iconSize={192} />
       <Layout>
         <Header>
           <MainMenu />
