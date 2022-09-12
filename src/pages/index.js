@@ -13,7 +13,7 @@ export default () => (
       <Col xs={{span: 24}} md={{ span: 21, offset: 3 }}>
         <Row className="app-logo-container" justify="center">
           <Col xs={{ flex: "350px" }} md={6}>
-            <img src="./img/ScourNomadLogo.png"/>
+            <img src="./img/NetScourSecLogo.png"/>
           </Col>
           <Col xs={{ flex: "350px" }} md={18}>
             <span className="intro-text">NetScour Security presents</span>
