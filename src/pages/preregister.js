@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Plausible from 'plausible-tracker'
 import { Button, Col, Row } from 'antd'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -8,10 +8,6 @@ import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-ic
 const { trackEvent } = Plausible()
 
 export default function Preregister() {
-    const [text, setText] = useState("[Click to reveal]");
-    const [url, setUrl] = useState("");
-    const [isDecoded, setIsDecoded] = useState(false);
-
     return (
         <div className="preregister-page">
             <div className="content">
@@ -31,12 +27,6 @@ export default function Preregister() {
                     <li><a href="#" target="_blank"><FontAwesomeIcon icon={faTwitter} /><span className="social-name">Twitter</span></a></li>
                     <li><a href="#" target="_blank"><FontAwesomeIcon icon={faLinkedin} /><span className="social-name">Linkedin</span></a></li>
                 </ul>
-                <p>
-                    If you'd like to contact us, send us an email here:
-                </p>
-                <ul>
-                    <li><a href={url} onClick={event => decryptMail(event, isDecoded, setIsDecoded, setText, setUrl)}>{text}</a></li>
-                </ul>
                 <Row justify="center" style={{ marginTop: "100px"}}>
                 <Col xs={24} xl={18}>
                     <Button block className="shout-button" onClick={() => {
@@ -50,17 +40,4 @@ export default function Preregister() {
             </div>
         </div>
     )
-}
-
-/* Concatenating and redirection mailstring function */
-function decryptMail(event, isDecoded, setIsDecoded, setText, setUrl) {
-    if (!isDecoded) {
-        event.preventDefault();
-
-        var addressString = atob("Y29udGFjdEBuZXRzY291cnNlYy5jb20=");
-        
-        setIsDecoded(true);
-        setText(addressString);
-        setUrl(`mailto:${addressString}`);
-    }
 }
