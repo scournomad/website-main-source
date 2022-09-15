@@ -19,16 +19,16 @@ export function MainFooter() {
                 <Col xs={24} sm={5} md={9} xl={5}>
                     <h3>Social</h3>
                     <ul>
-                        <li><a href="#" target="_blank"><FontAwesomeIcon icon={faGithub} /> Github</a></li>
-                        <li><a href="#" target="_blank"><FontAwesomeIcon icon={faTwitter} /> Twitter</a></li>
-                        <li><a href="#" target="_blank"><FontAwesomeIcon icon={faLinkedin} /> Linkedin</a></li>
+                        <li><a href="https://github.com/netscoursec" target="_blank" rel="nofollow noopener"><FontAwesomeIcon icon={faGithub} /> Github</a></li>
+                        <li><a href="https://twitter.com/netscoursec" target="_blank" rel="nofollow noopener"><FontAwesomeIcon icon={faTwitter} /> Twitter</a></li>
+                        <li><a href="https://www.linkedin.com/company/netscour-security/" target="_blank" rel="nofollow noopener"><FontAwesomeIcon icon={faLinkedin} /> Linkedin</a></li>
                     </ul>
                 </Col>
                 <Col xs={24} sm={14} md={11} xl={8}>
                     <h3>Partners</h3>
                     <Row className='partners'>
                         <Col xs={24} sm={8}>
-                            <a href="https://filrougecapital.com/" target="_blank">
+                            <a href="https://filrougecapital.com/" target="_blank" rel="nofollow noopener">
                                 <img src="./img/partners/FRC.png"></img>
                             </a>
                         </Col>
@@ -48,8 +48,8 @@ export function MainFooter() {
             <hr></hr>
             <Row justify="space-between">
                 <Col xs={24} sm={5}>
-                    <a href="#" target="_blank">Terms and Conditions</a>&nbsp;&nbsp;&nbsp;
-                    <a href="#" target="_blank">Privacy Policy</a>
+                    <a href="#" target="_blank" rel="nofollow noopener">Terms and Conditions</a>&nbsp;&nbsp;&nbsp;
+                    <a href="#" target="_blank" rel="nofollow noopener">Privacy Policy</a>
                 </Col>
                 <Col xs={24} sm={5} className="copyright">&copy; 2022 by NetScour Security</Col>
             </Row>

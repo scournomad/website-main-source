@@ -23,9 +23,9 @@ export default function Preregister() {
                     your daily activities. If you feel like sharing, chatting, and helping out, please join our community:
                 </p>
                 <ul style={{ listStyleType: "none" }}>
-                    <li><a href="#" target="_blank"><FontAwesomeIcon icon={faGithub} /><span className="social-name">Github</span></a></li>
-                    <li><a href="#" target="_blank"><FontAwesomeIcon icon={faTwitter} /><span className="social-name">Twitter</span></a></li>
-                    <li><a href="#" target="_blank"><FontAwesomeIcon icon={faLinkedin} /><span className="social-name">Linkedin</span></a></li>
+                    <li><a href="https://github.com/netscoursec" target="_blank" rel="nofollow noopener"><FontAwesomeIcon icon={faGithub} /><span className="social-name">Github</span></a></li>
+                    <li><a href="https://twitter.com/netscoursec" target="_blank" rel="nofollow noopener"><FontAwesomeIcon icon={faTwitter} /><span className="social-name">Twitter</span></a></li>
+                    <li><a href="https://www.linkedin.com/company/netscour-security/" target="_blank" rel="nofollow noopener"><FontAwesomeIcon icon={faLinkedin} /><span className="social-name">Linkedin</span></a></li>
                 </ul>
                 <Row justify="center" style={{ marginTop: "100px"}}>
                 <Col xs={24} xl={18}>

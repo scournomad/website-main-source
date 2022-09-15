@@ -37,13 +37,13 @@ export function MainMenu() {
               <Link to="/preregister">Preregister</Link>
             </Menu.Item>
             <Menu.Item key="github" className="social">
-              <a href="#" target="_blank"><FontAwesomeIcon icon={faGithub} /><span className="social-name">Github</span></a>
+              <a href="https://github.com/netscoursec" target="_blank" rel="nofollow noopener"><FontAwesomeIcon icon={faGithub} /><span className="social-name">Github</span></a>
             </Menu.Item>
             <Menu.Item key="twitter" className="social">
-              <a href="#" target="_blank"><FontAwesomeIcon icon={faTwitter} /><span className="social-name">Twitter</span></a>
+              <a href="https://twitter.com/netscoursec" target="_blank" rel="nofollow noopener"><FontAwesomeIcon icon={faTwitter} /><span className="social-name">Twitter</span></a>
             </Menu.Item>
             <Menu.Item key="linkedin" className="social">
-              <a href="#" target="_blank"><FontAwesomeIcon icon={faLinkedin} /><span className="social-name">Linkedin</span></a>
+              <a href="https://www.linkedin.com/company/netscour-security/" target="_blank" rel="nofollow noopener"><FontAwesomeIcon icon={faLinkedin} /><span className="social-name">Linkedin</span></a>
             </Menu.Item>
           </Menu>
       </>
