@@ -127,6 +127,26 @@ img {
   color: #CCC;
 }
 
+.alert {
+  border: 1px solid #9e70c7;
+  margin: 50px 0;
+  padding: 2px;
+}
+
+.alert-header {
+  background: repeating-linear-gradient(
+    45deg,
+    #9e70c7,
+    #9e70c7 10px,
+    #1f1f1f 10px,
+    #1f1f1f 20px
+  );
+}
+
+.alert-content {
+  margin: 5px;
+}
+
 /* ========== Header ========== */
 
 .ant-layout-header {

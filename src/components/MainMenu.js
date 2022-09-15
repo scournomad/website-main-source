@@ -37,7 +37,7 @@ export function MainMenu() {
               <Link to="/preregister">Preregister</Link>
             </Menu.Item>
             <Menu.Item key="github" className="social">
-              <a href="https://github.com/netscoursec" target="_blank" rel="nofollow noopener"><FontAwesomeIcon icon={faGithub} /><span className="social-name">Github</span></a>
+              <a href="https://github.com/netscoursec" target="_blank" rel="nofollow noopener"><FontAwesomeIcon icon={faGithub} /><span className="social-name">GitHub</span></a>
             </Menu.Item>
             <Menu.Item key="twitter" className="social">
               <a href="https://twitter.com/netscoursec" target="_blank" rel="nofollow noopener"><FontAwesomeIcon icon={faTwitter} /><span className="social-name">Twitter</span></a>
