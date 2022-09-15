@@ -18,10 +18,9 @@ export function Roadmap() {
                         <Timeline.Item label="2021" color="#9e70c7">Proof of Concept development</Timeline.Item>
                         <Timeline.Item label="Q3 2022" color="#9e70c7">FRC investment received</Timeline.Item>
                         <Timeline.Item label="Sep 2022" color="#cf9ff8">Pre-alpha development</Timeline.Item>
-                        <Timeline.Item label="Dec 2022" color="gray" dot={<FontAwesomeIcon icon={faUserSecret} />}>Initial pentest</Timeline.Item>
                         <Timeline.Item label="Jan 2022" color="gray">Closed alpha testing starts</Timeline.Item>
-                        <Timeline.Item label="Q1 2023" color="gray" dot={<FontAwesomeIcon icon={faUserSecret} />}>Additional pentest</Timeline.Item>
                         <Timeline.Item label="Q1-Q2 2023" color="gray">Beta testing starts</Timeline.Item>
+                        <Timeline.Item label="Q1 2023" color="gray" dot={<FontAwesomeIcon icon={faUserSecret} />}>Full third-party pentest</Timeline.Item>
                         <Timeline.Item label="Q2-Q3 2023" color="gray">First commercial version</Timeline.Item>
                     </Timeline>
                 </Col>
