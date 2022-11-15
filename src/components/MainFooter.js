@@ -51,7 +51,7 @@ export function MainFooter() {
                     <a href="#" target="_blank" rel="nofollow noopener">Terms and Conditions</a>&nbsp;&nbsp;&nbsp;
                     <a href="#" target="_blank" rel="nofollow noopener">Privacy Policy</a>
                 </Col>
-                <Col xs={24} sm={5} className="copyright">&copy; 2022 by NetScour Security</Col>
+                <Col xs={24} sm={5} className="copyright">&copy; 2022 by ScourNomad</Col>
             </Row>
         </>
     )

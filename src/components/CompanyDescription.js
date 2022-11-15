@@ -7,7 +7,7 @@ const items = [
     {
         icon: faVault,
         title: "Security",
-        text: "NetScour Security considers user data sacred and will do everything in our power to protect it",
+        text: "ScourNomad considers user data sacred and will do everything in our power to protect it",
         textItems: [
             "We will perform internal penetration tests regularly",
             "We will perform third-party penetration tests as regularly as possible",

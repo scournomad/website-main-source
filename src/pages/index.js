@@ -15,10 +15,9 @@ export default () => (
           <Col xs={{ flex: "350px" }} md={6}>
             <img src="./img/NetScourSecLogo.png"/>
           </Col>
-          <Col xs={{ flex: "350px" }} md={18}>
-            <span className="intro-text">NetScour Security presents</span>
+          <Col className="title-box" xs={{ flex: "350px" }} md={18}>
             <h1 className="header1">ScourNomad</h1>
-            <h2 className="header2">Redefining infosec toolbox</h2>
+            <h2 className="header2">Swiss Army Knife for Pentesters</h2>
           </Col>
         </Row>
       </Col>

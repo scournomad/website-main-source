@@ -351,6 +351,10 @@ img {
   display: block;
 }
 
+.app-logo-container .title-box {
+  padding-top: 23px;
+}
+
 .app-logo-container .header1 {
   color: #8552b3;
   font-size: 60px;
@@ -362,6 +366,7 @@ img {
 .app-logo-container .header2 {
   text-shadow: 10px 10px 2px #222;
   color: #CCC;
+  font-size: 25px;
 }
 
 .app-logo-container img {

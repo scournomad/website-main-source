@@ -19,7 +19,7 @@ export function MainMenu() {
       <>
           <div className="logo">
             <Link to="/">
-              <img src="./img/NetScourSecLogo.png" />&nbsp;<span className="company-name">NetScour Security</span>
+              <img src="./img/NetScourSecLogo.png" alt="" />&nbsp;<span className="company-name">ScourNomad</span>
             </Link>
           </div>
           <Menu
@@ -37,13 +37,13 @@ export function MainMenu() {
               <Link to="/preregister">Preregister</Link>
             </Menu.Item>
             <Menu.Item key="github" className="social">
-              <a href="https://github.com/netscoursec" target="_blank" rel="nofollow noopener"><FontAwesomeIcon icon={faGithub} /><span className="social-name">GitHub</span></a>
+              <a href="https://github.com/netscoursec" target="_blank" rel="nofollow noreferrer"><FontAwesomeIcon icon={faGithub} /><span className="social-name">GitHub</span></a>
             </Menu.Item>
             <Menu.Item key="twitter" className="social">
-              <a href="https://twitter.com/netscoursec" target="_blank" rel="nofollow noopener"><FontAwesomeIcon icon={faTwitter} /><span className="social-name">Twitter</span></a>
+              <a href="https://twitter.com/netscoursec" target="_blank" rel="nofollow noreferrer"><FontAwesomeIcon icon={faTwitter} /><span className="social-name">Twitter</span></a>
             </Menu.Item>
             <Menu.Item key="linkedin" className="social">
-              <a href="https://www.linkedin.com/company/netscour-security/" target="_blank" rel="nofollow noopener"><FontAwesomeIcon icon={faLinkedin} /><span className="social-name">Linkedin</span></a>
+              <a href="https://www.linkedin.com/company/netscour-security/" target="_blank" rel="nofollow noreferrer"><FontAwesomeIcon icon={faLinkedin} /><span className="social-name">Linkedin</span></a>
             </Menu.Item>
           </Menu>
       </>
