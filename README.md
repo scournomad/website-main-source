@@ -4,7 +4,12 @@
 
 * `npm run serve`
 
+## Deploy
 
+* `npm run deploy`
+    * It builds everything using gh-pages to branch gh-pages
+    * It pushes branch gh-pages
+    * Netlify catches it and deploys it
 
 ## Vulnerabilities
 
