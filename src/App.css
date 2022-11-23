@@ -622,9 +622,17 @@ a.anchor {
   width: 100%;
 }
 
+.pricing-tier-first {
+  padding-top: 30px !important;
+}
+
+.pricing-tier-last {
+  padding-bottom: 30px !important;
+}
+
 .pricing-tier {
   background-color: #171717;
-  padding: 30px;
+  padding: 0 30px;
   width: 100%;
   height: 100%;
 }
@@ -637,10 +645,16 @@ a.anchor {
   font-size: 30px;
   margin: 30px 0 0 0;
   line-height: 30px;
+  color: #cf9ff8;
 }
 
 .pricing-tier h4 {
   font-size: 15px;
+  margin: 0;
+}
+
+.pricing-tier .price-color {
+  color: #cf9ff8;
 }
 
 .pricing-tier h4:last-of-type {
@@ -656,6 +670,45 @@ a.anchor {
   color: #888;
 }
 
+.buy-button.primary,
+.buy-button:active.primary,
+.buy-button:focus.primary {
+  background-color: #6a3f91;
+}
+
+.buy-button.secondary,
+.buy-button:active.secondary,
+.buy-button:focus.secondary {
+  background-color: #3F3F3F !important;
+}
+
+.buy-button:hover.primary {
+  background-color: #8552b3;
+  color: #CCC;
+}
+
+.buy-button:hover.secondary {
+  background-color: #4F4F4F !important;
+  color: #CCC !important;
+}
+
+.buy-button,
+.buy-button:active,
+.buy-button:focus {
+  height: 30px;
+  line-height: 25px;
+  font-size: 15px;
+  color: #CCC !important;
+  border: none;
+}
+
+.buy-button svg {
+  vertical-align: middle;
+}
+
+.buy-button span {
+  font-size: 15px;
+}
 /* Pricing - end */
 
 /* 404 */

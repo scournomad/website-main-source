@@ -1,8 +1,11 @@
 import React from 'react'
 import { Button, Col, Row } from 'antd'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCartShopping } from '@fortawesome/pro-duotone-svg-icons'
-import { PricingTier } from '../components/PricingTier'
+import { faCartShopping, faCreditCard } from '@fortawesome/pro-duotone-svg-icons'
+import { PricingTierDescription } from '../components/PricingTierDescription'
+import { PricingTierPrice } from '../components/PricingTierPrice'
+import { PricingTierItems } from '../components/PricingTierItems'
+import { PricingTierAction } from '../components/PricingTierAction'
 
 
 export default function PricingPage() {
@@ -30,7 +33,7 @@ export default function PricingPage() {
                 "Automation",
                 "Early supporter badge",
             ],
-            actionContent: <Button>Sign up</Button>
+            actionContent: <Button block className="buy-button primary">Purchase</Button>
         },
         {
             title: "Basic",
@@ -53,7 +56,7 @@ export default function PricingPage() {
                 "Knowledge base",
                 "Timeline",
             ],
-            actionContent: <span>Coming soon</span>
+            actionContent: <Button block disabled className="buy-button secondary">Coming soon</Button>
         },
         {
             title: "Teams",
@@ -66,7 +69,7 @@ export default function PricingPage() {
             </>,
             price: "$50 / month",
             priceSecondaryItems: [
-                " + 20 / user / month",
+                <><span className="price-color">+ $20 / user / month</span></>,
                 " + scanning resources"
             ],
             includedItems: [
@@ -76,7 +79,7 @@ export default function PricingPage() {
                 "Internal knowledgebase management",
                 "Team insingts"
             ],
-            actionContent: <span>Coming soon</span>
+            actionContent: <Button block disabled className="buy-button secondary">Coming soon</Button>
         },
         // {
         //     title: "Corporate",
@@ -99,7 +102,52 @@ export default function PricingPage() {
                 <Row className="pricing-table" justify="center" gutter={32}>
                     {tiers.map((tier, index) => 
                         <Col key={index} span={8}>
-                            <PricingTier 
+                            <PricingTierDescription
+                                title = {tier.title}
+                                contents = {tier.contents}
+                                price = {tier.price}
+                                priceSecondaryItems = {tier.priceSecondaryItems}
+                                discount = {tier.discount}
+                                wrapperText = {tier.wrapperText}
+                                includedItems = {tier.includedItems}
+                                actionContent = {tier.actionContent} />
+                        </Col>
+                    )}
+                </Row>
+                <Row className="pricing-table" justify="center" gutter={32}>
+                    {tiers.map((tier, index) => 
+                        <Col key={index} span={8}>
+                            <PricingTierPrice
+                                title = {tier.title}
+                                contents = {tier.contents}
+                                price = {tier.price}
+                                priceSecondaryItems = {tier.priceSecondaryItems}
+                                discount = {tier.discount}
+                                wrapperText = {tier.wrapperText}
+                                includedItems = {tier.includedItems}
+                                actionContent = {tier.actionContent} />
+                        </Col>
+                    )}
+                </Row>
+                <Row className="pricing-table" justify="center" gutter={32}>
+                    {tiers.map((tier, index) => 
+                        <Col key={index} span={8}>
+                            <PricingTierItems
+                                title = {tier.title}
+                                contents = {tier.contents}
+                                price = {tier.price}
+                                priceSecondaryItems = {tier.priceSecondaryItems}
+                                discount = {tier.discount}
+                                wrapperText = {tier.wrapperText}
+                                includedItems = {tier.includedItems}
+                                actionContent = {tier.actionContent} />
+                        </Col>
+                    )}
+                </Row>
+                <Row className="pricing-table" justify="center" gutter={32}>
+                    {tiers.map((tier, index) => 
+                        <Col key={index} span={8}>
+                            <PricingTierAction
                                 title = {tier.title}
                                 contents = {tier.contents}
                                 price = {tier.price}
