@@ -1,29 +1,44 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import { Row, Col, Card, Button } from 'antd';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { PlatformDescriptionItem } from '../components/PlatformDescriptionItem';
-import { faBrainCircuit, faBugs, faGears, faListCheck, faBullhorn, faRadar, faSignsPost } from '@fortawesome/pro-duotone-svg-icons';
+import { faBrainCircuit, faBugs, faGears, faListCheck, faRadar, faSignsPost, faBasketShopping, faMagnifyingGlass } from '@fortawesome/pro-duotone-svg-icons';
 import { Roadmap } from '../components/Roadmap';
 
 const { Meta } = Card;
 
 export default function HomePage() {
+  const navigate = useNavigate();
   return (
     <div className="main-body">
       <Row className="app-logo" justify="center">
         <Col xs={{span: 24}} md={{ span: 21, offset: 3 }}>
           <Row className="app-logo-container" justify="center">
             <Col xs={{ flex: "350px" }} md={6}>
-              <img src="./img/NetScourSecLogo.png"/>
+              <img src="./img/NetScourSecLogo.png" alt=""/>
             </Col>
             <Col className="title-box" xs={{ flex: "350px" }} md={18}>
               <h1 className="header1">ScourNomad</h1>
               <h2 className="header2">Swiss Army Knife for Pentesters</h2>
             </Col>
           </Row>
+          <Row className="app-logo-container" justify="center" gutter={16}>
+            <Col className="title-box" md={12}>
+              <Button block className="shout-button primary" onClick={() => navigate("/pricing")}>
+                <FontAwesomeIcon icon={faBasketShopping} />&nbsp;&nbsp;Purchase
+              </Button>
+            </Col>
+            <Col className="title-box" md={12}>
+              <Button block className="shout-button secondary" onClick={() => document.location = "#about"}>
+                <FontAwesomeIcon icon={faMagnifyingGlass} />&nbsp;&nbsp;Review features
+              </Button>
+            </Col>
+          </Row>
         </Col>
       </Row>
       <div className="content">
+        <a className="anchor" id="about"></a>
         <h2>
           What is <span className="platform-name">ScourNomad</span>?
         </h2>
@@ -82,13 +97,6 @@ export default function HomePage() {
         </p>
         <PlatformDescriptionItem />
         <Roadmap />
-        <Row justify="center" style={{ marginTop: "100px"}}>
-          <Col xs={24} xl={18}>
-            <Button block className="shout-button" onClick={() => document.location = "/preregister"}>
-              <FontAwesomeIcon icon={faBullhorn} /> Preregister
-            </Button>
-          </Col>
-        </Row>
       </div>
     </div>
   );

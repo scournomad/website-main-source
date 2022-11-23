@@ -147,6 +147,13 @@ img {
   margin: 5px;
 }
 
+a.anchor {
+  display: block;
+  position: relative;
+  top: -80px;
+  visibility: hidden;
+}
+
 /* ========== Header ========== */
 
 .ant-layout-header {
@@ -511,30 +518,46 @@ img {
 .shout-button,
 .shout-button:active,
 .shout-button:focus {
-  height: 60px;
-  line-height: 52px;
+  height: 50px;
+  line-height: 45px;
+  margin: 30px 5px 5px 5px;
   font-size: 25px;
   font-weight: bold;
-  background-color: #333;
   color: #CCC;
-  margin-bottom: 100px;
   border: none;
 }
 
-.shout-button:hover {
+.shout-button.primary,
+.shout-button:active.primary,
+.shout-button:focus.primary {
+  background-color: #6a3f91;
+}
+
+.shout-button.secondary,
+.shout-button:active.secondary,
+.shout-button:focus.secondary {
   background-color: #3F3F3F;
+}
+
+.shout-button:hover.primary {
+  background-color: #8552b3;
+  color: #CCC;
+}
+
+.shout-button:hover.secondary {
+  background-color: #4F4F4F;
   color: #CCC;
 }
 
 .shout-button svg {
   vertical-align: middle;
-  font-size: 35px;
-  color: #9e70c7;
+  /* font-size: 35px; */
+  /* color: #9e70c7; */
 }
 
 .shout-button span {
   font-size: 20px;
-  margin-left: 15px;
+  /* margin-left: 15px; */
 }
 
 @media (max-width: 480px) /* xs */
@@ -589,6 +612,52 @@ img {
 
 /* Roadmap - end */
 
+/* Pricing */
+
+.pricing-table .ant-col {
+  display: flex;
+}
+
+.ant-ribbon-wrapper:has(.pricing-tier) {
+  width: 100%;
+}
+
+.pricing-tier {
+  background-color: #171717;
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+}
+
+.pricing-tier h2 {
+  font-size: 35px;
+}
+
+.pricing-tier h3 {
+  font-size: 30px;
+  margin: 30px 0 0 0;
+  line-height: 30px;
+}
+
+.pricing-tier h4 {
+  font-size: 15px;
+}
+
+.pricing-tier h4:last-of-type {
+  margin: 0 0 30px 0;
+}
+
+.pricing-tier p {
+  font-size: 15px;
+}
+
+.crossed-over {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Pricing - end */
+
 /* 404 */
 
 .ant-result-404 {
@@ -617,6 +686,7 @@ img {
 /* ========== Footer ========== */
 
 footer {
+  margin-top: 100px;
   min-height: 200px;
   background-color: #111 !important;
   flex: 0 1 200px;

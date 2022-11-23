@@ -2,7 +2,8 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from './pages/home';
 import ComapnyPage from './pages/company';
-import PreregisterPage from './pages/preregister';
+import PricingPage from './pages/pricing';
+import NotFoundPage from './pages/404';
 
 import { Layout } from 'antd';
 import { MainMenu } from './components/MainMenu';
@@ -25,7 +26,8 @@ function App() {
             <Routes>
               <Route index element={<HomePage />} />
               <Route path="company" element={<ComapnyPage />} />
-              <Route path="preregister" element={<PreregisterPage />} />
+              <Route path="pricing" element={<PricingPage />} />
+              <Route path="*" element={<NotFoundPage />} />
             </Routes>
           </Content>
           <Footer>
