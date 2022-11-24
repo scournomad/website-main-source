@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button, Col, Row } from 'antd'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCartShopping, faCreditCard } from '@fortawesome/pro-duotone-svg-icons'
+import { faCartShopping } from '@fortawesome/pro-duotone-svg-icons'
 import { PricingTierDescription } from '../components/PricingTierDescription'
 import { PricingTierPrice } from '../components/PricingTierPrice'
 import { PricingTierItems } from '../components/PricingTierItems'
@@ -22,11 +22,11 @@ export default function PricingPage() {
                     New features automatically will become available as they are developed.
                 </p>
             </>,
-            price: "$50",
+            price: "$?",
             priceSecondaryItems: [
                 " + scanning resources"
             ],
-            discount: "$25 / month",
+            discount: "$? / month",
             wrapperText: "-20% for first 6 months",
             includedItems: [
                 "Project management",
@@ -44,7 +44,7 @@ export default function PricingPage() {
                     with manual testing.
                 </p>
             </>,
-            price: "$50 / month",
+            price: "$? / month",
             priceSecondaryItems: [
                 " + scanning resources"
             ],
@@ -67,9 +67,9 @@ export default function PricingPage() {
                     team members as they are being complemted. 
                 </p>
             </>,
-            price: "$50 / month",
+            price: "$? / month",
             priceSecondaryItems: [
-                <><span className="price-color">+ $20 / user / month</span></>,
+                <><span className="price-color">+ $? / user / month</span></>,
                 " + scanning resources"
             ],
             includedItems: [

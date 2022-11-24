@@ -32,9 +32,9 @@ export function MainMenu() {
         <Menu.Item key="/company">
           <Link to="/company">Company</Link>
         </Menu.Item>
-        <Menu.Item key="/pricing">
+        {/* <Menu.Item key="/pricing">
           <Link to="/pricing">Pricing</Link>
-        </Menu.Item>
+        </Menu.Item> */}
         <Menu.Item key="github" className="social">
           <a href="https://github.com/netscoursec" target="_blank" rel="nofollow noreferrer"><FontAwesomeIcon icon={faGithub} /><span className="social-name">GitHub</span></a>
         </Menu.Item>

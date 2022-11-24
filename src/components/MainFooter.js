@@ -17,7 +17,7 @@ export function MainFooter() {
                     <ul>
                         <li><Link to="/">Product</Link></li>
                         <li><Link to="/company">Company</Link></li>
-                        <li><Link to="/pricing">Pricing</Link></li>
+                        {/* <li><Link to="/pricing">Pricing</Link></li> */}
                     </ul>
                 </Col>
                 <Col xs={24} sm={5} md={9} xl={5}>

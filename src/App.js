@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from './pages/home';
 import ComapnyPage from './pages/company';
-import PricingPage from './pages/pricing';
+//import PricingPage from './pages/pricing';
 import NotFoundPage from './pages/404';
 
 import { Layout } from 'antd';
@@ -26,7 +26,7 @@ function App() {
             <Routes>
               <Route index element={<HomePage />} />
               <Route path="company" element={<ComapnyPage />} />
-              <Route path="pricing" element={<PricingPage />} />
+              {/* <Route path="pricing" element={<PricingPage />} /> */}
               <Route path="*" element={<NotFoundPage />} />
             </Routes>
           </Content>
