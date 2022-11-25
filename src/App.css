@@ -29,6 +29,7 @@ a:hover {
 
 b {
   font-weight: bold;
+  color: #9e70c7;
 }
 
 h1, h2, h3, h4, h5 {
@@ -560,6 +561,15 @@ a.anchor {
   /* margin-left: 15px; */
 }
 
+.shout-button-small {
+  height: 32px !important;
+  line-height: 23px;
+}
+
+.shout-button-small span {
+  font-size: 15px !important;
+}
+
 @media (max-width: 480px) /* xs */
 {
   .shout-button svg {
@@ -819,3 +829,36 @@ footer .copyright {
     margin: -15px auto 15px auto;
   }
 }
+
+/* ===== Footer - end ====== */
+
+/* ===== Modal ====== */
+
+.ant-modal-header,
+.ant-modal-title,
+.ant-modal-close,
+.ant-modal-content,
+.ant-modal-footer {
+  background-color: #1F1F1F;
+  color: #CCC;
+  border: 0;
+}
+
+.preorder-modal .ant-btn-block {
+  margin: 30px 0 44px 0;
+}
+
+.preorder-modal h1 {
+  margin: 30px 0 0 0;
+}
+
+.preorder-modal .ant-modal-body {
+  padding: 24px 24px 0 24px;
+}
+
+.preorder-modal .ant-modal-footer {
+  padding: 0 16px 10px 16px;
+}
+
+
+/* ===== Modal - end ====== */

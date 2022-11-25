@@ -1,15 +1,21 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
 import { Row, Col, Card, Button } from 'antd';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { PlatformDescriptionItem } from '../components/PlatformDescriptionItem';
 import { faBrainCircuit, faBugs, faGears, faListCheck, faRadar, faSignsPost, faBasketShopping, faMagnifyingGlass } from '@fortawesome/pro-duotone-svg-icons';
 import { Roadmap } from '../components/Roadmap';
+import PreorderModal from '../components/PreorderModal';
 
 const { Meta } = Card;
 
 export default function HomePage() {
-  const navigate = useNavigate();
+  const preorderModal = React.createRef();
+  const openPreorderModal = () => {
+    if (preorderModal.current) {
+      (preorderModal.current).show();
+    }
+  };
+
   return (
     <div className="main-body">
       <Row className="app-logo" justify="center">
@@ -25,7 +31,7 @@ export default function HomePage() {
           </Row>
           <Row className="app-logo-container" justify="center" gutter={16}>
             <Col className="title-box" md={12}>
-              <Button block className="shout-button primary" onClick={() => navigate("/pricing")}>
+              <Button block className="shout-button primary" onClick={() => openPreorderModal()}>
                 <FontAwesomeIcon icon={faBasketShopping} />&nbsp;&nbsp;Purchase
               </Button>
             </Col>
@@ -97,7 +103,17 @@ export default function HomePage() {
         </p>
         <PlatformDescriptionItem />
         <Roadmap />
+
+        <Row justify="center" style={{ marginTop: "100px"}}>
+          <Col xs={24} xl={18}>
+            <Button block className="shout-button primary" onClick={() => openPreorderModal()}>
+              <FontAwesomeIcon icon={faBasketShopping} />&nbsp;&nbsp;Purchase
+            </Button>
+          </Col>
+        </Row>
+        
       </div>
+      <PreorderModal ref={preorderModal}/>
     </div>
   );
 }
