@@ -746,6 +746,97 @@ a.anchor {
 
 /* 404 - end */
 
+/* ========== Global elements ========== */
+
+/* Forms */ 
+
+.ant-input {
+  background-color: #1F1F1F;
+  border: 2px solid #555;
+  color: #CCC;
+}
+
+.ant-form-item-label > label {
+  color: #CCC;
+  margin-top: 10px !important;
+}
+
+.ant-form-item {
+  margin: 25px 0;
+}
+
+.ant-input:hover,
+.ant-input:focus,
+.ant-input:focus-visible {
+  border: 2px solid #9e70c7;
+}
+
+.ant-input-focused,
+.ant-input:focus,
+.ant-input:focus-visible {
+  box-shadow: 0 0 0 2px rgba(158, 112, 199, .2);
+}
+
+.ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input,
+.ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input:hover {
+  background-color: #1F1F1F;
+}
+
+.ant-checkbox-wrapper {
+  display: flex;
+  color: #CCC;
+  margin-left: 8px;
+}
+
+.ant-checkbox-wrapper span:not(.ant-checkbox, .ant-checkbox-inner) {
+  display: flex;
+  width: 100%;
+  padding-right: 18px;
+}
+
+.ant-checkbox-group,
+.ant-checkbox-group label {
+  width: 100%;
+}
+
+.other-input {
+  width: 100%;
+  margin-left: 10px;
+}
+
+.ant-input-textarea-show-count::after {
+  color: #CCC;
+}
+
+textarea.ant-input {
+  min-height: 80px;
+}
+
+/* Inner form item inside checkbox */
+
+.ant-checkbox-wrapper .ant-form-item {
+  margin: 0;
+  width: 100%;
+}
+
+/* Forms - end */ 
+
+/* Messages */
+.ant-notification-notice,
+.ant-notification-notice-content,
+.ant-message-notice-content {
+  background-color: #1F1F1F;
+  color: #CCC;
+}
+
+.ant-notification-notice-message {
+  color: #CCC;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Messages - end */
+
 /* ========== Footer ========== */
 
 footer {
@@ -844,8 +935,15 @@ footer .copyright {
   border: 0;
 }
 
+.ant-modal-close:focus,
+.ant-modal-close:hover {
+  color: white;
+  background-color: #333;
+  transition: 0.3s;
+}
+
 .preorder-modal .ant-btn-block {
-  margin: 30px 0 44px 0;
+  margin: 10px 0 44px 0;
 }
 
 .preorder-modal h1 {
@@ -858,6 +956,10 @@ footer .copyright {
 
 .preorder-modal .ant-modal-footer {
   padding: 0 16px 10px 16px;
+}
+
+.preorder-modal .shout-button {
+  margin-bottom: 0 !important;
 }
 
 

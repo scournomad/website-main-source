@@ -2,7 +2,7 @@ import React from 'react'
 import { Row, Col, Card, Button } from 'antd';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { PlatformDescriptionItem } from '../components/PlatformDescriptionItem';
-import { faBrainCircuit, faBugs, faGears, faListCheck, faRadar, faSignsPost, faBasketShopping, faMagnifyingGlass } from '@fortawesome/pro-duotone-svg-icons';
+import { faBrainCircuit, faBugs, faGears, faListCheck, faRadar, faSignsPost, faBasketShopping, faBallot } from '@fortawesome/pro-duotone-svg-icons';
 import { Roadmap } from '../components/Roadmap';
 import PreorderModal from '../components/PreorderModal';
 
@@ -36,15 +36,14 @@ export default function HomePage() {
               </Button>
             </Col>
             <Col className="title-box" md={12}>
-              <Button block className="shout-button secondary" onClick={() => document.location = "#about"}>
-                <FontAwesomeIcon icon={faMagnifyingGlass} />&nbsp;&nbsp;Review features
+              <Button block className="shout-button secondary" onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSepgX9yTxt7_ljmSOHb4KsqZpdyEv0Z32Z6-_gRnab7vWockw/viewform", "_blank")}>
+                <FontAwesomeIcon icon={faBallot} />&nbsp;&nbsp;Fill the survey
               </Button>
             </Col>
           </Row>
         </Col>
       </Row>
       <div className="content">
-        <a className="anchor" id="about"></a>
         <h2>
           What is <span className="platform-name">ScourNomad</span>?
         </h2>
