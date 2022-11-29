@@ -29,6 +29,7 @@ a:hover {
 
 b {
   font-weight: bold;
+  color: #9e70c7;
 }
 
 h1, h2, h3, h4, h5 {
@@ -145,6 +146,13 @@ img {
 
 .alert-content {
   margin: 5px;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -80px;
+  visibility: hidden;
 }
 
 /* ========== Header ========== */
@@ -511,30 +519,55 @@ img {
 .shout-button,
 .shout-button:active,
 .shout-button:focus {
-  height: 60px;
-  line-height: 52px;
+  height: 50px;
+  line-height: 45px;
+  margin: 30px 5px 5px 5px;
   font-size: 25px;
   font-weight: bold;
-  background-color: #333;
   color: #CCC;
-  margin-bottom: 100px;
   border: none;
 }
 
-.shout-button:hover {
+.shout-button.primary,
+.shout-button:active.primary,
+.shout-button:focus.primary {
+  background-color: #6a3f91;
+}
+
+.shout-button.secondary,
+.shout-button:active.secondary,
+.shout-button:focus.secondary {
   background-color: #3F3F3F;
+}
+
+.shout-button:hover.primary {
+  background-color: #8552b3;
+  color: #CCC;
+}
+
+.shout-button:hover.secondary {
+  background-color: #4F4F4F;
   color: #CCC;
 }
 
 .shout-button svg {
   vertical-align: middle;
-  font-size: 35px;
-  color: #9e70c7;
+  /* font-size: 35px; */
+  /* color: #9e70c7; */
 }
 
 .shout-button span {
   font-size: 20px;
-  margin-left: 15px;
+  /* margin-left: 15px; */
+}
+
+.shout-button-small {
+  height: 32px !important;
+  line-height: 23px;
+}
+
+.shout-button-small span {
+  font-size: 15px !important;
 }
 
 @media (max-width: 480px) /* xs */
@@ -589,6 +622,105 @@ img {
 
 /* Roadmap - end */
 
+/* Pricing */
+
+.pricing-table .ant-col {
+  display: flex;
+}
+
+.ant-ribbon-wrapper:has(.pricing-tier) {
+  width: 100%;
+}
+
+.pricing-tier-first {
+  padding-top: 30px !important;
+}
+
+.pricing-tier-last {
+  padding-bottom: 30px !important;
+}
+
+.pricing-tier {
+  background-color: #171717;
+  padding: 0 30px;
+  width: 100%;
+  height: 100%;
+}
+
+.pricing-tier h2 {
+  font-size: 35px;
+}
+
+.pricing-tier h3 {
+  font-size: 30px;
+  margin: 30px 0 0 0;
+  line-height: 30px;
+  color: #cf9ff8;
+}
+
+.pricing-tier h4 {
+  font-size: 15px;
+  margin: 0;
+}
+
+.pricing-tier .price-color {
+  color: #cf9ff8;
+}
+
+.pricing-tier h4:last-of-type {
+  margin: 0 0 30px 0;
+}
+
+.pricing-tier p {
+  font-size: 15px;
+}
+
+.crossed-over {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.buy-button.primary,
+.buy-button:active.primary,
+.buy-button:focus.primary {
+  background-color: #6a3f91;
+}
+
+.buy-button.secondary,
+.buy-button:active.secondary,
+.buy-button:focus.secondary {
+  background-color: #3F3F3F !important;
+}
+
+.buy-button:hover.primary {
+  background-color: #8552b3;
+  color: #CCC;
+}
+
+.buy-button:hover.secondary {
+  background-color: #4F4F4F !important;
+  color: #CCC !important;
+}
+
+.buy-button,
+.buy-button:active,
+.buy-button:focus {
+  height: 30px;
+  line-height: 25px;
+  font-size: 15px;
+  color: #CCC !important;
+  border: none;
+}
+
+.buy-button svg {
+  vertical-align: middle;
+}
+
+.buy-button span {
+  font-size: 15px;
+}
+/* Pricing - end */
+
 /* 404 */
 
 .ant-result-404 {
@@ -614,9 +746,105 @@ img {
 
 /* 404 - end */
 
+/* ========== Global elements ========== */
+
+/* Forms */ 
+
+.ant-input {
+  background-color: #1F1F1F;
+  border: 2px solid #555;
+  color: #CCC;
+}
+
+.ant-form-item-label > label {
+  color: #CCC;
+  margin-top: 10px !important;
+}
+
+.ant-form-item {
+  margin: 25px 0;
+}
+
+.ant-input:hover,
+.ant-input:focus,
+.ant-input:focus-visible {
+  border: 2px solid #9e70c7;
+}
+
+.ant-input-focused,
+.ant-input:focus,
+.ant-input:focus-visible {
+  box-shadow: 0 0 0 2px rgba(158, 112, 199, .2);
+}
+
+.ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input,
+.ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input:hover {
+  background-color: #1F1F1F;
+}
+
+.ant-checkbox-wrapper {
+  display: flex;
+  color: #CCC;
+  margin-left: 8px;
+}
+
+.ant-checkbox-wrapper span:not(.ant-checkbox, .ant-checkbox-inner) {
+  display: flex;
+  width: 100%;
+  padding-right: 18px;
+}
+
+.ant-checkbox-group,
+.ant-checkbox-group label {
+  width: 100%;
+}
+
+.other-input {
+  width: 100%;
+  margin-left: 10px;
+}
+
+.ant-input-textarea-show-count::after {
+  color: #CCC;
+}
+
+textarea.ant-input {
+  min-height: 80px;
+}
+
+/* Inner form item inside checkbox */
+
+.ant-checkbox-wrapper .ant-form-item {
+  margin: 0;
+  width: 100%;
+}
+
+/* Forms - end */ 
+
+/* Messages */
+.ant-notification-notice,
+.ant-notification-notice-content,
+.ant-message-notice-content {
+  background-color: #1F1F1F;
+  color: #CCC;
+}
+
+.ant-notification-notice-message {
+  color: #CCC;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.ant-notification-notice-close-x {
+  color: #CCC;
+}
+
+/* Messages - end */
+
 /* ========== Footer ========== */
 
 footer {
+  margin-top: 100px;
   min-height: 200px;
   background-color: #111 !important;
   flex: 0 1 200px;
@@ -696,3 +924,47 @@ footer .copyright {
     margin: -15px auto 15px auto;
   }
 }
+
+/* ===== Footer - end ====== */
+
+/* ===== Modal ====== */
+
+.ant-modal-header,
+.ant-modal-title,
+.ant-modal-close,
+.ant-modal-content,
+.ant-modal-footer {
+  background-color: #1F1F1F;
+  color: #CCC;
+  border: 0;
+}
+
+.ant-modal-close:focus,
+.ant-modal-close:hover {
+  color: white;
+  background-color: #333;
+  transition: 0.3s;
+}
+
+.preorder-modal .ant-btn-block {
+  margin: 10px 0 44px 0;
+}
+
+.preorder-modal h1 {
+  margin: 30px 0 0 0;
+}
+
+.preorder-modal .ant-modal-body {
+  padding: 24px 24px 0 24px;
+}
+
+.preorder-modal .ant-modal-footer {
+  padding: 0 16px 10px 16px;
+}
+
+.preorder-modal .shout-button {
+  margin-bottom: 0 !important;
+}
+
+
+/* ===== Modal - end ====== */

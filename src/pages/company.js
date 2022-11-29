@@ -1,12 +1,22 @@
 import React from 'react'
-import { useNavigate } from '@reach/router'
+import ReactGA from 'react-ga4';
 import { Button, Col, Descriptions, Row } from 'antd'
 import { CompanyDescription } from '../components/CompanyDescription'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBuildingShield, faBullhorn } from '@fortawesome/pro-duotone-svg-icons'
+import { faBuildingShield, faBasketShopping } from '@fortawesome/pro-duotone-svg-icons'
+import PreorderModal from '../components/PreorderModal'
 
-export default function Blog() {
-  const navigate = useNavigate();
+export default function ComapnyPage() {
+  const preorderModal = React.createRef();
+  const openPreorderModal = () => {
+    if (preorderModal.current) {
+      ReactGA.event({
+        category: "main",
+        action: "company_page_preorder_clicked",
+      });
+      (preorderModal.current).show();
+    }
+  };
   return (
     <div className="company-page">
       <div className="content">
@@ -35,12 +45,13 @@ export default function Blog() {
 
         <Row justify="center" style={{ marginTop: "100px"}}>
           <Col xs={24} xl={18}>
-            <Button block className="shout-button" onClick={() => navigate("/preregister")}>
-              <FontAwesomeIcon icon={faBullhorn} /> Preregister
+            <Button block className="shout-button primary" onClick={() => openPreorderModal()}>
+              <FontAwesomeIcon icon={faBasketShopping} />&nbsp;&nbsp;Purchase
             </Button>
           </Col>
         </Row>
       </div>
+      <PreorderModal ref={preorderModal}/>
     </div>
   )
 }

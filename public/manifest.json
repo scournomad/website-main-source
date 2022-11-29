@@ -1,0 +1,25 @@
+{
+  "short_name": "React App",
+  "name": "Create React App Sample",
+  "icons": [
+    {
+      "src": "NetScour-Security-128px-favicon.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "NetScour-Security-128px-favicon.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    {
+      "src": "NetScour-Security-128px-favicon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

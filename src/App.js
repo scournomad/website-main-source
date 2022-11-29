@@ -1,50 +1,46 @@
 import React from 'react';
-import { Root, Routes, addPrefetchExcludes } from 'react-static';
-import { Router } from 'components/Router';
-import Plausible from 'plausible-tracker'
-import { Layout } from 'antd';
-import { MainMenu } from 'components/MainMenu';
+import ReactGA from "react-ga4";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from './pages/home';
+import ComapnyPage from './pages/company';
+//import PricingPage from './pages/pricing';
+import NotFoundPage from './pages/404';
 
-import 'antd/dist/antd.css';
-import './app.css'
+import { Layout } from 'antd';
+import { MainMenu } from './components/MainMenu';
 import { MainFooter } from './components/MainFooter';
-import Favicon from 'react-favicon';
+
+import 'antd/dist/antd.min.css';
+import './App.css';
+
+ReactGA.initialize("G-V6P25FRXH7");
+ReactGA.send("pageview");
 
 const { Header, Footer, Content } = Layout;
 
-// Any routes that start with 'dynamic' will be treated as non-static routes
-addPrefetchExcludes(['dynamic']);
-
 function App() {
-  if (typeof window !== 'undefined') {
-    const plausible = Plausible({ domain: 'netscoursec.com' });
-    plausible.enableAutoPageviews();
-    plausible.enableAutoOutboundTracking();
-  }
-  
   return (
-    <Root>
-      <Favicon url='/img/favicons/NetScour-Security-32px-favicon.png' iconSize={32} />
-      <Favicon url='/img/favicons/NetScour-Security-128px-favicon.png' iconSize={128} />
-      <Favicon url='/img/favicons/NetScour-Security-180px-favicon.png' iconSize={180} />
-      <Favicon url='/img/favicons/NetScour-Security-192px-favicon.png' iconSize={192} />
-      <Layout>
-        <Header>
-          <MainMenu />
-        </Header>
-        <Content>
-          <React.Suspense fallback={<></>}>
-            <Router>
-              <Routes path="*" />
-            </Router>
-          </React.Suspense>
-        </Content>
-        <Footer>
-          <MainFooter />
-        </Footer>
-      </Layout>
-    </Root>
-  )
+    <React.Suspense fallback={<></>}>
+      <BrowserRouter>
+        <Layout>
+          <Header>
+            <MainMenu />
+          </Header>
+          <Content>
+            <Routes>
+              <Route index element={<HomePage />} />
+              <Route path="company" element={<ComapnyPage />} />
+              {/* <Route path="pricing" element={<PricingPage />} /> */}
+              <Route path="*" element={<NotFoundPage />} />
+            </Routes>
+          </Content>
+          <Footer>
+            <MainFooter />
+          </Footer>
+        </Layout>
+      </BrowserRouter>
+    </React.Suspense>
+  );
 }
 
-export default App
+export default App;
