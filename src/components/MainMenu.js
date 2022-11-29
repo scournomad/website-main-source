@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faBars } from '@fortawesome/pro-duotone-svg-icons';
 
+import logo from '../img/NetScourSecLogo.png';
+
 export function MainMenu() {
   const location = useLocation();
   const [current, setCurrent] = useState(location.pathname); // TODO: Works as long as there are no complex paths
@@ -17,7 +19,7 @@ export function MainMenu() {
     <>
       <div className="logo">
         <Link to="/">
-          <img src="./img/NetScourSecLogo.png" alt="" />&nbsp;<span className="company-name">ScourNomad</span>
+          <img src={logo} alt="" />&nbsp;<span className="company-name">ScourNomad</span>
         </Link>
       </div>
       <Menu

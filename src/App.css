@@ -835,6 +835,10 @@ textarea.ant-input {
   font-size: 18px;
 }
 
+.ant-notification-notice-close-x {
+  color: #CCC;
+}
+
 /* Messages - end */
 
 /* ========== Footer ========== */
