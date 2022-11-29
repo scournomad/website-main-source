@@ -32,15 +32,15 @@ export function MainFooter() {
                     <h3>Partners</h3>
                     <Row className='partners'>
                         <Col xs={24} sm={8}>
-                            <a href="https://filrougecapital.com/" target="_blank" rel="nofollow noopener">
-                                <img src={FRC}></img>
+                            <a href="https://filrougecapital.com/" target="_blank" rel="nofollow noreferrer">
+                                <img src={FRC} alt="FRC"></img>
                             </a>
                         </Col>
                         <Col xs={24} sm={8}>
-                            <img src={EU}></img>
+                            <img src={EU} alt="EU"></img>
                         </Col>
                         <Col xs={24} sm={8}>
-                            <img src={ESIF}></img>
+                            <img src={ESIF} alt="ESIF"></img>
                             <span className="esif-text">
                                 Krajnji primatelj ﬁnancijskog instrumenta suﬁnanciranog iz Europskog fonda za 
                                 regionalni razvoj u sklopu Operativnog programa "Konkurentnost i kohezija".
@@ -52,8 +52,8 @@ export function MainFooter() {
             <hr></hr>
             <Row justify="space-between">
                 <Col xs={24} sm={5}>
-                    <a href="#" target="_blank" rel="nofollow noopener">Terms and Conditions</a>&nbsp;&nbsp;&nbsp;
-                    <a href="#" target="_blank" rel="nofollow noopener">Privacy Policy</a>
+                    <a href="/#" target="_blank" rel="nofollow noreferrer">Terms and Conditions</a>&nbsp;&nbsp;&nbsp;
+                    <a href="/#" target="_blank" rel="nofollow noreferrer">Privacy Policy</a>
                 </Col>
                 <Col xs={24} sm={5} className="copyright">&copy; 2022 by ScourNomad</Col>
             </Row>

@@ -11,7 +11,6 @@ export function MainMenu() {
 
   if (current !== location.pathname) setCurrent(location.pathname);
   const onClick = e => {
-    console.log('click ', e);
     setCurrent(e.key);
   };
   return (

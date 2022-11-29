@@ -76,7 +76,7 @@ export function PlatformDescriptionItem() {
             {
                 items.map((item, idx) =>
                     <Row className="platform-description-item-row" gutter={32} align="middle">
-                        <Col xl={{ span: 12, push: idx % 2 == 0 ? 0 : 12 }}>
+                        <Col xl={{ span: 12, push: idx % 2 === 0 ? 0 : 12 }}>
                             <Image
                                 preview={{ visible: false }}
                                 onClick={() => { 
@@ -85,7 +85,7 @@ export function PlatformDescriptionItem() {
                                 }}
                                 src={item.image} />
                         </Col>
-                        <Col xl={{ span: 12, pull: idx % 2 == 0 ? 0 : 12 }}>
+                        <Col xl={{ span: 12, pull: idx % 2 === 0 ? 0 : 12 }}>
                             <ul>
                                 {item.textItems.map(textItem => <li>{textItem}</li>)}
                             </ul>
