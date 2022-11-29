@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactGA from "react-ga4";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from './pages/home';
 import ComapnyPage from './pages/company';
@@ -11,6 +12,9 @@ import { MainFooter } from './components/MainFooter';
 
 import 'antd/dist/antd.min.css';
 import './App.css';
+
+ReactGA.initialize("G-V6P25FRXH7");
+ReactGA.send("pageview");
 
 const { Header, Footer, Content } = Layout;
 
