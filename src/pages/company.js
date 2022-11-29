@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactGA from 'react-ga4';
 import { Button, Col, Descriptions, Row } from 'antd'
 import { CompanyDescription } from '../components/CompanyDescription'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -9,6 +10,10 @@ export default function ComapnyPage() {
   const preorderModal = React.createRef();
   const openPreorderModal = () => {
     if (preorderModal.current) {
+      ReactGA.event({
+        category: "main",
+        action: "company_page_preorder_clicked",
+      });
       (preorderModal.current).show();
     }
   };

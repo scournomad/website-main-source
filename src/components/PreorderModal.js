@@ -1,5 +1,6 @@
 import React, { useState, useImperativeHandle } from 'react';
 import { Modal, Button, Form, Input, notification } from 'antd';
+import ReactGA from 'react-ga4';
 
 const PreorderModal = React.forwardRef((props, ref) => {
     const [visible, setVisible] = useState(false);
@@ -28,11 +29,26 @@ const PreorderModal = React.forwardRef((props, ref) => {
               'Content-Type': 'application/x-www-form-urlencoded',
             }
         })
+        .then(() => {
+            ReactGA.event({
+                category: "main",
+                action: "preorder_email_submit_error_1",
+            });
+            notification.error({message: "Error submitting email", description: "There was an error while submitting the email address."})
+        })
         .catch((error) => {
             if (error instanceof TypeError) {
                 notification.success({message: "Email address submitted", description: "You should receive a cofirmation email."});
                 emailForm.resetFields();
+                ReactGA.event({
+                    category: "main",
+                    action: "preorder_email_submitted",
+                });
             } else {
+                ReactGA.event({
+                    category: "main",
+                    action: "preorder_email_submit_error_2",
+                });
                 notification.error({message: "Error submitting email", description: "There was an error while submitting the email address."})
             }
         });
@@ -73,7 +89,13 @@ const PreorderModal = React.forwardRef((props, ref) => {
                     </Button>
                 </Form.Item>
             </Form>
-            <Button block htmlType="submit" className="shout-button primary" onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSepgX9yTxt7_ljmSOHb4KsqZpdyEv0Z32Z6-_gRnab7vWockw/viewform", "_blank")}>
+            <Button block htmlType="submit" className="shout-button primary" onClick={() => {
+                ReactGA.event({
+                    category: "main",
+                    action: "preorder_survey_clicked",
+                });
+                window.open("https://docs.google.com/forms/d/e/1FAIpQLSepgX9yTxt7_ljmSOHb4KsqZpdyEv0Z32Z6-_gRnab7vWockw/viewform", "_blank")
+            }}>
                 Fill out the survey - let your voice be heard!
             </Button>
         </Modal>

@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactGA from 'react-ga4';
 import { Row, Col, Card, Button } from 'antd';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { PlatformDescriptionItem } from '../components/PlatformDescriptionItem';
@@ -12,6 +13,10 @@ export default function HomePage() {
   const preorderModal = React.createRef();
   const openPreorderModal = () => {
     if (preorderModal.current) {
+      ReactGA.event({
+        category: "main",
+        action: "main_page_preorder_clicked",
+      });
       (preorderModal.current).show();
     }
   };
@@ -36,7 +41,13 @@ export default function HomePage() {
               </Button>
             </Col>
             <Col className="title-box" md={12}>
-              <Button block className="shout-button secondary" onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSepgX9yTxt7_ljmSOHb4KsqZpdyEv0Z32Z6-_gRnab7vWockw/viewform", "_blank")}>
+              <Button block className="shout-button secondary" onClick={() => {
+                  ReactGA.event({
+                    category: "main",
+                    action: "main_page_survey_clicked",
+                  });
+                  window.open("https://docs.google.com/forms/d/e/1FAIpQLSepgX9yTxt7_ljmSOHb4KsqZpdyEv0Z32Z6-_gRnab7vWockw/viewform", "_blank")
+                }}>
                 <FontAwesomeIcon icon={faBallot} />&nbsp;&nbsp;Fill the survey
               </Button>
             </Col>

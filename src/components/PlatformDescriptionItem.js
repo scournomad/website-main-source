@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ReactGA from 'react-ga4';
 import { Row, Col, Image } from 'antd';
 
 const items = [
@@ -80,6 +81,11 @@ export function PlatformDescriptionItem() {
                             <Image
                                 preview={{ visible: false }}
                                 onClick={() => { 
+                                    ReactGA.event({
+                                        category: "main",
+                                        action: "main_page_screenshot_viewed",
+                                        label: `image ${idx}`
+                                    });
                                     setIndex(idx);
                                     setVisible(true);
                                 }}
