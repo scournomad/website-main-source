@@ -19,7 +19,7 @@ export function MainMenu() {
     <>
       <div className="logo">
         <Link to="/">
-          <img src={logo} alt="" />&nbsp;<span className="company-name">ScourNomad</span>
+          <img src={logo} alt="Logo" />&nbsp;<span className="company-name">ScourNomad</span>
         </Link>
       </div>
       <Menu

@@ -31,8 +31,9 @@ const PreorderModal = React.forwardRef((props, ref) => {
         })
         .then(() => {
             ReactGA.event({
-                category: "main",
-                action: "preorder_email_submit_error_1",
+                category: "preorder_modal",
+                action: "email_submit_error",
+                label: "Success happened when CORS expected"
             });
             notification.error({message: "Error submitting email", description: "There was an error while submitting the email address."})
         })
@@ -41,13 +42,14 @@ const PreorderModal = React.forwardRef((props, ref) => {
                 notification.success({message: "Email address submitted", description: "You should receive a cofirmation email."});
                 emailForm.resetFields();
                 ReactGA.event({
-                    category: "main",
-                    action: "preorder_email_submitted",
+                    category: "preorder_modal",
+                    action: "email_submitted",
                 });
             } else {
                 ReactGA.event({
-                    category: "main",
-                    action: "preorder_email_submit_error_2",
+                    category: "preorder_modal",
+                    action: "email_submit_error",
+                    label: `Unhandled error happened: ${error}`,
                 });
                 notification.error({message: "Error submitting email", description: "There was an error while submitting the email address."})
             }
@@ -91,8 +93,8 @@ const PreorderModal = React.forwardRef((props, ref) => {
             </Form>
             <Button block htmlType="submit" className="shout-button primary" onClick={() => {
                 ReactGA.event({
-                    category: "main",
-                    action: "preorder_survey_clicked",
+                    category: "preorder_modal",
+                    action: "survey_clicked",
                 });
                 window.open("https://docs.google.com/forms/d/e/1FAIpQLSepgX9yTxt7_ljmSOHb4KsqZpdyEv0Z32Z6-_gRnab7vWockw/viewform", "_blank")
             }}>

@@ -5,6 +5,7 @@ import { Row, Col, Image } from 'antd';
 const items = [
     {
         image: "./img/platform/project-details.png",
+        imageLabel: "Project Management",
         textItems: [
             "Easily access project notes and information",
             "Manage initial seed resources",
@@ -13,6 +14,7 @@ const items = [
     },
     {
         image: "./img/platform/automation.png",
+        imageLabel: "Automation",
         textItems: [
             "Use publicly available tools as well as the proprietary nodes",
             "Run the workflows manually or schedule them",
@@ -24,6 +26,7 @@ const items = [
     },
     {
         image: "./img/platform/attack-surface.png",
+        imageLabel: "Attack Surface Management",
         textItems: [
             "Review discovered resources and their relationships",
             "Review discovered CVE-s, bugs, keys, and other loot",
@@ -34,6 +37,7 @@ const items = [
     },
     {
         image: "./img/platform/report-templates.png",
+        imageLabel: "Report Templates",
         textItems: [
             "Build report templates, either for client reports or internal technical reports",
             "Fill them up automatically by running workflows or manual tools",
@@ -43,6 +47,7 @@ const items = [
     },
     {
         image: "./img/platform/knowledge-base.png",
+        imageLabel: "Knowledge Base",
         textItems: [
             "Keep the knowledge base and project notes as correlated pieces of information",
             "Effortlessly locate your notes related to discovered resources, like ports and services, directly from the attack surface monitor",
@@ -51,6 +56,7 @@ const items = [
     },
     {
         image: "./img/platform/timeline.png",
+        imageLabel: "Timeline",
         textItems: [
             "The platform will automatically keep the timeline for you",
             "Set up what goes into the timeline and how it is displayed",
@@ -60,11 +66,13 @@ const items = [
     },
     {
         image: "./img/platform/collaboration.png",
+        imageLabel: "Collaboration",
         textItems: [
             "Collaborate with your team, company, or fellow security researchers",
             "Selectively share the pieces of your knowledgebase",
             "Jointly edit the project notes, group knowledgebase, or project information",
-            "Split the tasks, and create the tickets in one of the supported ticketing systems",
+            "Split the tasks, and create the tickets for team members",
+            "Send gained access and found secrets to your team members"
         ]
     },
 ];
@@ -82,14 +90,15 @@ export function PlatformDescriptionItem() {
                                 preview={{ visible: false }}
                                 onClick={() => { 
                                     ReactGA.event({
-                                        category: "main",
-                                        action: "main_page_screenshot_viewed",
-                                        label: `image ${idx}`
+                                        category: "main_page",
+                                        action: "screenshot_viewed",
+                                        label: item.imageLabel
                                     });
                                     setIndex(idx);
                                     setVisible(true);
                                 }}
-                                src={item.image} />
+                                src={item.image} 
+                                alt={`Image ${idx}`}/>
                         </Col>
                         <Col xl={{ span: 12, pull: idx % 2 === 0 ? 0 : 12 }}>
                             <ul>

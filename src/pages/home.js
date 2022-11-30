@@ -14,8 +14,8 @@ export default function HomePage() {
   const openPreorderModal = () => {
     if (preorderModal.current) {
       ReactGA.event({
-        category: "main",
-        action: "main_page_preorder_clicked",
+        category: "main_page",
+        action: "preorder_clicked",
       });
       (preorderModal.current).show();
     }
@@ -27,7 +27,7 @@ export default function HomePage() {
         <Col xs={{span: 24}} md={{ span: 21, offset: 3 }}>
           <Row className="app-logo-container" justify="center">
             <Col xs={{ flex: "350px" }} md={6}>
-              <img src="./img/NetScourSecLogo.png" alt=""/>
+              <img src="./img/NetScourSecLogo.png" alt="Logo"/>
             </Col>
             <Col className="title-box" xs={{ flex: "350px" }} md={18}>
               <h1 className="header1">ScourNomad</h1>
@@ -43,8 +43,8 @@ export default function HomePage() {
             <Col className="title-box" md={12}>
               <Button block className="shout-button secondary" onClick={() => {
                   ReactGA.event({
-                    category: "main",
-                    action: "main_page_survey_clicked",
+                    category: "main_page",
+                    action: "survey_clicked",
                   });
                   window.open("https://docs.google.com/forms/d/e/1FAIpQLSepgX9yTxt7_ljmSOHb4KsqZpdyEv0Z32Z6-_gRnab7vWockw/viewform", "_blank")
                 }}>

@@ -11,8 +11,8 @@ export default function ComapnyPage() {
   const openPreorderModal = () => {
     if (preorderModal.current) {
       ReactGA.event({
-        category: "main",
-        action: "company_page_preorder_clicked",
+        category: "company_page",
+        action: "preorder_clicked",
       });
       (preorderModal.current).show();
     }
