@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faBars } from '@fortawesome/pro-duotone-svg-icons';
 
-import logo from '../img/NetScourSecLogo.png';
+import logo from '../img/ScourNomadLogo.png';
 
 export function MainMenu() {
   const location = useLocation();
@@ -37,13 +37,13 @@ export function MainMenu() {
           <Link to="/pricing">Pricing</Link>
         </Menu.Item> */}
         <Menu.Item key="github" className="social">
-          <a href="https://github.com/netscoursec" target="_blank" rel="nofollow noreferrer"><FontAwesomeIcon icon={faGithub} /><span className="social-name">GitHub</span></a>
+          <a href="https://github.com/scournomad" target="_blank" rel="nofollow noreferrer"><FontAwesomeIcon icon={faGithub} /><span className="social-name">GitHub</span></a>
         </Menu.Item>
         <Menu.Item key="twitter" className="social">
-          <a href="https://twitter.com/netscoursec" target="_blank" rel="nofollow noreferrer"><FontAwesomeIcon icon={faTwitter} /><span className="social-name">Twitter</span></a>
+          <a href="https://twitter.com/scournomad" target="_blank" rel="nofollow noreferrer"><FontAwesomeIcon icon={faTwitter} /><span className="social-name">Twitter</span></a>
         </Menu.Item>
         <Menu.Item key="linkedin" className="social">
-          <a href="https://www.linkedin.com/company/netscour-security/" target="_blank" rel="nofollow noreferrer"><FontAwesomeIcon icon={faLinkedin} /><span className="social-name">Linkedin</span></a>
+          <a href="https://www.linkedin.com/company/scour-nomad/" target="_blank" rel="nofollow noreferrer"><FontAwesomeIcon icon={faLinkedin} /><span className="social-name">Linkedin</span></a>
         </Menu.Item>
       </Menu>
     </>

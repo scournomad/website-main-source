@@ -27,7 +27,7 @@ export default function HomePage() {
         <Col xs={{span: 24}} md={{ span: 21, offset: 3 }}>
           <Row className="app-logo-container" justify="center">
             <Col xs={{ flex: "350px" }} md={6}>
-              <img src="./img/NetScourSecLogo.png" alt="Logo"/>
+              <img src="./img/ScourNomadLogo.png" alt="Logo"/>
             </Col>
             <Col className="title-box" xs={{ flex: "350px" }} md={18}>
               <h1 className="header1">ScourNomad</h1>

@@ -23,9 +23,9 @@ export function MainFooter() {
                 <Col xs={24} sm={5} md={9} xl={5}>
                     <h3>Social</h3>
                     <ul>
-                        <li><a href="https://github.com/netscoursec" target="_blank" rel="nofollow noreferrer"><FontAwesomeIcon icon={faGithub} /> Github</a></li>
-                        <li><a href="https://twitter.com/netscoursec" target="_blank" rel="nofollow noreferrer"><FontAwesomeIcon icon={faTwitter} /> Twitter</a></li>
-                        <li><a href="https://www.linkedin.com/company/netscour-security/" target="_blank" rel="nofollow noreferrer"><FontAwesomeIcon icon={faLinkedin} /> Linkedin</a></li>
+                        <li><a href="https://github.com/scournomad" target="_blank" rel="nofollow noreferrer"><FontAwesomeIcon icon={faGithub} /> Github</a></li>
+                        <li><a href="https://twitter.com/scournomad" target="_blank" rel="nofollow noreferrer"><FontAwesomeIcon icon={faTwitter} /> Twitter</a></li>
+                        <li><a href="https://www.linkedin.com/company/scour-nomad/" target="_blank" rel="nofollow noreferrer"><FontAwesomeIcon icon={faLinkedin} /> Linkedin</a></li>
                     </ul>
                 </Col>
                 <Col xs={24} sm={14} md={11} xl={8}>
