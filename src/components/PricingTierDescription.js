@@ -13,7 +13,7 @@ import { Badge } from 'antd';
 
 export function PricingTierDescription(props) {
     const WrapperText = props.wrapperText
-        ? inner => <Badge.Ribbon 
+        ? inner => <Badge.Ribbon
             className="pricing-tier-wrapper"
             text={props.wrapperText}
             color={props.wrapperColor ?? "purple"}>{inner.children}</Badge.Ribbon>

@@ -20,8 +20,8 @@ const PreorderModal = React.forwardRef((props, ref) => {
 
     const onEmailFinish = (values) => {
         var url = new URL('https://docs.google.com/forms/d/e/1FAIpQLSffu_ua3wkTublRraW77ItO7CGFharPPcuHIUud0ku4gUe-oQ/formResponse');
-        url.search = new URLSearchParams(values); 
-        
+        url.search = new URLSearchParams(values);
+
         fetch(url.toString(), {
             method: 'GET',
             data: values,
@@ -71,7 +71,7 @@ const PreorderModal = React.forwardRef((props, ref) => {
             ]}>
             <p>
                 ScourNomad is currently <b>in the internal alpha testing phase</b> and will become available in <b>January 2023</b>.
-                If you are interested in ScourNomad, <b>please send us your email using the form below</b>, and we will inform you when it 
+                If you are interested in ScourNomad, <b>please send us your email using the form below</b>, and we will inform you when it
                 becomes available.
             </p>
             <p>

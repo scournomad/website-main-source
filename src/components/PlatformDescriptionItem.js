@@ -88,7 +88,7 @@ export function PlatformDescriptionItem() {
                         <Col xl={{ span: 12, push: idx % 2 === 0 ? 0 : 12 }}>
                             <Image
                                 preview={{ visible: false }}
-                                onClick={() => { 
+                                onClick={() => {
                                     ReactGA.event({
                                         category: "main_page",
                                         action: "screenshot_viewed",
@@ -97,7 +97,7 @@ export function PlatformDescriptionItem() {
                                     setIndex(idx);
                                     setVisible(true);
                                 }}
-                                src={item.image} 
+                                src={item.image}
                                 alt={`Image ${idx}`}/>
                         </Col>
                         <Col xl={{ span: 12, pull: idx % 2 === 0 ? 0 : 12 }}>

@@ -294,7 +294,7 @@ a.anchor {
 
   .ant-layout-header .ant-menu li.social .social-name {
     display: inline;
-  } 
+  }
 }
 
 /* ========== Content ========== */
@@ -328,7 +328,7 @@ a.anchor {
     background-size: cover;
     position: relative;
     top: -64px;
-  } 
+  }
 }
 
 @media (max-width: 770px)
@@ -344,7 +344,7 @@ a.anchor {
     background-size: cover;
     position: relative;
     top: -64px;
-  } 
+  }
 }
 
 .app-logo-container {
@@ -748,7 +748,7 @@ a.anchor {
 
 /* ========== Global elements ========== */
 
-/* Forms */ 
+/* Forms */
 
 .ant-input {
   background-color: #1F1F1F;
@@ -819,7 +819,7 @@ textarea.ant-input {
   width: 100%;
 }
 
-/* Forms - end */ 
+/* Forms - end */
 
 /* Messages */
 .ant-notification-notice,

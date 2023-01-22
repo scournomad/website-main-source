@@ -9,7 +9,7 @@ export function CompanyDescriptionItem(props) {
     return (
         <Card
             cover={<FontAwesomeIcon icon={data.icon} />}>
-            <Meta 
+            <Meta
                 title={data.title}
                 description={data.text} />
             <Popover content={<ul>{data.textItems.map(i => <li>{i}</li>)}</ul>}>

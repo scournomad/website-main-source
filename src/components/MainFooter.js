@@ -42,7 +42,7 @@ export function MainFooter() {
                         <Col xs={24} sm={8}>
                             <img src={ESIF} alt="ESIF"></img>
                             <span className="esif-text">
-                                Krajnji primatelj ﬁnancijskog instrumenta suﬁnanciranog iz Europskog fonda za 
+                                Krajnji primatelj ﬁnancijskog instrumenta suﬁnanciranog iz Europskog fonda za
                                 regionalni razvoj u sklopu Operativnog programa "Konkurentnost i kohezija".
                             </span>
                         </Col>

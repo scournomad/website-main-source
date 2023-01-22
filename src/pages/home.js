@@ -59,8 +59,8 @@ export default function HomePage() {
           What is <span className="platform-name">ScourNomad</span>?
         </h2>
         <p>
-          The goal of the ScourNomad platform is to reduce the security experts' time and effort performing 
-          mundane tasks and improve testing performance. It enhances the penetration tests and bug hunts speed 
+          The goal of the ScourNomad platform is to reduce the security experts' time and effort performing
+          mundane tasks and improve testing performance. It enhances the penetration tests and bug hunts speed
           and precision, providing easy-to-use interfaces and powerful integrations.
         </p>
         <b>
@@ -104,11 +104,11 @@ export default function HomePage() {
             </Card>
           </Col>
         </Row>
-        
+
         <h2>How <span className="platform-name">ScourNomad</span> platform works:</h2>
         <p>
-          ScourNomad platform provides multiple user interfaces to cover the daily tasks that software 
-          security professionals require. It also offers the most used tools that are readily available 
+          ScourNomad platform provides multiple user interfaces to cover the daily tasks that software
+          security professionals require. It also offers the most used tools that are readily available
           at any moment.
         </p>
         <PlatformDescriptionItem />
@@ -121,7 +121,7 @@ export default function HomePage() {
             </Button>
           </Col>
         </Row>
-        
+
       </div>
       <PreorderModal ref={preorderModal}/>
     </div>

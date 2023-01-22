@@ -62,9 +62,9 @@ export default function PricingPage() {
             title: "Teams",
             contents: <>
                 <p>
-                    Best suitable for small teams of security professionals. Collaborate on the projects and 
-                    share information between the team. Set the tasks for each team member and move them between 
-                    team members as they are being complemted. 
+                    Best suitable for small teams of security professionals. Collaborate on the projects and
+                    share information between the team. Set the tasks for each team member and move them between
+                    team members as they are being complemted.
                 </p>
             </>,
             price: "$? / month",
@@ -98,9 +98,9 @@ export default function PricingPage() {
         <div className="pricing-page">
             <div className="content">
                 <h1><span className="platform-name"><FontAwesomeIcon icon={faCartShopping} />&nbsp;Pricing</span> - buy ScourNomad</h1>
-                
+
                 <Row className="pricing-table" justify="center" gutter={32}>
-                    {tiers.map((tier, index) => 
+                    {tiers.map((tier, index) =>
                         <Col key={index} span={8}>
                             <PricingTierDescription
                                 title = {tier.title}
@@ -115,7 +115,7 @@ export default function PricingPage() {
                     )}
                 </Row>
                 <Row className="pricing-table" justify="center" gutter={32}>
-                    {tiers.map((tier, index) => 
+                    {tiers.map((tier, index) =>
                         <Col key={index} span={8}>
                             <PricingTierPrice
                                 title = {tier.title}
@@ -130,7 +130,7 @@ export default function PricingPage() {
                     )}
                 </Row>
                 <Row className="pricing-table" justify="center" gutter={32}>
-                    {tiers.map((tier, index) => 
+                    {tiers.map((tier, index) =>
                         <Col key={index} span={8}>
                             <PricingTierItems
                                 title = {tier.title}
@@ -145,7 +145,7 @@ export default function PricingPage() {
                     )}
                 </Row>
                 <Row className="pricing-table" justify="center" gutter={32}>
-                    {tiers.map((tier, index) => 
+                    {tiers.map((tier, index) =>
                         <Col key={index} span={8}>
                             <PricingTierAction
                                 title = {tier.title}
